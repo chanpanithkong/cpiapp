@@ -5,7 +5,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import {
   Button,
   Checkbox,
-  Divider,
+  // Divider,
   FormControlLabel,
   FormHelperText,
   Grid,
@@ -24,7 +24,7 @@ import { Formik } from 'formik';
 // project import
 import useAuth from 'hooks/useAuth';
 import useScriptRef from 'hooks/useScriptRef';
-import FirebaseSocial from './FirebaseSocial';
+// import FirebaseSocial from './FirebaseSocial';
 import IconButton from 'components/@extended/IconButton';
 import AnimateButton from 'components/@extended/AnimateButton';
 
@@ -199,14 +199,14 @@ const AuthLogin = () => {
                   </Button>
                 </AnimateButton>
               </Grid>
-              <Grid item xs={12}>
+              {/* <Grid item xs={12}>
                 <Divider>
                   <Typography variant="caption"> Login with</Typography>
                 </Divider>
               </Grid>
               <Grid item xs={12}>
                 <FirebaseSocial />
-              </Grid>
+              </Grid> */}
             </Grid>
           </form>
         )}
