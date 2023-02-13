@@ -35,35 +35,50 @@ const other = {
   type: 'group',
   children: [
     {
-      id: 'sample-page',
-      title: <FormattedMessage id="sample-page" />,
+      id: 'home',
+      title: 'Home',
       type: 'item',
-      url: '/sample-page',
+      url: '/home',
       icon: icons.ChromeOutlined
     },
     {
-      id: 'documentation',
-      title: <FormattedMessage id="documentation" />,
+      id: 'userprofile',
+      title: 'User Profile',
       type: 'item',
-      url: 'https://codedthemes.gitbook.io/mantis/',
-      icon: icons.QuestionOutlined,
-      external: true,
-      target: true,
-      chip: {
-        label: 'gitbook',
-        color: 'secondary',
-        size: 'small'
-      }
+      url: '/userpofile',
+      icon: icons.ChromeOutlined
     },
     {
-      id: 'roadmap',
-      title: <FormattedMessage id="roadmap" />,
+      id: 'logout',
+      title: 'Logout',
       type: 'item',
-      url: 'https://codedthemes.gitbook.io/mantis/roadmap',
-      icon: icons.DeploymentUnitOutlined,
-      external: true,
-      target: true
+      url: '/login',
+      icon: icons.ChromeOutlined
     }
+    // ,
+    // {
+    //   id: 'documentation',
+    //   title: <FormattedMessage id="documentation" />,
+    //   type: 'item',
+    //   url: 'https://codedthemes.gitbook.io/mantis/',
+    //   icon: icons.QuestionOutlined,
+    //   external: true,
+    //   target: true,
+    //   chip: {
+    //     label: 'gitbook',
+    //     color: 'secondary',
+    //     size: 'small'
+    //   }
+    // },
+    // {
+    //   id: 'roadmap',
+    //   title: <FormattedMessage id="roadmap" />,
+    //   type: 'item',
+    //   url: 'https://codedthemes.gitbook.io/mantis/roadmap',
+    //   icon: icons.DeploymentUnitOutlined,
+    //   external: true,
+    //   target: true
+    // }
   ]
 };
 

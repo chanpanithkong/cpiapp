@@ -29,11 +29,26 @@ const MainRoutes = {
       ),
       children: [
         {
-          path: 'sample-page',
+          path: 'home',
           element: <SamplePage />
         }
       ]
     },
+    // {
+    //   path: '/',
+    //   element: (
+    //     <AuthGuard>
+    //       <MainLayout />
+    //     </AuthGuard>
+    //   ),
+    //   children: [
+    //     {
+    //       path: 'sample-page',
+    //       element: <SamplePage />
+    //     }
+    //   ]
+    // }
+    // ,
     {
       path: '/maintenance',
       element: <CommonLayout />,
