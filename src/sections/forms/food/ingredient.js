@@ -28,7 +28,7 @@ const validationSchema = yup.object({
 
 // ==============================|| FORM VALIDATION - INSTANT FEEDBACK FORMIK  ||============================== //
 
-const RiceForm = () => {
+const IngredientForm = () => {
   const dispatch = useDispatch();
 
   const formik = useFormik({
@@ -55,12 +55,12 @@ const RiceForm = () => {
   });
 
   return (
-    <MainCard title="អង្ករ">
+    <MainCard title="គ្រឿងទេស">
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={3}>
           <Grid item xs={12} lg={6}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email">អង្ករផ្កាម្លិះ/KG</InputLabel>
+              <InputLabel htmlFor="email">ប្រេងឆា និងខ្លាញ់/KG</InputLabel>
               <TextField
                 fullWidth
                 id="emailInstant"
@@ -92,7 +92,7 @@ const RiceForm = () => {
           </Grid>
           <Grid item xs={12} lg={6}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise2">អង្ករផ្កាខ្ញី/KG</InputLabel>
+              <InputLabel htmlFor="rise2">ទឹកត្រី/KG</InputLabel>
               <TextField
                 fullWidth
                 id="rise2Instant"
@@ -124,7 +124,7 @@ const RiceForm = () => {
           </Grid>
           <Grid item xs={12} lg={6}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">អង្ករនាងមិញ/KG</InputLabel>
+              <InputLabel htmlFor="rise3">ស្ករស/KG</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -156,7 +156,7 @@ const RiceForm = () => {
           </Grid>
           <Grid item xs={12} lg={6}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">អង្ករនាងខុន/KG</InputLabel>
+              <InputLabel htmlFor="rise4">ស្ករត្នោត/KG</InputLabel>
               <TextField
                 fullWidth
                 id="rise4Instant"
@@ -188,7 +188,7 @@ const RiceForm = () => {
           </Grid>
           <Grid item xs={12} lg={6}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">អង្ករដំណើប/KG</InputLabel>
+              <InputLabel htmlFor="rise3">អំបិល/KG</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -220,7 +220,7 @@ const RiceForm = () => {
           </Grid>
           <Grid item xs={12} lg={6}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">ធញ្ញជាតិផ្សេងៗ/KG</InputLabel>
+              <InputLabel htmlFor="rise3">ម្សៅស៊ុប/KG</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -310,4 +310,4 @@ const RiceForm = () => {
   );
 };
 
-export default RiceForm;
+export default IngredientForm;
