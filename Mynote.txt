@@ -1,0 +1,5 @@
+-----Language
+src>components>Locales.js
+
+---Change text Format
+src>utils>locales>en.json

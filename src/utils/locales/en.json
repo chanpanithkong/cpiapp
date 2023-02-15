@@ -38,6 +38,7 @@
   "custom": "Custom",
   "customer": "Customer",
   "dashboard": "Dashboard",
+  "food": "ម្ហូបអាហារ",
   "data": "Data",
   "data-display": "Data Display",
   "datatable": "Datatable",
@@ -126,5 +127,6 @@
   "user-list": "User List",
   "user-profile": "User Profile",
   "utils": "Utils",
-  "widgets": "Widgets"
+  "widgets": "Widgets",
+  "rice": "អង្ករ"
 }

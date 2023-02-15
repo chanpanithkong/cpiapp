@@ -10,6 +10,10 @@ import AuthGuard from 'utils/route-guard/AuthGuard';
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/default')));
 const DashboardAnalytics = Loadable(lazy(() => import('pages/dashboard/analytics')));
 
+//render -food
+const Page1 = Loadable(lazy(() => import('pages/food/page1')));
+const Rice = Loadable(lazy(() => import('pages/food/rice')));
+
 // render - widget
 const WidgetStatistics = Loadable(lazy(() => import('pages/widget/statistics')));
 const WidgetData = Loadable(lazy(() => import('pages/widget/data')));
@@ -129,6 +133,23 @@ const MainRoutes = {
             {
               path: 'analytics',
               element: <DashboardAnalytics />
+            },
+            {
+              path: 'analytics',
+              element: <DashboardAnalytics />
+            }
+          ]
+        },
+        {
+          path: 'food',
+          children: [
+            {
+              path: 'page1',
+              element: <Page1 />
+            },
+            {
+              path: 'rice',
+              element: <Rice />
             }
           ]
         },

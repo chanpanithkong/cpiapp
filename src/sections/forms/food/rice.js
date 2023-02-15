@@ -17,18 +17,20 @@ import * as yup from 'yup';
  * yup.string Expected 0 arguments, but got 1 */
 const validationSchema = yup.object({
   emailInstant: yup.string().email('Enter a valid email').required('Email is required'),
-  passwordInstant: yup.string().min(8, 'Password should be of minimum 8 characters length').required('Password is required')
+  passwordInstant: yup.string().min(8, 'Password should be of minimum 8 characters length').required('Password is required'),
+  rise2Instant: yup.string().min(8, 'something').required('Password is required')
 });
 
 // ==============================|| FORM VALIDATION - INSTANT FEEDBACK FORMIK  ||============================== //
 
-const InstantFeedback = () => {
+const RiceForm = () => {
   const dispatch = useDispatch();
 
   const formik = useFormik({
     initialValues: {
       emailInstant: '',
-      passwordInstant: ''
+      passwordInstant: '',
+      rise2Instant: ''
     },
     validationSchema,
     onSubmit: (values) => {
@@ -48,12 +50,12 @@ const InstantFeedback = () => {
   });
 
   return (
-    <MainCard title="On Leave">
+    <MainCard title="អង្ករ">
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={3}>
-          <Grid item xs={12}>
+          <Grid item xs={6}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email">Email Address</InputLabel>
+              <InputLabel htmlFor="email">អង្ករផ្កាម្លិះ/KG</InputLabel>
               <TextField
                 fullWidth
                 id="emailInstant"
@@ -67,40 +69,55 @@ const InstantFeedback = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={6}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email">Password</InputLabel>
+              <InputLabel htmlFor="email">តំលៃ</InputLabel>
               <TextField
                 fullWidth
-                id="passwordInstant"
-                name="passwordInstant"
-                placeholder="Enter your password"
-                type="password"
-                value={formik.values.passwordInstant}
+                id="emailInstant"
+                name="emailInstant"
+                placeholder="Enter email address"
+                value={formik.values.emailInstant}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                error={formik.touched.passwordInstant && Boolean(formik.errors.passwordInstant)}
-                helperText={formik.touched.passwordInstant && formik.errors.passwordInstant}
+                error={formik.touched.emailInstant && Boolean(formik.errors.emailInstant)}
+                helperText={formik.touched.emailInstant && formik.errors.emailInstant}
               />
             </Stack>
-          </Grid>
-          <Grid item xs={12}>
+        </Grid>
+          <Grid item xs={6}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email">Password</InputLabel>
+              <InputLabel htmlFor="rise2">អង្ករផ្កាខ្ញី/KG</InputLabel>
               <TextField
                 fullWidth
-                id="passwordInstant"
-                name="passwordInstant"
-                placeholder="Enter your password"
-                type="password"
-                value={formik.values.passwordInstant}
+                id="rise2Instant"
+                name="rise2Instant"
+                //placeholder="Enter email address"
+                value={formik.values.rise2Instant}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                error={formik.touched.passwordInstant && Boolean(formik.errors.passwordInstant)}
-                helperText={formik.touched.passwordInstant && formik.errors.passwordInstant}
+                error={formik.touched.rise2Instant && Boolean(formik.errors.rise2Instant)}
+                helperText={formik.touched.rise2Instant && formik.errors.rise2Instant}
               />
             </Stack>
-          </Grid>
+        </Grid>
+        <Grid item xs={6}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="price2">តំលៃ</InputLabel>
+              <TextField
+                fullWidth
+                id="price2Instant"
+                name="price2Instant"
+                //placeholder="Enter email address"
+                value={formik.values.price2Instant}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                error={formik.touched.price2Instant && Boolean(formik.errors.price2Instant)}
+                helperText={formik.touched.price2Instant && formik.errors.price2Instant}
+              />
+            </Stack>
+        </Grid>
+
           <Grid item xs={12}>
             <Stack direction="row" justifyContent="flex-end">
               <AnimateButton>
@@ -116,4 +133,4 @@ const InstantFeedback = () => {
   );
 };
 
-export default InstantFeedback;
+export default RiceForm;
