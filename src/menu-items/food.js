@@ -2,13 +2,14 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DashboardOutlined, GoldOutlined, HomeOutlined } from '@ant-design/icons';
+import { DashboardOutlined, GoldOutlined, HomeOutlined, DashboardFilled } from '@ant-design/icons';
 
 // icons
 const icons = {
   DashboardOutlined,
   GoldOutlined,
-  HomeOutlined
+  HomeOutlined,
+  DashboardFilled
 };
 
 // ==============================|| MENU ITEMS - FOOD ||============================== //
@@ -21,15 +22,8 @@ const food = {
       id: 'food',
       title: <FormattedMessage id="food" />,
       type: 'collapse',
-      icon: icons.DashboardOutlined,
+      icon: icons.DashboardFilled,
       children: [
-        {
-          id: 'page1',
-          title: <FormattedMessage id="page1" />,
-          type: 'item',
-          url: '/food/page1',
-          breadcrumbs: false
-        },
         {
           id: 'rice',
           title: <FormattedMessage id="rice" />,

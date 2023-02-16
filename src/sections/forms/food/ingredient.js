@@ -1,7 +1,7 @@
 import { useDispatch } from 'store';
 
 // material-ui
-import { Button, Grid, InputLabel, Stack, TextField, CardActions, Tooltip } from '@mui/material';
+import { Button, Grid, InputLabel, Stack, TextField, CardActions, Tooltip, Select, MenuItem, FormControl } from '@mui/material';
 
 // project imports
 import MainCard from 'components/MainCard';
@@ -58,7 +58,7 @@ const IngredientForm = () => {
     <MainCard title="គ្រឿងទេស">
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="email">ប្រេងឆា និងខ្លាញ់/KG</InputLabel>
               <TextField
@@ -72,6 +72,19 @@ const IngredientForm = () => {
                 //error={formik.touched.emailInstant && Boolean(formik.errors.emailInstant)}
                 //helperText={formik.touched.emailInstant && formik.errors.emailInstant}
               />
+            </Stack>
+          </Grid>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                  <MenuItem value={10}>KG</MenuItem>
+                  <MenuItem value={20}>G</MenuItem>
+                  <MenuItem value={30}>L</MenuItem>
+                </Select>
+              </FormControl>
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6}>
@@ -90,7 +103,7 @@ const IngredientForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="rise2">ទឹកត្រី/KG</InputLabel>
               <TextField
@@ -104,6 +117,19 @@ const IngredientForm = () => {
                 //error={formik.touched.rise2Instant && Boolean(formik.errors.rise2Instant)}
                 //helperText={formik.touched.rise2Instant && formik.errors.rise2Instant}
               />
+            </Stack>
+          </Grid>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                  <MenuItem value={10}>KG</MenuItem>
+                  <MenuItem value={20}>G</MenuItem>
+                  <MenuItem value={30}>L</MenuItem>
+                </Select>
+              </FormControl>
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6}>
@@ -122,7 +148,7 @@ const IngredientForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="rise3">ស្ករស/KG</InputLabel>
               <TextField
@@ -136,6 +162,19 @@ const IngredientForm = () => {
                 //error={formik.touched.rise3Instant && Boolean(formik.errors.rise3Instant)}
                 //helperText={formik.touched.rise3Instant && formik.errors.rise3Instant}
               />
+            </Stack>
+          </Grid>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                  <MenuItem value={10}>KG</MenuItem>
+                  <MenuItem value={20}>G</MenuItem>
+                  <MenuItem value={30}>L</MenuItem>
+                </Select>
+              </FormControl>
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6}>
@@ -154,7 +193,7 @@ const IngredientForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="rise4">ស្ករត្នោត/KG</InputLabel>
               <TextField
@@ -168,6 +207,19 @@ const IngredientForm = () => {
                 //error={formik.touched.rise4Instant && Boolean(formik.errors.rise4Instant)}
                 //helperText={formik.touched.rise4Instant && formik.errors.rise4Instant}
               />
+            </Stack>
+          </Grid>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                  <MenuItem value={10}>KG</MenuItem>
+                  <MenuItem value={20}>G</MenuItem>
+                  <MenuItem value={30}>L</MenuItem>
+                </Select>
+              </FormControl>
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6}>
@@ -186,7 +238,7 @@ const IngredientForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="rise3">អំបិល/KG</InputLabel>
               <TextField
@@ -200,6 +252,19 @@ const IngredientForm = () => {
                 //error={formik.touched.rise3Instant && Boolean(formik.errors.rise3Instant)}
                 //helperText={formik.touched.rise3Instant && formik.errors.rise3Instant}
               />
+            </Stack>
+          </Grid>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                  <MenuItem value={10}>KG</MenuItem>
+                  <MenuItem value={20}>G</MenuItem>
+                  <MenuItem value={30}>L</MenuItem>
+                </Select>
+              </FormControl>
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6}>
@@ -218,7 +283,7 @@ const IngredientForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="rise3">ម្សៅស៊ុប/KG</InputLabel>
               <TextField
@@ -232,6 +297,19 @@ const IngredientForm = () => {
                 //error={formik.touched.rise3Instant && Boolean(formik.errors.rise3Instant)}
                 //helperText={formik.touched.rise3Instant && formik.errors.rise3Instant}
               />
+            </Stack>
+          </Grid>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                  <MenuItem value={10}>KG</MenuItem>
+                  <MenuItem value={20}>G</MenuItem>
+                  <MenuItem value={30}>L</MenuItem>
+                </Select>
+              </FormControl>
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6}>
