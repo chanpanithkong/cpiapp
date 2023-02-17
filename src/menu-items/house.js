@@ -2,14 +2,14 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DashboardOutlined, GoldOutlined, HomeOutlined, DashboardFilled } from '@ant-design/icons';
+import { DashboardOutlined, GoldOutlined, HomeOutlined, BankFilled } from '@ant-design/icons';
 
 // icons
 const icons = {
   DashboardOutlined,
   GoldOutlined,
   HomeOutlined,
-  DashboardFilled
+  BankFilled
 };
 
 // ==============================|| MENU ITEMS - DRINK AND SMOKE ||============================== //
@@ -26,7 +26,7 @@ const house = {
       title: <FormattedMessage id="house" />,
       type: 'item',
       url: '/food/ingredient',
-      icon: icons.DashboardFilled,
+      icon: icons.BankFilled,
       breadcrumbs: false
     }
   ]

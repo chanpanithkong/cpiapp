@@ -2,14 +2,15 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DashboardOutlined, GoldOutlined, HomeOutlined, DashboardFilled } from '@ant-design/icons';
+import { DashboardOutlined, GoldOutlined, HomeOutlined, DashboardFilled, TrophyFilled } from '@ant-design/icons';
 
 // icons
 const icons = {
   DashboardOutlined,
   GoldOutlined,
   HomeOutlined,
-  DashboardFilled
+  DashboardFilled,
+  TrophyFilled
 };
 
 // ==============================|| MENU ITEMS - DRINK AND SMOKE ||============================== //
@@ -26,7 +27,7 @@ const drinksmoke = {
       title: <FormattedMessage id="drinksmoke" />,
       type: 'item',
       url: '/food/ingredient',
-      icon: icons.DashboardFilled,
+      icon: icons.TrophyFilled,
       breadcrumbs: false
     }
   ]
