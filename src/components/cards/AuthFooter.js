@@ -16,13 +16,14 @@ const AuthFooter = () => {
       >
         <Typography variant="subtitle2" color="secondary" component="span">
           This site is protected by{' '}
-            <Typography component={Link} variant="subtitle2" href="https://www.nbc.gov.kh/" target="_blank" underline="hover">
+          <Typography component={Link} variant="subtitle2" href="https://www.nbc.gov.kh/" target="_blank" underline="hover">
             National Bank of Cambodia
           </Typography>
-        </Typography> 
-
+        </Typography>
         <Stack direction={matchDownSM ? 'column' : 'row'} spacing={matchDownSM ? 1 : 3} textAlign={matchDownSM ? 'center' : 'inherit'}>
-           <Typography variant="subtitle2" color="secondary" underline="hover">2023 &copy; All rights reserved </Typography>
+          <Typography variant="subtitle2" color="secondary" underline="hover">
+            2023 &copy; All rights reserved{' '}
+          </Typography>
         </Stack>
       </Stack>
     </Container>

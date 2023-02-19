@@ -7,9 +7,8 @@ import { DatePicker, LocalizationProvider } from '@mui/x-date-pickers';
 
 // third-party
 import frLocale from 'date-fns/locale/fr';
-import ruLocale from 'date-fns/locale/ru';
-import deLocale from 'date-fns/locale/de';
 import enLocale from 'date-fns/locale/en-US';
+import kmLocale from 'date-fns/locale/km';
 
 // project import
 import MainCard from 'components/MainCard';
@@ -17,15 +16,13 @@ import MainCard from 'components/MainCard';
 const localeMap = {
   en: enLocale,
   fr: frLocale,
-  ru: ruLocale,
-  de: deLocale
+  km: kmLocale
 };
 
 const maskMap = {
   fr: '__/__/____',
   en: '__/__/____',
-  ru: '__.__.____',
-  de: '__.__.____'
+  km: '__/__/____'
 };
 
 // ==============================|| DATE PICKER - LOCALIZED ||============================== //

@@ -6,7 +6,6 @@ import { useTheme } from '@mui/material/styles';
 import {
   Button,
   Box,
-  CardMedia,
   ClickAwayListener,
   Grid,
   List,
@@ -16,7 +15,6 @@ import {
   ListSubheader,
   Paper,
   Popper,
-  Stack,
   Typography
 } from '@mui/material';
 
@@ -29,9 +27,9 @@ import { drawerWidth } from 'config';
 
 // assets
 import { ArrowRightOutlined, WindowsOutlined } from '@ant-design/icons';
-import backgroundVector from 'assets/images/mega-menu/back.svg';
-import imageChart from 'assets/images/mega-menu/chart.svg';
 import AnimateButton from 'components/@extended/AnimateButton';
+import { FormattedMessage } from 'react-intl';
+//import { FormattedMessage } from 'react-intl';
 
 // ==============================|| HEADER CONTENT - MEGA MENU SECTION ||============================== //
 
@@ -90,58 +88,19 @@ const MegaMenuSection = () => {
           <Transitions type="fade" in={open} {...TransitionProps}>
             <Paper
               sx={{
-                boxShadow: theme.customShadows.z1,
-                minWidth: 750,
+                minWidth: 600,
                 width: {
                   md: `calc(100vw - 100px)`,
                   lg: `calc(100vw - ${drawerWidth + 100}px)`,
                   xl: `calc(100vw - ${drawerWidth + 140}px)`
                 },
-                maxWidth: 1024
+                maxWidth: 600
               }}
             >
               <ClickAwayListener onClickAway={handleClose}>
                 <MainCard elevation={0} border={false} content={false}>
                   <Grid container>
-                    <Grid
-                      item
-                      md={4}
-                      sx={{
-                        background: `url(${backgroundVector}), linear-gradient(183.77deg, ${theme.palette.primary.main} 11.46%, ${theme.palette.primary[700]} 100.33%)`
-                      }}
-                    >
-                      <Box sx={{ p: 4.5, pb: 3 }}>
-                        <Stack sx={{ color: 'background.paper' }}>
-                          <Typography variant="h2" sx={{ fontSize: '1.875rem', mb: 1 }}>
-                            Explore Components
-                          </Typography>
-                          <Typography variant="h6">
-                            Try our pre made component pages to check how it feels and suits as per your need.
-                          </Typography>
-                          <Stack direction="row" justifyContent="space-between" alignItems="flex-end" sx={{ mt: -1 }}>
-                            <AnimateButton>
-                              <Button
-                                variant="contained"
-                                color="secondary"
-                                sx={{
-                                  bgcolor: 'background.paper',
-                                  color: 'text.primary',
-                                  '&:hover': { bgcolor: 'background.paper', color: 'text.primary' }
-                                }}
-                                endIcon={<ArrowRightOutlined />}
-                                component={Link}
-                                to="/components-overview/buttons"
-                                target="_blank"
-                              >
-                                View All
-                              </Button>
-                            </AnimateButton>
-                            <CardMedia component="img" src={imageChart} alt="Chart" sx={{ mr: -2.5, mb: -2.5, width: 124 }} />
-                          </Stack>
-                        </Stack>
-                      </Box>
-                    </Grid>
-                    <Grid item md={8}>
+                    <Grid item md={12}>
                       <Box
                         sx={{
                           p: 4,
@@ -163,15 +122,15 @@ const MegaMenuSection = () => {
                           }
                         }}
                       >
-                        <Grid container spacing={6}>
+                        <Grid container spacing={1}>
                           <Grid item xs={4}>
                             <List
                               component="nav"
                               aria-labelledby="nested-list-user"
                               subheader={
                                 <ListSubheader id="nested-list-user">
-                                  <Typography variant="subtitle1" color="textPrimary">
-                                    Authentication
+                                  <Typography variant="subtitle1" color="textPrimary" className="authentication">
+                                    <FormattedMessage id="authentication" />
                                   </Typography>
                                 </ListSubheader>
                               }
@@ -180,46 +139,8 @@ const MegaMenuSection = () => {
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
                                 </ListItemIcon>
-                                <ListItemText primary="Login" />
+                                <ListItemText primary="Dashboard" />
                               </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/register">
-                                <ListItemIcon>
-                                  <Dot size={7} color="secondary" variant="outlined" />
-                                </ListItemIcon>
-                                <ListItemText primary="Register" />
-                              </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/forgot-password">
-                                <ListItemIcon>
-                                  <Dot size={7} color="secondary" variant="outlined" />
-                                </ListItemIcon>
-                                <ListItemText primary="Reset Password" />
-                              </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/reset-password">
-                                <ListItemIcon>
-                                  <Dot size={7} color="secondary" variant="outlined" />
-                                </ListItemIcon>
-                                <ListItemText primary="Forgot Password" />
-                              </ListItemButton>
-                              <ListItemButton disableRipple component={Link} target="_blank" to="/auth/code-verification">
-                                <ListItemIcon>
-                                  <Dot size={7} color="secondary" variant="outlined" />
-                                </ListItemIcon>
-                                <ListItemText primary="Verification Code" />
-                              </ListItemButton>
-                            </List>
-                          </Grid>
-                          <Grid item xs={4}>
-                            <List
-                              component="nav"
-                              aria-labelledby="nested-list-user"
-                              subheader={
-                                <ListSubheader id="nested-list-user">
-                                  <Typography variant="subtitle1" color="textPrimary">
-                                    Other Pages
-                                  </Typography>
-                                </ListSubheader>
-                              }
-                            >
                               <ListItemButton disableRipple component={Link} target="_blank" to="/">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
@@ -238,6 +159,20 @@ const MegaMenuSection = () => {
                                 </ListItemIcon>
                                 <ListItemText primary="Pricing" />
                               </ListItemButton>
+                            </List>
+                          </Grid>
+                          <Grid item xs={4}>
+                            <List
+                              component="nav"
+                              aria-labelledby="nested-list-user"
+                              subheader={
+                                <ListSubheader id="nested-list-user">
+                                  <Typography variant="subtitle1" color="textPrimary">
+                                    Other Pages
+                                  </Typography>
+                                </ListSubheader>
+                              }
+                            >
                               <ListItemButton disableRipple component={Link} to="/apps/profiles/user/payment">
                                 <ListItemIcon>
                                   <Dot size={7} color="secondary" variant="outlined" />
@@ -264,8 +199,8 @@ const MegaMenuSection = () => {
                               aria-labelledby="nested-list-user"
                               subheader={
                                 <ListSubheader id="nested-list-user">
-                                  <Typography variant="subtitle1" color="textPrimary">
-                                    SAAS Pages
+                                  <Typography variant="subtitle1" color="textPrimary" className="saas-pages">
+                                    <FormattedMessage id="saas-pages" />
                                   </Typography>
                                 </ListSubheader>
                               }
@@ -282,6 +217,23 @@ const MegaMenuSection = () => {
                                 </ListItemIcon>
                                 <ListItemText primary="Landing" />
                               </ListItemButton>
+                              <AnimateButton>
+                                <Button
+                                  variant="contained"
+                                  color="secondary"
+                                  sx={{
+                                    bgcolor: 'background.paper',
+                                    color: 'text.primary',
+                                    '&:hover': { bgcolor: 'background.paper', color: 'text.primary' }
+                                  }}
+                                  endIcon={<ArrowRightOutlined />}
+                                  component={Link}
+                                  to="/components-overview/buttons"
+                                  target="_blank"
+                                >
+                                  View All
+                                </Button>
+                              </AnimateButton>
                             </List>
                           </Grid>
                         </Grid>

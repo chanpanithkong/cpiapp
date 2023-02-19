@@ -79,7 +79,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
@@ -108,7 +108,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -136,7 +136,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
@@ -165,7 +165,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -193,7 +193,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
@@ -222,7 +222,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -250,7 +250,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
@@ -279,7 +279,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -307,7 +307,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
@@ -336,7 +336,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -364,7 +364,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
@@ -393,7 +393,7 @@ const MeetForm = () => {
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age" >
+                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>

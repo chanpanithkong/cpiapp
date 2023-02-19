@@ -14,9 +14,9 @@ import { openDrawer } from 'store/reducers/menu';
 import defaultLayout from 'assets/images/customization/default.svg';
 import rtlLayout from 'assets/images/customization/rtl.svg';
 import miniMenu from 'assets/images/customization/mini-menu.svg';
+import * as React from 'react';
 
 // ==============================|| CUSTOMIZATION - LAYOUT ||============================== //
-
 const ThemeLayout = () => {
   const theme = useTheme();
   const dispatch = useDispatch();

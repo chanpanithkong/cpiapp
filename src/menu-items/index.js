@@ -17,7 +17,22 @@ import house from './house';
 // ==============================|| MENU ITEMS ||============================== //
 
 const menuItems = {
-  items: [dashboard, food, drinksmoke, resturant, cloth, transport, medicine, house, widget, applications, formsTables, chartsMap, pages, other]
+  items: [
+    dashboard,
+    food,
+    drinksmoke,
+    resturant,
+    cloth,
+    transport,
+    medicine,
+    house,
+    widget,
+    applications,
+    formsTables,
+    chartsMap,
+    pages,
+    other
+  ]
 };
 
 export default menuItems;
