@@ -1,12 +1,12 @@
 // material-ui
-import { Button, Link, CardMedia, Stack, Typography } from '@mui/material';
+import { CardMedia, Stack, Typography } from '@mui/material';
 
 // project import
 import MainCard from 'components/MainCard';
 
 // assets
 import avatar from 'assets/images/users/avatar-group.png';
-import AnimateButton from 'components/@extended/AnimateButton';
+//import AnimateButton from 'components/@extended/AnimateButton';
 
 // ==============================|| DRAWER CONTENT - NAVIGATION CARD ||============================== //
 
@@ -20,11 +20,6 @@ const NavCard = () => (
           Get to resolve query
         </Typography>
       </Stack>
-      <AnimateButton>
-        <Button variant="shadow" size="small" component={Link} href="https://codedthemes.support-hub.io/" target="_blank">
-          Support
-        </Button>
-      </AnimateButton>
     </Stack>
   </MainCard>
 );

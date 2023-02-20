@@ -31,12 +31,10 @@ const HeaderContent = () => {
       {!matchesXs && megaMenu}
       {!matchesXs && localization}
       {matchesXs && <Box sx={{ width: '100%', ml: 1 }} />}
-
       <Notification />
       {!matchesXs && <Profile />}
       {matchesXs && <MobileSection />}
     </>
   );
 };
-
 export default HeaderContent;

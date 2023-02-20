@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { useMediaQuery, useTheme } from '@mui/material';
 
 // project import
-import NavCard from './NavCard';
+//import NavCard from './NavCard';
 import Navigation from './Navigation';
 import SimpleBar from 'components/third-party/SimpleBar';
 
@@ -27,7 +27,7 @@ const DrawerContent = () => {
       }}
     >
       <Navigation />
-      {drawerOpen && !matchDownMD && <NavCard />}
+      {drawerOpen && !matchDownMD}
     </SimpleBar>
   );
 };

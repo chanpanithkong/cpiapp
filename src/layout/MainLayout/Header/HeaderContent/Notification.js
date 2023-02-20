@@ -159,11 +159,10 @@ const Notification = () => {
                       <ListItemText
                         primary={
                           <Typography variant="h6">
-                            It&apos;s{' '}
                             <Typography component="span" variant="subtitle1">
-                              Cristina danny&apos;s
+                              BSG Admin&apos;s
                             </Typography>{' '}
-                            birthday today.
+                            has approved your data.
                           </Typography>
                         }
                         secondary="2 min ago"
