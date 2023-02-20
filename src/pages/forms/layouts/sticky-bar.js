@@ -35,7 +35,7 @@ function StickyActionBar() {
               position: 'sticky',
               top: '60px',
               bgcolor: theme.palette.background.default,
-              zIndex: 1,
+              Index: 1,
               borderBottom: `1px solid ${theme.palette.divider}`
             }}
           >

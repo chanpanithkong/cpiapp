@@ -13,6 +13,11 @@ import cloth from './cloth';
 import transport from './transport';
 import medicine from './medicine';
 import house from './house';
+import reviewdata from './reviewdata';
+import authreject from './authreject';
+import user from './user';
+import role from './role';
+import product from './product';
 
 // ==============================|| MENU ITEMS ||============================== //
 
@@ -26,6 +31,11 @@ const menuItems = {
     transport,
     medicine,
     house,
+    reviewdata,
+    authreject,
+    user,
+    role,
+    product,
     widget,
     applications,
     formsTables,

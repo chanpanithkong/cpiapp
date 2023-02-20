@@ -127,5 +127,22 @@
   "user-profile": "Profil de l'utilisateur",
   "utils": "Utilitaires",
   "widgets": "Widgets",
-  "saas-pages": "ផ្សេងៗ.."
+  "saas-pages": "ផ្សេងៗ..","rice": "អង្ករ",
+  "ingredient": "គ្រឿងទេស",
+  "meet": "សាច់",
+  "seafood": "ត្រី និងគ្រឿងសមុទ្រ",
+  "fruit": "ផ្លែឈើ",
+  "vegetable": "បន្លែ",
+  "resturant": "ភោជនីយដ្ឋាន",
+  "cloth": "សំលៀកបំពាក់ និងស្បែកជើង",
+  "transport": "ការដឹកជញ្ជូន",
+  "medicine": "ថ្នាំពេទ្យ",
+  "house": "ផ្ទះសម្បែង",
+  "drinksmoke": "ភេសជ្ជៈ​ និងថ្នាំជក់",
+  "food": "ម្ហូបអាហារ",
+  "reviewdata": "Review Data",
+  "authreject": "Authorize and Reject",
+  "user": "User Management",
+  "role": "Role Management",
+  "product": "Product Management"
 }
