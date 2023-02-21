@@ -1,11 +1,11 @@
 // project import
-import applications from './applications';
+//import applications from './applications';
 import dashboard from './dashboard';
-import widget from './widget';
-import formsTables from './forms-tables';
-import chartsMap from './charts-map';
-import other from './other';
-import pages from './pages';
+//import widget from './widget';
+//import formsTables from './forms-tables';
+//import chartsMap from './charts-map';
+//import other from './other';
+//import pages from './pages';
 import food from './food';
 import drinksmoke from './drinksmoke';
 import resturant from './resturant';
@@ -36,12 +36,12 @@ const menuItems = {
     user,
     role,
     product,
-    widget,
-    applications,
-    formsTables,
-    chartsMap,
-    pages,
-    other
+    // widget,
+    // applications,
+    // formsTables,
+    // chartsMap,
+    // pages,
+    // other
   ]
 };
 
