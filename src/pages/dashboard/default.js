@@ -94,9 +94,8 @@ const DashboardDefault = () => {
   useEffect(() => {
     setData(users);
   }, [users]);
-  
-  console.log({ data });
 
+  console.log({ data });
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
