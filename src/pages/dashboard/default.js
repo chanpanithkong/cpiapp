@@ -36,17 +36,14 @@ import avatar4 from 'assets/images/users/avatar-4.png';
 import { FormattedMessage } from 'react-intl';
 
 // test api
-import { getCategories } from 'store/reducers/categories';
+import { useDispatch, useSelector } from 'store';
+import { getUsers } from 'store/reducers/categories';
 
 // const addCart = () => {
 //   dispatch(getCategories());
 // };
-const CategoryList = () => {
-  useEffect(() => {
-    dispatch(getCategories());
-  }, []);
-};
-console.log({ CategoryList });
+
+// console.log({ CategoryList });
 // avatar style
 const avatarSX = {
   width: 36,
@@ -86,12 +83,25 @@ const DashboardDefault = () => {
   const [value, setValue] = useState('today');
   const [slot, setSlot] = useState('week');
 
+  const [data, setData] = useState([]);
+  const { users } = useSelector((state) => state.chat);
+  const dispatch = useDispatch([]);
+
+  useEffect(() => {
+    dispatch(getUsers());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  useEffect(() => {
+    setData(users);
+  }, [users]);
+  console.log({ data });
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
       {/* row 1 */}
       <Grid item xs={12} sx={{ mb: -2.25 }}>
         <Typography variant="h5" className="homepage">
           <FormattedMessage id="homepage" />
+          <div>{data.map((data) => data.nameen + ' ' + data.namekh)}</div>
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={8} lg={8}>
