@@ -60,7 +60,7 @@ const IngredientForm = () => {
         <Grid container spacing={3}>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email">សាច់គោ</InputLabel>
+              <InputLabel htmlFor="email">ប្រេងឆា និងខ្លាញ់/KG</InputLabel>
               <TextField
                 fullWidth
                 id="emailInstant"
@@ -117,7 +117,7 @@ const IngredientForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise2">សាច់ជ្រូក</InputLabel>
+              <InputLabel htmlFor="rise2">ទឹកត្រី/KG</InputLabel>
               <TextField
                 fullWidth
                 id="rise2Instant"
@@ -174,7 +174,7 @@ const IngredientForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">សាច់មាន់</InputLabel>
+              <InputLabel htmlFor="rise3">ស្ករស/KG</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"

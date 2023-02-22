@@ -25,7 +25,7 @@ const authreject = {
       id: 'authreject',
       title: <FormattedMessage id="authreject" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.CheckCircleFilled,
       breadcrumbs: false
     }

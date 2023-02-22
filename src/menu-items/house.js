@@ -25,7 +25,7 @@ const house = {
       id: 'house',
       title: <FormattedMessage id="house" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.BankFilled,
       breadcrumbs: false
     }

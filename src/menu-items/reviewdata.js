@@ -25,7 +25,7 @@ const reviewdata = {
       id: 'reviewdata',
       title: <FormattedMessage id="reviewdata" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.FileTextFilled,
       breadcrumbs: false
     }

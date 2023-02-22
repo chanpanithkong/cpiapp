@@ -25,7 +25,7 @@ const user = {
       id: 'user',
       title: <FormattedMessage id="user" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.UserOutlined,
       breadcrumbs: false
     }
