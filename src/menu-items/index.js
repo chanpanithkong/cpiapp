@@ -35,7 +35,7 @@ const menuItems = {
     authreject,
     user,
     role,
-    product,
+    product
     // widget,
     // applications,
     // formsTables,
