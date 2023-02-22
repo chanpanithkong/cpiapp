@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // material-ui
 import {
@@ -35,6 +35,18 @@ import avatar3 from 'assets/images/users/avatar-3.png';
 import avatar4 from 'assets/images/users/avatar-4.png';
 import { FormattedMessage } from 'react-intl';
 
+// test api
+import { getCategories } from 'store/reducers/categories';
+
+// const addCart = () => {
+//   dispatch(getCategories());
+// };
+const CategoryList = () => {
+  useEffect(() => {
+    dispatch(getCategories());
+  }, []);
+};
+console.log({ CategoryList });
 // avatar style
 const avatarSX = {
   width: 36,
