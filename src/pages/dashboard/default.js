@@ -1,27 +1,7 @@
-
-import { useEffect, useState } from 'react';
-
+import { useState } from 'react';
 
 // material-ui
-import {
-  AvatarGroup,
-  Avatar,
-  Box,
-  Button,
-  Grid,
-  List,
-  ListItemButton,
-  ListItemText,
-  Stack,
-  Typography,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  TextField,
-  DialogActions,
-  Divider,
-  InputLabel
-} from '@mui/material';
+import { Avatar, AvatarGroup, Box, Button, Grid, List, ListItemButton, ListItemText, Stack, Typography } from '@mui/material';
 
 // project import
 import MainCard from 'components/MainCard';
@@ -38,34 +18,10 @@ import avatar3 from 'assets/images/users/avatar-3.png';
 import avatar4 from 'assets/images/users/avatar-4.png';
 import { FormattedMessage } from 'react-intl';
 
-// test api
-import { getCategories } from 'store/reducers/categories';
-
-// const addCart = () => {
-//   dispatch(getCategories());
-// };
-const CategoryList = () => {
-  useEffect(() => {
-    dispatch(getCategories());
-  }, []);
-};
-console.log({ CategoryList });
-// avatar style
-
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
 
 const DashboardDefault = () => {
   const [slot, setSlot] = useState('week');
-
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
@@ -85,10 +41,10 @@ const DashboardDefault = () => {
               <Grid item>
                 <Stack>
                   <Typography variant="h5" noWrap>
-                    Create New Data Entry
+                    Help & Support Chat
                   </Typography>
                   <Typography variant="caption" color="secondary" noWrap>
-                    Insert Data....
+                    Typical replay within 5 min
                   </Typography>
                 </Stack>
               </Grid>
@@ -101,23 +57,9 @@ const DashboardDefault = () => {
                 </AvatarGroup>
               </Grid>
             </Grid>
-            <Button size="small" variant="contained" onClick={handleClickOpen} sx={{ textTransform: 'capitalize' }}>
-              Create
+            <Button size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
+              Need Help?
             </Button>
-            <Dialog open={open} onClose={handleClose}>
-              <DialogTitle>{'Add New'}</DialogTitle>
-              <Divider />
-              <DialogContent>
-                <InputLabel htmlFor="cal-title">Title</InputLabel>
-                <TextField fullWidth id="cal-title" placeholder="Title" />
-                <InputLabel htmlFor="cal-description">Description</InputLabel>
-                <TextField fullWidth id="cal-description" multiline rows={3} placeholder="Description" />
-              </DialogContent>
-              <DialogActions>
-                <Button onClick={handleClose}>Cancel</Button>
-                <Button onClick={handleClose}>Create</Button>
-              </DialogActions>
-            </Dialog>
           </Stack>
         </MainCard>
       </Grid>
