@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 // material-ui
 import { Avatar, AvatarGroup, Box, Button, Grid, List, ListItemButton, ListItemText, Stack, Typography } from '@mui/material';
@@ -19,9 +19,26 @@ import avatar4 from 'assets/images/users/avatar-4.png';
 import { FormattedMessage } from 'react-intl';
 
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
+// test api
+import { useDispatch, useSelector } from 'store';
+import { getUsers } from 'store/reducers/categories';
 
 const DashboardDefault = () => {
   const [slot, setSlot] = useState('week');
+
+  const [data, setData] = useState([]);
+  const { users } = useSelector((state) => state.chat);
+  const dispatch = useDispatch([]);
+
+  useEffect(() => {
+    dispatch(getUsers());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  useEffect(() => {
+    setData(users);
+  }, [users]);
+
+  console.log({ data });
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
@@ -29,6 +46,7 @@ const DashboardDefault = () => {
       <Grid item xs={12} sx={{ mb: -2.25 }}>
         <Typography variant="h5" className="homepage">
           <FormattedMessage id="homepage" />
+          <div>{data.map((data) => data.nameen + ' ' + data.namekh)}</div>
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={8} lg={8}>
@@ -41,10 +59,10 @@ const DashboardDefault = () => {
               <Grid item>
                 <Stack>
                   <Typography variant="h5" noWrap>
-                    Help & Support Chat
+                    Create New Data Entry
                   </Typography>
                   <Typography variant="caption" color="secondary" noWrap>
-                    Typical replay within 5 min
+                    Insert Data....
                   </Typography>
                 </Stack>
               </Grid>
@@ -58,7 +76,7 @@ const DashboardDefault = () => {
               </Grid>
             </Grid>
             <Button size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
-              Need Help?
+              Create
             </Button>
           </Stack>
         </MainCard>
