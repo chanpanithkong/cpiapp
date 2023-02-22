@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { useMediaQuery, Box, Button, Grid, Stack, TextField, Typography } from '@mui/material';
+import { useMediaQuery, Box, Grid, Stack, Typography } from '@mui/material';
 
 // third party
 import { useTimer } from 'react-timer-hook';
@@ -71,19 +71,6 @@ function ComingSoon() {
             <TimerBox count={minutes} label="min" />
             <Typography variant="h1"> : </Typography>
             <TimerBox count={seconds} label="sec" />
-          </Stack>
-        </Grid>
-        <Grid item xs={12} sx={{ width: { xs: 380, md: '40%', lg: '30%' } }}>
-          <Stack spacing={2} sx={{ mt: 2 }}>
-            <Typography align="center" color="textSecondary">
-              Be the first to be notified when Mantis launches.
-            </Typography>
-            <Stack direction="row" spacing={1}>
-              <TextField fullWidth placeholder="Email Address" />
-              <Button variant="contained" sx={{ width: '50%' }}>
-                Notify Me
-              </Button>
-            </Stack>
           </Stack>
         </Grid>
       </Grid>

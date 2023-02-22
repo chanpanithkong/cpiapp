@@ -25,7 +25,7 @@ const transport = {
       id: 'transport',
       title: <FormattedMessage id="transport" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.RocketFilled,
       breadcrumbs: false
     }

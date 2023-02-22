@@ -25,7 +25,7 @@ const resturant = {
       id: 'resturant',
       title: <FormattedMessage id="resturant" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.ShopFilled,
       breadcrumbs: false
     }

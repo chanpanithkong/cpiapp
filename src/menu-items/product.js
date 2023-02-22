@@ -25,7 +25,7 @@ const product = {
       id: 'product',
       title: <FormattedMessage id="product" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.PieChartFilled,
       breadcrumbs: false
     }

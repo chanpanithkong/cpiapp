@@ -98,7 +98,33 @@ const DashboardDefault = () => {
         <AnalyticEcommerce title="Total Page Views" count="4,42,236" percentage={59.3} extra="35,000" />
       </Grid>
       <Grid item xs={12} sm={6} md={8} lg={4}>
-        <AnalyticEcommerce title="Total Users" count="78,250" percentage={70.5} extra="8,900" />
+        <MainCard>
+          <Stack spacing={2}>
+            <Grid container justifyContent="space-between" alignItems="center">
+              <Grid item>
+                <Stack>
+                  <Typography variant="h5" noWrap>
+                    Create New Data Entry
+                  </Typography>
+                  <Typography variant="caption" color="secondary" noWrap>
+                    Insert Data....
+                  </Typography>
+                </Stack>
+              </Grid>
+              <Grid item>
+                <AvatarGroup sx={{ '& .MuiAvatar-root': { width: 32, height: 32 } }}>
+                  <Avatar alt="Remy Sharp" src={avatar1} />
+                  <Avatar alt="Travis Howard" src={avatar2} />
+                  <Avatar alt="Cindy Baker" src={avatar3} />
+                  <Avatar alt="Agnes Walker" src={avatar4} />
+                </AvatarGroup>
+              </Grid>
+            </Grid>
+            <Button size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
+              Create
+            </Button>
+          </Stack>
+        </MainCard>
       </Grid>
       {/*<Grid item xs={12} sm={6} md={4} lg={3}>*/}
       {/*  <AnalyticEcommerce title="Total Order" count="18,800" percentage={27.4} isLoss color="warning" extra="1,943" />*/}
@@ -319,33 +345,6 @@ const DashboardDefault = () => {
               </ListItemSecondaryAction>
             </ListItemButton>
           </List>
-        </MainCard>
-        <MainCard sx={{ mt: 2 }}>
-          <Stack spacing={3}>
-            <Grid container justifyContent="space-between" alignItems="center">
-              <Grid item>
-                <Stack>
-                  <Typography variant="h5" noWrap>
-                    Help & Support Chat
-                  </Typography>
-                  <Typography variant="caption" color="secondary" noWrap>
-                    Typical replay within 5 min
-                  </Typography>
-                </Stack>
-              </Grid>
-              <Grid item>
-                <AvatarGroup sx={{ '& .MuiAvatar-root': { width: 32, height: 32 } }}>
-                  <Avatar alt="Remy Sharp" src={avatar1} />
-                  <Avatar alt="Travis Howard" src={avatar2} />
-                  <Avatar alt="Cindy Baker" src={avatar3} />
-                  <Avatar alt="Agnes Walker" src={avatar4} />
-                </AvatarGroup>
-              </Grid>
-            </Grid>
-            <Button size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
-              Need Help?
-            </Button>
-          </Stack>
         </MainCard>
       </Grid>
     </Grid>

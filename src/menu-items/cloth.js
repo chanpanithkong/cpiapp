@@ -25,7 +25,7 @@ const cloth = {
       id: 'cloth',
       title: <FormattedMessage id="cloth" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.SkinFilled,
       breadcrumbs: false
     }

@@ -25,7 +25,7 @@ const role = {
       id: 'role',
       title: <FormattedMessage id="role" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.SettingFilled,
       breadcrumbs: false
     }
