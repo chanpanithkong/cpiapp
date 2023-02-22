@@ -5,7 +5,7 @@ import MainLayout from 'layout/MainLayout';
 import CommonLayout from 'layout/CommonLayout';
 import Loadable from 'components/Loadable';
 import AuthGuard from 'utils/route-guard/AuthGuard';
-import Ingredient from 'pages/food/ingredient';
+//import Ingredient from 'pages/food/ingredient';
 
 // render - dashboard
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/default')));
@@ -14,7 +14,9 @@ const DashboardAnalytics = Loadable(lazy(() => import('pages/dashboard/analytics
 //render -food
 const Page1 = Loadable(lazy(() => import('pages/food/page1')));
 const Rice = Loadable(lazy(() => import('pages/food/rice')));
+const Ingredient = Loadable(lazy(() => import('pages/food/ingredient')));
 const Meet = Loadable(lazy(() => import('pages/food/meet')));
+const Seafood = Loadable(lazy(() => import('pages/food/seafood')));
 
 // render - widget
 const WidgetStatistics = Loadable(lazy(() => import('pages/widget/statistics')));
@@ -160,6 +162,10 @@ const MainRoutes = {
             {
               path: 'meet',
               element: <Meet />
+            },
+            {
+              path: 'seafood',
+              element: <Seafood />
             }
           ]
         },

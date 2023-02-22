@@ -28,7 +28,7 @@ const validationSchema = yup.object({
 
 // ==============================|| FORM VALIDATION - INSTANT FEEDBACK FORMIK  ||============================== //
 
-const IngredientForm = () => {
+const SeafoodForm = () => {
   const dispatch = useDispatch();
 
   const formik = useFormik({
@@ -55,7 +55,7 @@ const IngredientForm = () => {
   });
 
   return (
-    <MainCard title="គ្រឿងទេស">
+    <MainCard title="ត្រី និងគ្រឿងសមុទ្រ">
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={3}>
           <Grid item xs={8} lg={4}>
@@ -460,4 +460,4 @@ const IngredientForm = () => {
   );
 };
 
-export default IngredientForm;
+export default SeafoodForm;

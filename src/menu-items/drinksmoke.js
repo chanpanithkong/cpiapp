@@ -26,7 +26,7 @@ const drinksmoke = {
       id: 'drinksmoke',
       title: <FormattedMessage id="drinksmoke" />,
       type: 'item',
-      url: '/food/ingredient',
+      url: '/maintenance/coming-soon',
       icon: icons.TrophyFilled,
       breadcrumbs: false
     }
