@@ -25,7 +25,7 @@ const medicine = {
       id: 'medicine',
       title: <FormattedMessage id="medicine" />,
       type: 'item',
-      url: '/maintenance/coming-soon',
+      url: '/medicine',
       icon: icons.MedicineBoxFilled,
       breadcrumbs: false
     }

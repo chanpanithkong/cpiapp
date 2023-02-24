@@ -8,9 +8,9 @@ import dashboard from './dashboard';
 //import pages from './pages';
 import food from './food';
 import drinksmoke from './drinksmoke';
-import resturant from './resturant';
-import cloth from './cloth';
-import transport from './transport';
+import restaurants from './restaurants';
+import clothes from './clothes';
+import transportation from './transportation';
 import medicine from './medicine';
 import house from './house';
 import reviewdata from './reviewdata';
@@ -26,9 +26,9 @@ const menuItems = {
     dashboard,
     food,
     drinksmoke,
-    resturant,
-    cloth,
-    transport,
+    restaurants,
+    clothes,
+    transportation,
     medicine,
     house,
     reviewdata,

@@ -2,34 +2,34 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DashboardOutlined, GoldOutlined, HomeOutlined, RocketFilled } from '@ant-design/icons';
+import { DashboardOutlined, GoldOutlined, HomeOutlined, SkinFilled } from '@ant-design/icons';
 
 // icons
 const icons = {
   DashboardOutlined,
   GoldOutlined,
   HomeOutlined,
-  RocketFilled
+  SkinFilled
 };
 
 // ==============================|| MENU ITEMS - DRINK AND SMOKE ||============================== //
 
-const transport = {
-  id: 'group-transport',
+const clothes = {
+  id: 'group-clothes',
   //type: 'group',
   //id: 'group-applications',
   //title: <FormattedMessage id="applications" />,
   type: 'group',
   children: [
     {
-      id: 'transport',
-      title: <FormattedMessage id="transport" />,
+      id: 'clothes',
+      title: <FormattedMessage id="cloth" />,
       type: 'item',
-      url: '/maintenance/coming-soon',
-      icon: icons.RocketFilled,
+      url: '/clothes',
+      icon: icons.SkinFilled,
       breadcrumbs: false
     }
   ]
 };
 
-export default transport;
+export default clothes;

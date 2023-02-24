@@ -14,26 +14,18 @@ const icons = {
 
 // ==============================|| MENU ITEMS - FOOD ||============================== //
 
-const house = {
-  id: 'group-huose',
+const houses = {
+  id: 'huose',
   type: 'group',
   children: [
     {
       id: 'house',
       title: <FormattedMessage id="house" />,
-      type: 'collapse',
-      icon: icons.HomeOutlined,
-      children: [
-        {
-          id: 'house',
-          title: <FormattedMessage id="house" />,
-          type: 'item',
-          url: 'house',
-          breadcrumbs: false
-        }
-      ]
+      type: 'item',
+      url: '/house',
+      icon: icons.HomeOutlined
     }
   ]
 };
 
-export default house;
+export default houses;
