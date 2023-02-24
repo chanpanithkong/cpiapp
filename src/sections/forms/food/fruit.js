@@ -60,7 +60,7 @@ const SeafoodForm = () => {
         <Grid container spacing={3}>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email">ត្រីរ៉ស់ (ស្រែ)</InputLabel>
+              <InputLabel htmlFor="email">ចេកណាំវ៉ា</InputLabel>
               <TextField
                 fullWidth
                 id="emailInstant"
@@ -117,7 +117,7 @@ const SeafoodForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise2">ត្រីរ៉ស់ (ចិញ្ចឹម)</InputLabel>
+              <InputLabel htmlFor="rise2">ប៉ោម</InputLabel>
               <TextField
                 fullWidth
                 id="rise2Instant"
@@ -174,7 +174,7 @@ const SeafoodForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">ត្រីឆ្តោ</InputLabel>
+              <InputLabel htmlFor="rise3">ក្រូចពោធិសាត់</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -231,7 +231,7 @@ const SeafoodForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">ត្រីអណ្តែង</InputLabel>
+              <InputLabel htmlFor="rise4">មៀន</InputLabel>
               <TextField
                 fullWidth
                 id="rise4Instant"
@@ -288,7 +288,7 @@ const SeafoodForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">ត្រីទីឡាបយ៉ា</InputLabel>
+              <InputLabel htmlFor="rise3">ទំពាំងបាយជូរធម្មតា</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -299,405 +299,6 @@ const SeafoodForm = () => {
                 onBlur={formik.handleBlur}
                 //error={formik.touched.rise3Instant && Boolean(formik.errors.rise3Instant)}
                 //helperText={formik.touched.rise3Instant && formik.errors.rise3Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
-              <FormControl fullWidth>
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>គីឡូ</MenuItem>
-                  <MenuItem value={20}>ក្រាម</MenuItem>
-                  <MenuItem value={30}>លីត្រ</MenuItem>
-                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="price3">តំលៃ</InputLabel>
-              <TextField
-                fullWidth
-                id="price3Instant"
-                name="price3Instant"
-                //placeholder="Enter email address"
-                value={formik.values.price3Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.price3Instant && Boolean(formik.errors.price3Instant)}
-                //helperText={formik.touched.price3Instant && formik.errors.price3Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
-              <FormControl fullWidth>
-                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>រៀល</MenuItem>
-                  <MenuItem value={20}>ដុល្លា</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">ត្រីងៀត</InputLabel>
-              <TextField
-                fullWidth
-                id="rise3Instant"
-                name="rise3Instant"
-                //placeholder="Enter email address"
-                value={formik.values.rise3Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.rise3Instant && Boolean(formik.errors.rise3Instant)}
-                //helperText={formik.touched.rise3Instant && formik.errors.rise3Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
-              <FormControl fullWidth>
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>គីឡូ</MenuItem>
-                  <MenuItem value={20}>ក្រាម</MenuItem>
-                  <MenuItem value={30}>លីត្រ</MenuItem>
-                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="price3">តំលៃ</InputLabel>
-              <TextField
-                fullWidth
-                id="price3Instant"
-                name="price3Instant"
-                //placeholder="Enter email address"
-                value={formik.values.price3Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.price3Instant && Boolean(formik.errors.price3Instant)}
-                //helperText={formik.touched.price3Instant && formik.errors.price3Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
-              <FormControl fullWidth>
-                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>រៀល</MenuItem>
-                  <MenuItem value={20}>ដុល្លា</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">ប្រហុក</InputLabel>
-              <TextField
-                fullWidth
-                id="rise4Instant"
-                name="rise4Instant"
-                //placeholder="Enter email address"
-                value={formik.values.rise4Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.rise4Instant && Boolean(formik.errors.rise4Instant)}
-                //helperText={formik.touched.rise4Instant && formik.errors.rise4Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
-              <FormControl fullWidth>
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>គីឡូ</MenuItem>
-                  <MenuItem value={20}>ក្រាម</MenuItem>
-                  <MenuItem value={30}>លីត្រ</MenuItem>
-                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="price3">តំលៃ</InputLabel>
-              <TextField
-                fullWidth
-                id="price3Instant"
-                name="price3Instant"
-                //placeholder="Enter email address"
-                value={formik.values.price3Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.price3Instant && Boolean(formik.errors.price3Instant)}
-                //helperText={formik.touched.price3Instant && formik.errors.price3Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
-              <FormControl fullWidth>
-                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>រៀល</MenuItem>
-                  <MenuItem value={20}>ដុល្លា</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">ត្រីអណ្តែង</InputLabel>
-              <TextField
-                fullWidth
-                id="rise4Instant"
-                name="rise4Instant"
-                //placeholder="Enter email address"
-                value={formik.values.rise4Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.rise4Instant && Boolean(formik.errors.rise4Instant)}
-                //helperText={formik.touched.rise4Instant && formik.errors.rise4Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
-              <FormControl fullWidth>
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>គីឡូ</MenuItem>
-                  <MenuItem value={20}>ក្រាម</MenuItem>
-                  <MenuItem value={30}>លីត្រ</MenuItem>
-                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="price3">តំលៃ</InputLabel>
-              <TextField
-                fullWidth
-                id="price3Instant"
-                name="price3Instant"
-                //placeholder="Enter email address"
-                value={formik.values.price3Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.price3Instant && Boolean(formik.errors.price3Instant)}
-                //helperText={formik.touched.price3Instant && formik.errors.price3Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
-              <FormControl fullWidth>
-                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>រៀល</MenuItem>
-                  <MenuItem value={20}>ដុល្លា</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">ត្រីសមុទ្រ(កាម៉ុងចំហុយ)</InputLabel>
-              <TextField
-                fullWidth
-                id="rise4Instant"
-                name="rise4Instant"
-                //placeholder="Enter email address"
-                value={formik.values.rise4Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.rise4Instant && Boolean(formik.errors.rise4Instant)}
-                //helperText={formik.touched.rise4Instant && formik.errors.rise4Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
-              <FormControl fullWidth>
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>គីឡូ</MenuItem>
-                  <MenuItem value={20}>ក្រាម</MenuItem>
-                  <MenuItem value={30}>លីត្រ</MenuItem>
-                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="price3">តំលៃ</InputLabel>
-              <TextField
-                fullWidth
-                id="price3Instant"
-                name="price3Instant"
-                //placeholder="Enter email address"
-                value={formik.values.price3Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.price3Instant && Boolean(formik.errors.price3Instant)}
-                //helperText={formik.touched.price3Instant && formik.errors.price3Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
-              <FormControl fullWidth>
-                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>រៀល</MenuItem>
-                  <MenuItem value={20}>ដុល្លា</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">បង្គា</InputLabel>
-              <TextField
-                fullWidth
-                id="rise4Instant"
-                name="rise4Instant"
-                //placeholder="Enter email address"
-                value={formik.values.rise4Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.rise4Instant && Boolean(formik.errors.rise4Instant)}
-                //helperText={formik.touched.rise4Instant && formik.errors.rise4Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
-              <FormControl fullWidth>
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>គីឡូ</MenuItem>
-                  <MenuItem value={20}>ក្រាម</MenuItem>
-                  <MenuItem value={30}>លីត្រ</MenuItem>
-                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="price3">តំលៃ</InputLabel>
-              <TextField
-                fullWidth
-                id="price3Instant"
-                name="price3Instant"
-                //placeholder="Enter email address"
-                value={formik.values.price3Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.price3Instant && Boolean(formik.errors.price3Instant)}
-                //helperText={formik.touched.price3Instant && formik.errors.price3Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
-              <FormControl fullWidth>
-                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>រៀល</MenuItem>
-                  <MenuItem value={20}>ដុល្លា</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">មឹក</InputLabel>
-              <TextField
-                fullWidth
-                id="rise4Instant"
-                name="rise4Instant"
-                //placeholder="Enter email address"
-                value={formik.values.rise4Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.rise4Instant && Boolean(formik.errors.rise4Instant)}
-                //helperText={formik.touched.rise4Instant && formik.errors.rise4Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
-              <FormControl fullWidth>
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>គីឡូ</MenuItem>
-                  <MenuItem value={20}>ក្រាម</MenuItem>
-                  <MenuItem value={30}>លីត្រ</MenuItem>
-                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="price3">តំលៃ</InputLabel>
-              <TextField
-                fullWidth
-                id="price3Instant"
-                name="price3Instant"
-                //placeholder="Enter email address"
-                value={formik.values.price3Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.price3Instant && Boolean(formik.errors.price3Instant)}
-                //helperText={formik.touched.price3Instant && formik.errors.price3Instant}
-              />
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
-              <FormControl fullWidth>
-                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
-                <Select id="demo-simple-select" value={10}>
-                  <MenuItem value={10}>រៀល</MenuItem>
-                  <MenuItem value={20}>ដុល្លា</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={8} lg={4}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">ងាវ</InputLabel>
-              <TextField
-                fullWidth
-                id="rise4Instant"
-                name="rise4Instant"
-                //placeholder="Enter email address"
-                value={formik.values.rise4Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.rise4Instant && Boolean(formik.errors.rise4Instant)}
-                //helperText={formik.touched.rise4Instant && formik.errors.rise4Instant}
               />
             </Stack>
           </Grid>

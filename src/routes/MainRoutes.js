@@ -5,6 +5,7 @@ import MainLayout from 'layout/MainLayout';
 import CommonLayout from 'layout/CommonLayout';
 import Loadable from 'components/Loadable';
 import AuthGuard from 'utils/route-guard/AuthGuard';
+//import Drinksmoke from 'pages/foodcategory/drinksmoke';
 //import Ingredient from 'pages/food/ingredient';
 
 // render - dashboard
@@ -18,6 +19,10 @@ const Ingredient = Loadable(lazy(() => import('pages/food/ingredient')));
 const Meet = Loadable(lazy(() => import('pages/food/meet')));
 const Seafood = Loadable(lazy(() => import('pages/food/seafood')));
 const Fruit = Loadable(lazy(() => import('pages/food/fruit')));
+const Vegetable = Loadable(lazy(() => import('pages/food/vegetable')));
+
+//Render Food Category
+const Drinksmoke = Loadable(lazy(() => import('pages/forms/drinksmoke')));
 
 // render - widget
 const WidgetStatistics = Loadable(lazy(() => import('pages/widget/statistics')));
@@ -172,8 +177,16 @@ const MainRoutes = {
             {
               path: 'fruit',
               element: <Fruit />
+            },
+            {
+              path: 'vegetable',
+              element: <Vegetable />
             }
           ]
+        },
+        {
+          path: 'drinksmoke',
+          element: <Drinksmoke />
         },
         {
           path: 'widget',

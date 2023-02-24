@@ -63,7 +63,7 @@ const food = {
           id: 'vegetable',
           title: <FormattedMessage id="vegetable" />,
           type: 'item',
-          url: '/maintenance/coming-soon',
+          url: '/food/vegetable',
           breadcrumbs: false
         }
       ]
