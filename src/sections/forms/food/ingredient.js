@@ -60,12 +60,12 @@ const IngredientForm = () => {
         <Grid container spacing={3}>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email">សាច់គោ</InputLabel>
+              <InputLabel htmlFor="email">ប្រេងឆា និងខ្លាញ់</InputLabel>
               <TextField
                 fullWidth
                 id="emailInstant"
                 name="emailInstant"
-                placeholder="Enter email address"
+                //placeholder="Enter email address"
                 value={formik.values.emailInstant}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -78,11 +78,11 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
                 </Select>
               </FormControl>
             </Stack>
@@ -94,7 +94,7 @@ const IngredientForm = () => {
                 fullWidth
                 id="emailInstant"
                 name="emailInstant"
-                placeholder="Enter email address"
+                //placeholder="Enter email address"
                 value={formik.values.emailInstant}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -107,8 +107,8 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -117,7 +117,7 @@ const IngredientForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise2">សាច់ជ្រូក</InputLabel>
+              <InputLabel htmlFor="rise2">ទឹកត្រី</InputLabel>
               <TextField
                 fullWidth
                 id="rise2Instant"
@@ -135,11 +135,11 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
                 </Select>
               </FormControl>
             </Stack>
@@ -164,8 +164,8 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -174,7 +174,7 @@ const IngredientForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">សាច់មាន់</InputLabel>
+              <InputLabel htmlFor="rise3">ស្ករស</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -192,11 +192,11 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
                 </Select>
               </FormControl>
             </Stack>
@@ -221,8 +221,8 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -231,7 +231,7 @@ const IngredientForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">ស្ករត្នោត/KG</InputLabel>
+              <InputLabel htmlFor="rise4">ស្ករត្នោត</InputLabel>
               <TextField
                 fullWidth
                 id="rise4Instant"
@@ -249,11 +249,11 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
                 </Select>
               </FormControl>
             </Stack>
@@ -278,8 +278,8 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -288,7 +288,7 @@ const IngredientForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">អំបិល/KG</InputLabel>
+              <InputLabel htmlFor="rise3">អំបិល</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -306,11 +306,11 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
                 </Select>
               </FormControl>
             </Stack>
@@ -335,8 +335,8 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -345,7 +345,7 @@ const IngredientForm = () => {
           </Grid>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">ម្សៅស៊ុប/KG</InputLabel>
+              <InputLabel htmlFor="rise3">ម្សៅស៊ុប</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -363,11 +363,11 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">ខ្នាត</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>គីឡូ</MenuItem>
                   <MenuItem value={20}>ក្រាម</MenuItem>
                   <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
                 </Select>
               </FormControl>
             </Stack>
@@ -392,8 +392,8 @@ const IngredientForm = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
               <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select labelId="demo-simple-select-label" id="demo-simple-select" value={10} label="Age">
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
