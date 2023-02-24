@@ -8,7 +8,7 @@ import { useMediaQuery, Box, Grid, Stack, Typography } from '@mui/material';
 import { useTimer } from 'react-timer-hook';
 
 // assets
-import coming from 'assets/images/maintenance/coming-soon.png';
+import coming from 'assets/images/nbclogo.png';
 import MainCard from 'components/MainCard';
 
 // ==============================|| COMING SOON - MAIN ||============================== //

@@ -2,32 +2,36 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DashboardOutlined, GoldOutlined, HomeOutlined, BankFilled } from '@ant-design/icons';
+import { DashboardOutlined, GoldOutlined, HomeOutlined, DashboardFilled } from '@ant-design/icons';
 
 // icons
 const icons = {
   DashboardOutlined,
   GoldOutlined,
   HomeOutlined,
-  BankFilled
+  DashboardFilled
 };
 
-// ==============================|| MENU ITEMS - DRINK AND SMOKE ||============================== //
+// ==============================|| MENU ITEMS - FOOD ||============================== //
 
 const house = {
-  id: 'group-house',
-  //type: 'group',
-  //id: 'group-applications',
-  //title: <FormattedMessage id="applications" />,
+  id: 'group-huose',
   type: 'group',
   children: [
     {
       id: 'house',
       title: <FormattedMessage id="house" />,
-      type: 'item',
-      url: '/maintenance/coming-soon',
-      icon: icons.BankFilled,
-      breadcrumbs: false
+      type: 'collapse',
+      icon: icons.HomeOutlined,
+      children: [
+        {
+          id: 'house',
+          title: <FormattedMessage id="house" />,
+          type: 'item',
+          url: 'house',
+          breadcrumbs: false
+        }
+      ]
     }
   ]
 };

@@ -77,6 +77,7 @@ const ReactTableEditable = Loadable(lazy(() => import('pages/tables/react-table/
 const ReactTableDragDrop = Loadable(lazy(() => import('pages/tables/react-table/drag-drop')));
 const ReactTableColumnHiding = Loadable(lazy(() => import('pages/tables/react-table/column-hiding')));
 const ReactTableUmbrella = Loadable(lazy(() => import('pages/tables/react-table/umbrella')));
+const FormHouses = Loadable(lazy(() => import('pages/forms/houses')));
 
 // render - charts & map
 const ChartApexchart = Loadable(lazy(() => import('pages/charts/apexchart')));
@@ -464,6 +465,10 @@ const MainRoutes = {
         {
           path: 'pricing',
           element: <PricingPage />
+        },
+        {
+          path: '/house',
+          element: <FormHouses />
         }
       ]
     },
