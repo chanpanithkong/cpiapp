@@ -17,6 +17,7 @@ const Rice = Loadable(lazy(() => import('pages/food/rice')));
 const Ingredient = Loadable(lazy(() => import('pages/food/ingredient')));
 const Meet = Loadable(lazy(() => import('pages/food/meet')));
 const Seafood = Loadable(lazy(() => import('pages/food/seafood')));
+const Fruit = Loadable(lazy(() => import('pages/food/fruit')));
 
 // render - widget
 const WidgetStatistics = Loadable(lazy(() => import('pages/widget/statistics')));
@@ -166,6 +167,10 @@ const MainRoutes = {
             {
               path: 'seafood',
               element: <Seafood />
+            },
+            {
+              path: 'fruit',
+              element: <Fruit />
             }
           ]
         },

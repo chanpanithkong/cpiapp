@@ -55,7 +55,7 @@ const SeafoodForm = () => {
   });
 
   return (
-    <MainCard title="ត្រី និងគ្រឿងសមុទ្រ">
+    <MainCard title="ផ្លែឈើ">
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={3}>
           <Grid item xs={8} lg={4}>

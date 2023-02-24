@@ -1,7 +1,7 @@
 import { useDispatch } from 'store';
 
 // material-ui
-import { Button, Grid, InputLabel, Stack, TextField, CardActions, Tooltip } from '@mui/material';
+import { Button, Grid, InputLabel, Stack, TextField, CardActions, Tooltip, MenuItem, FormControl,Select } from '@mui/material';
 
 // project imports
 import MainCard from 'components/MainCard';
@@ -58,14 +58,14 @@ const RiceForm = () => {
     <MainCard title="អង្ករ">
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email">អង្ករផ្កាម្លិះ/KG</InputLabel>
+              <InputLabel htmlFor="email">អង្ករផ្កាម្លិះ</InputLabel>
               <TextField
                 fullWidth
                 id="emailInstant"
                 name="emailInstant"
-                placeholder="Enter email address"
+                //placeholder="Enter email address"
                 value={formik.values.emailInstant}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -74,14 +74,27 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>គីឡូ</MenuItem>
+                  <MenuItem value={20}>ក្រាម</MenuItem>
+                  <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="email">តំលៃ</InputLabel>
               <TextField
                 fullWidth
                 id="emailInstant"
                 name="emailInstant"
-                placeholder="Enter email address"
+                //placeholder="Enter email address"
                 value={formik.values.emailInstant}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
@@ -90,9 +103,21 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise2">អង្ករផ្កាខ្ញី/KG</InputLabel>
+              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
+              <FormControl fullWidth>
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>រៀល</MenuItem>
+                  <MenuItem value={20}>ដុល្លា</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="rise2">អង្ករផ្កាខ្ញី</InputLabel>
               <TextField
                 fullWidth
                 id="rise2Instant"
@@ -106,7 +131,20 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>គីឡូ</MenuItem>
+                  <MenuItem value={20}>ក្រាម</MenuItem>
+                  <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="price2">តំលៃ</InputLabel>
               <TextField
@@ -122,9 +160,21 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">អង្ករនាងមិញ/KG</InputLabel>
+              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
+              <FormControl fullWidth>
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>រៀល</MenuItem>
+                  <MenuItem value={20}>ដុល្លា</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="rise3">អង្ករនាងមិញ</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -138,7 +188,20 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>គីឡូ</MenuItem>
+                  <MenuItem value={20}>ក្រាម</MenuItem>
+                  <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="price3">តំលៃ</InputLabel>
               <TextField
@@ -154,9 +217,21 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise4">អង្ករនាងខុន/KG</InputLabel>
+              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
+              <FormControl fullWidth>
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>រៀល</MenuItem>
+                  <MenuItem value={20}>ដុល្លា</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="rise4">អង្ករនាងខុន</InputLabel>
               <TextField
                 fullWidth
                 id="rise4Instant"
@@ -170,7 +245,20 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>គីឡូ</MenuItem>
+                  <MenuItem value={20}>ក្រាម</MenuItem>
+                  <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="price4">តំលៃ</InputLabel>
               <TextField
@@ -186,9 +274,21 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">អង្ករដំណើប/KG</InputLabel>
+              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
+              <FormControl fullWidth>
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>រៀល</MenuItem>
+                  <MenuItem value={20}>ដុល្លា</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="rise3">អង្ករដំណើប</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -202,7 +302,20 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>គីឡូ</MenuItem>
+                  <MenuItem value={20}>ក្រាម</MenuItem>
+                  <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="price3">តំលៃ</InputLabel>
               <TextField
@@ -218,9 +331,21 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise3">ធញ្ញជាតិផ្សេងៗ/KG</InputLabel>
+              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
+              <FormControl fullWidth>
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>រៀល</MenuItem>
+                  <MenuItem value={20}>ដុល្លា</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="rise3">ធញ្ញជាតិផ្សេងៗ</InputLabel>
               <TextField
                 fullWidth
                 id="rise3Instant"
@@ -234,7 +359,20 @@ const RiceForm = () => {
               />
             </Stack>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">ខ្នាត</InputLabel>
+              <FormControl fullWidth>
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>គីឡូ</MenuItem>
+                  <MenuItem value={20}>ក្រាម</MenuItem>
+                  <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
               <InputLabel htmlFor="price3">តំលៃ</InputLabel>
               <TextField
@@ -248,6 +386,18 @@ const RiceForm = () => {
                 //error={formik.touched.price3Instant && Boolean(formik.errors.price3Instant)}
                 //helperText={formik.touched.price3Instant && formik.errors.price3Instant}
               />
+            </Stack>
+          </Grid>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel>
+              <FormControl fullWidth>
+                {/* <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel> */}
+                <Select id="demo-simple-select" value={10}>
+                  <MenuItem value={10}>រៀល</MenuItem>
+                  <MenuItem value={20}>ដុល្លា</MenuItem>
+                </Select>
+              </FormControl>
             </Stack>
           </Grid>
           <Grid item xs={12} lg={6}>
