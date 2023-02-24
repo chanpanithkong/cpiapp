@@ -2,14 +2,14 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DashboardOutlined, GoldOutlined, HomeOutlined, UserOutlined } from '@ant-design/icons';
+import { DashboardOutlined, GoldOutlined, HomeOutlined, UsergroupAddOutlined } from '@ant-design/icons';
 
 // icons
 const icons = {
   DashboardOutlined,
   GoldOutlined,
   HomeOutlined,
-  UserOutlined
+  UsergroupAddOutlined
 };
 
 // ==============================|| MENU ITEMS - DRINK AND SMOKE ||============================== //
@@ -26,7 +26,7 @@ const user = {
       title: <FormattedMessage id="user" />,
       type: 'item',
       url: '/maintenance/coming-soon',
-      icon: icons.UserOutlined,
+      icon: icons.UsergroupAddOutlined,
       breadcrumbs: false
     }
   ]

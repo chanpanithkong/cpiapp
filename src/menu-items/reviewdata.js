@@ -2,14 +2,14 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DashboardOutlined, GoldOutlined, HomeOutlined, FileTextFilled } from '@ant-design/icons';
+import { DashboardOutlined, GoldOutlined, HomeOutlined, FundViewOutlined } from '@ant-design/icons';
 
 // icons
 const icons = {
   DashboardOutlined,
   GoldOutlined,
   HomeOutlined,
-  FileTextFilled
+  FundViewOutlined
 };
 
 // ==============================|| MENU ITEMS - DRINK AND SMOKE ||============================== //
@@ -26,7 +26,7 @@ const reviewdata = {
       title: <FormattedMessage id="reviewdata" />,
       type: 'item',
       url: '/maintenance/coming-soon',
-      icon: icons.FileTextFilled,
+      icon: icons.FundViewOutlined,
       breadcrumbs: false
     }
   ]

@@ -2,14 +2,14 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DashboardOutlined, GoldOutlined, HomeOutlined, CheckCircleFilled } from '@ant-design/icons';
+import { DashboardOutlined, GoldOutlined, HomeOutlined, AuditOutlined } from '@ant-design/icons';
 
 // icons
 const icons = {
   DashboardOutlined,
   GoldOutlined,
   HomeOutlined,
-  CheckCircleFilled
+  AuditOutlined
 };
 
 // ==============================|| MENU ITEMS - DRINK AND SMOKE ||============================== //
@@ -26,7 +26,7 @@ const authreject = {
       title: <FormattedMessage id="authreject" />,
       type: 'item',
       url: '/maintenance/coming-soon',
-      icon: icons.CheckCircleFilled,
+      icon: icons.AuditOutlined,
       breadcrumbs: false
     }
   ]

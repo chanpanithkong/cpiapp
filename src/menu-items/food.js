@@ -2,14 +2,15 @@
 import { FormattedMessage } from 'react-intl';
 
 // assets
-import { DashboardOutlined, GoldOutlined, HomeOutlined, DashboardFilled } from '@ant-design/icons';
+import { DashboardOutlined, GoldOutlined, HomeOutlined, DollarOutlined, SecurityScanOutlined } from '@ant-design/icons';
 
 // icons
 const icons = {
   DashboardOutlined,
   GoldOutlined,
   HomeOutlined,
-  DashboardFilled
+  DollarOutlined,
+  SecurityScanOutlined
 };
 
 // ==============================|| MENU ITEMS - FOOD ||============================== //
@@ -22,12 +23,13 @@ const food = {
       id: 'food',
       title: <FormattedMessage id="food" />,
       type: 'collapse',
-      icon: icons.DashboardFilled,
+      icon: icons.DollarOutlined,
       children: [
         {
           id: 'rice',
           title: <FormattedMessage id="rice" />,
           type: 'item',
+          icon: icons.SecurityScanOutlined,
           url: '/food/rice',
           breadcrumbs: false
         },
@@ -35,6 +37,7 @@ const food = {
           id: 'ingredient',
           title: <FormattedMessage id="ingredient" />,
           type: 'item',
+          icon: icons.SecurityScanOutlined,
           url: '/food/ingredient',
           breadcrumbs: false
         },
@@ -42,6 +45,7 @@ const food = {
           id: 'meet',
           title: <FormattedMessage id="meet" />,
           type: 'item',
+          icon: icons.SecurityScanOutlined,
           url: '/food/meet',
           breadcrumbs: false
         },
@@ -49,6 +53,7 @@ const food = {
           id: 'seafood',
           title: <FormattedMessage id="seafood" />,
           type: 'item',
+          icon: icons.SecurityScanOutlined,
           url: '/food/seafood',
           breadcrumbs: false
         },
@@ -56,6 +61,7 @@ const food = {
           id: 'fruit',
           title: <FormattedMessage id="fruit" />,
           type: 'item',
+          icon: icons.SecurityScanOutlined,
           url: '/food/fruit',
           breadcrumbs: false
         },
@@ -63,6 +69,7 @@ const food = {
           id: 'vegetable',
           title: <FormattedMessage id="vegetable" />,
           type: 'item',
+          icon: icons.SecurityScanOutlined,
           url: '/food/vegetable',
           breadcrumbs: false
         }
