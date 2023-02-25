@@ -8,16 +8,9 @@ import dashboard from './dashboard';
 //import pages from './pages';
 import food from './food';
 import drinksmoke from './drinksmoke';
-import restaurants from './restaurants';
-import clothes from './clothes';
-import transportation from './transportation';
-import medicine from './medicine';
-import house from './house';
-import reviewdata from './reviewdata';
-import authreject from './authreject';
-import user from './user';
-import role from './role';
-import product from './product';
+import administration from './administration';
+import authorization from './authorization';
+import datainput from './datainput';
 
 // ==============================|| MENU ITEMS ||============================== //
 
@@ -26,17 +19,9 @@ const menuItems = {
     dashboard,
     food,
     drinksmoke,
-    restaurants,
-    clothes,
-    transportation,
-    medicine,
-    house,
-    reviewdata,
-    authreject,
-    user,
-    role,
-    product
-    // widget,
+    datainput,
+    authorization,
+    administration
     // applications,
     // formsTables,
     // chartsMap,

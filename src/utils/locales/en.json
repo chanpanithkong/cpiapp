@@ -137,9 +137,9 @@
   "seafood": "Seafood",
   "fruit": "Fruit",
   "vegetable": "Vegetable",
-  "resturant": "Resturant",
-  "cloth": "Cloth",
-  "transport": "Transport",
+  "restaurants": "Resturant",
+  "cloth": "Clothes",
+  "transport": "Transportation",
   "medicine": "Medicine",
   "house": "House",
   "drinksmoke": "Drink and Smoke",
@@ -147,5 +147,8 @@
   "authreject": "Authorize and Reject",
   "user": "User Management",
   "role": "Role Management",
-  "product": "Product Management"
+  "product": "Product Management",
+  "administration": "Administration",
+  "authorization": "Authorization",
+  "data-input": "Data Input"
 }

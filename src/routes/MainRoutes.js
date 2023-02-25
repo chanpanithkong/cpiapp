@@ -83,11 +83,11 @@ const ReactTableEditable = Loadable(lazy(() => import('pages/tables/react-table/
 const ReactTableDragDrop = Loadable(lazy(() => import('pages/tables/react-table/drag-drop')));
 const ReactTableColumnHiding = Loadable(lazy(() => import('pages/tables/react-table/column-hiding')));
 const ReactTableUmbrella = Loadable(lazy(() => import('pages/tables/react-table/umbrella')));
-const FormHouses = Loadable(lazy(() => import('pages/forms/houses')));
-const FormMedicine = Loadable(lazy(() => import('pages/forms/medicine')));
-const FormTransport = Loadable(lazy(() => import('pages/forms/transportation')));
-const FormClothes = Loadable(lazy(() => import('pages/forms/clothes')));
-const FormRestaurants = Loadable(lazy(() => import('pages/forms/restaurants')));
+const FormHouses = Loadable(lazy(() => import('pages/data-input/houses')));
+const FormMedicine = Loadable(lazy(() => import('pages/data-input/medicine')));
+const FormTransport = Loadable(lazy(() => import('pages/data-input/transportation')));
+const FormClothes = Loadable(lazy(() => import('pages/data-input/clothes')));
+const FormRestaurants = Loadable(lazy(() => import('pages/data-input/restaurants')));
 
 // render - charts & map
 const ChartApexchart = Loadable(lazy(() => import('pages/charts/apexchart')));
@@ -164,10 +164,6 @@ const MainRoutes = {
             {
               path: 'default',
               element: <DashboardDefault />
-            },
-            {
-              path: 'analytics',
-              element: <DashboardAnalytics />
             },
             {
               path: 'analytics',

@@ -24,8 +24,8 @@ const dashboard = {
       icon: icons.DashboardOutlined,
       children: [
         {
-          id: 'default',
-          title: <FormattedMessage id="default" />,
+          id: 'homepage',
+          title: <FormattedMessage id="homepage" />,
           type: 'item',
           url: '/dashboard/default',
           breadcrumbs: false
@@ -34,7 +34,8 @@ const dashboard = {
           id: 'analytics',
           title: <FormattedMessage id="analytics" />,
           type: 'item',
-          url: '/dashboard/analytics'
+          //url: '/dashboard/analytics'
+          url: '/maintenance/under-construction'
         }
       ]
     }

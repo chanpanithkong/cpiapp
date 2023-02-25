@@ -573,5 +573,4 @@ const DrinksmokeForm = () => {
     </MainCard>
   );
 };
-
 export default DrinksmokeForm;
