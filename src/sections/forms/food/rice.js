@@ -84,7 +84,7 @@ const RiceForm = () => {
                 helperText={formik.touched.emailInstant && formik.errors.emailInstant}
               />
             </Stack>
-        </Grid>
+          </Grid>
           <Grid item xs={6}>
             <Stack spacing={1}>
               <InputLabel htmlFor="rise2">អង្ករផ្កាខ្ញី/KG</InputLabel>
@@ -100,8 +100,8 @@ const RiceForm = () => {
                 helperText={formik.touched.rise2Instant && formik.errors.rise2Instant}
               />
             </Stack>
-        </Grid>
-        <Grid item xs={6}>
+          </Grid>
+          <Grid item xs={6}>
             <Stack spacing={1}>
               <InputLabel htmlFor="price2">តំលៃ</InputLabel>
               <TextField
@@ -116,8 +116,7 @@ const RiceForm = () => {
                 helperText={formik.touched.price2Instant && formik.errors.price2Instant}
               />
             </Stack>
-        </Grid>
-
+          </Grid>
           <Grid item xs={12}>
             <Stack direction="row" justifyContent="flex-end">
               <AnimateButton>

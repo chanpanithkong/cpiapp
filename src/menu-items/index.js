@@ -11,7 +11,7 @@ import food from './food';
 // ==============================|| MENU ITEMS ||============================== //
 
 const menuItems = {
-  items: [dashboard,food, widget, applications, formsTables, chartsMap, pages, other]
+  items: [dashboard, food, widget, applications, formsTables, chartsMap, pages, other]
 };
 
 export default menuItems;
