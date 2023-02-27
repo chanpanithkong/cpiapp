@@ -7,7 +7,7 @@ import { Avatar, AvatarGroup, Box, Button, Grid, List, ListItemButton, ListItemT
 import MainCard from 'components/MainCard';
 import AnalyticEcommerce from 'components/cards/statistics/AnalyticEcommerce';
 import IncomeAreaChart from 'sections/dashboard/default/IncomeAreaChart';
-import MonthlyBarChart from 'sections/dashboard/default/MonthlyBarChart';
+import Calendar from 'sections/forms/calendar';
 import ReportAreaChart from 'sections/dashboard/default/ReportAreaChart';
 import OrdersTable from 'sections/dashboard/default/OrdersTable';
 
@@ -87,7 +87,6 @@ const DashboardDefault = () => {
       {/*<Grid item xs={12} sm={6} md={4} lg={3}>*/}
       {/*  <AnalyticEcommerce title="Total Sales" count="$35,078" percentage={27.4} isLoss color="warning" extra="$20,395" />*/}
       {/*</Grid>*/}
-
       <Grid item md={8} sx={{ display: { sm: 'none', md: 'block', lg: 'none' } }} />
 
       {/* row 2 */}
@@ -135,15 +134,15 @@ const DashboardDefault = () => {
           <Grid item />
         </Grid>
         <MainCard sx={{ mt: 2 }} content={false}>
-          <Box sx={{ p: 3, pb: 0 }}>
-            <Stack spacing={2}>
-              <Typography variant="h6" color="textSecondary">
-                This Week Statistics
-              </Typography>
-              <Typography variant="h3">$7,650</Typography>
-            </Stack>
-          </Box>
-          <MonthlyBarChart />
+          {/*<Box sx={{ p: 3, pb: 0 }}>*/}
+          {/*  <Stack spacing={2}>*/}
+          {/*    <Typography variant="h6" color="textSecondary">*/}
+          {/*      This Week Statistics*/}
+          {/*    </Typography>*/}
+          {/*    <Typography variant="h3">$7,650</Typography>*/}
+          {/*  </Stack>*/}
+          {/*</Box>*/}
+          <Calendar />
         </MainCard>
       </Grid>
 

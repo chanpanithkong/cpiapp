@@ -149,5 +149,7 @@
   "product": "Product Management",
   "administration": "Administration",
   "authorization": "Authorization",
-  "data-input": "បញ្ចូលទិន្ន័យ"
+  "data-input": "បញ្ចូលទិន្ន័យ",
+  "quantity": "បិរមាណ",
+  "unit-price": "Unit Price"
 }

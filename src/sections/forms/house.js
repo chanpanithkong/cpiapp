@@ -1,21 +1,22 @@
 import { useDispatch } from 'store';
 
 // material-ui
-import { Button, Grid, InputLabel, Stack, TextField, CardActions, Tooltip, Typography } from '@mui/material';
+import { Button, Grid, Stack, TextField, CardActions, Autocomplete } from '@mui/material';
 
 // project imports
 import MainCard from 'components/MainCard';
 //import AnimateButton from 'components/@extended/AnimateButton';
 import { openSnackbar } from 'store/reducers/snackbar';
-import IconButton from 'components/@extended/IconButton';
+//import IconButton from 'components/@extended/IconButton';
 //import Pagination from '@mui/material/Pagination';
 
 // assets
-import { DeleteFilled } from '@ant-design/icons';
+//import { DeleteFilled } from '@ant-design/icons';
 
 // third-party
 import { useFormik } from 'formik';
 import * as yup from 'yup';
+import { FormattedMessage } from 'react-intl';
 
 /**
  * 'Enter your email'
@@ -30,6 +31,8 @@ const validationSchema = yup.object({
 
 const HouseForm = () => {
   const dispatch = useDispatch();
+
+  const ccy = [{ label: 'KHR' }, { label: 'USD' }];
 
   const formik = useFormik({
     initialValues: {
@@ -58,65 +61,108 @@ const HouseForm = () => {
     <MainCard>
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={3}>
-          <Grid item xs={12} lg={3}>
-            <Typography>Gas</Typography>
-          </Grid>
-          <Grid item xs={12} lg={3}>
+          <Grid item xs={12} lg={2}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email">????</InputLabel>
-              <TextField
-                fullWidth
-                id="emailInstant"
-                name="emailInstant"
-                placeholder="Enter email address"
-                value={formik.values.emailInstant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.emailInstant && Boolean(formik.errors.emailInstant)}
-                //helperText={formik.touched.emailInstant && formik.errors.emailInstant}
-              />
+              <Button variant="text">Text</Button>
             </Stack>
           </Grid>
           <Grid item xs={12} lg={3}>
-            <Stack spacing={1}>
-              <InputLabel htmlFor="rise2">?????????????/KG</InputLabel>
-              <TextField
-                fullWidth
-                id="rise2Instant"
-                name="rise2Instant"
-                //placeholder="Enter email address"
-                value={formik.values.rise2Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.rise2Instant && Boolean(formik.errors.rise2Instant)}
-                //helperText={formik.touched.rise2Instant && formik.errors.rise2Instant}
-              />
-            </Stack>
+            {/*<TextField inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}  />*/}
+            <TextField
+              inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
+              fullWidth
+              id="quantity"
+              label={<FormattedMessage id="quantity" />}
+            />
           </Grid>
           <Grid item xs={12} lg={3}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="rise2">?????????????/KG</InputLabel>
-              <TextField
-                fullWidth
-                id="rise2Instant"
-                name="rise2Instant"
-                //placeholder="Enter email address"
-                value={formik.values.rise2Instant}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                //error={formik.touched.rise2Instant && Boolean(formik.errors.rise2Instant)}
-                //helperText={formik.touched.rise2Instant && formik.errors.rise2Instant}
+              <Autocomplete
+                disablePortal
+                id="combo-box-demo"
+                options={ccy}
+                renderInput={(params) => <TextField {...params} label="Currency" />}
               />
             </Stack>
           </Grid>
+          <Grid item xs={12} lg={2}>
+            <Stack spacing={1}>
+              <TextField fullWidth id="quantity" label={<FormattedMessage id="quantity" />} />
+            </Stack>
+          </Grid>
+          <Grid item xs={12} lg={2}>
+            <Stack spacing={1}>
+              {/*<TextField fullWidth id="quantity" label={<FormattedMessage id="quantity" />} />*/}
+              <Autocomplete
+                disablePortal
+                id="combo-box-demo"
+                options={ccy}
+                renderInput={(params) => <TextField {...params} label="Currency" />}
+              />
+            </Stack>
+          </Grid>
+        </Grid>
+        <Grid container spacing={3}>
           <Grid item xs={12}>
             <CardActions>
               <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ width: 1 }}>
-                <Tooltip title="Delete" placement="top">
-                  <IconButton size="large" color="error">
-                    <DeleteFilled />
-                  </IconButton>
-                </Tooltip>
+                <Stack direction="row" spacing={1} sx={{ px: 1.5, py: 0.75 }}>
+                  <Button variant="shadow" color="error">
+                    Cancel
+                  </Button>
+                  {/* <Button color="error" size="small">
+                    Cancel
+                  </Button> */}
+                  <Button variant="contained" size="small">
+                    Submit
+                  </Button>
+                </Stack>
+              </Stack>
+            </CardActions>
+          </Grid>
+        </Grid>
+      </form>
+      <form onSubmit={formik.handleSubmit}>
+        <Grid container spacing={3}>
+          <Grid item xs={12} lg={2}>
+            <Stack spacing={1}>
+              <Button variant="text">Text</Button>
+            </Stack>
+          </Grid>
+          <Grid item xs={12} lg={3}>
+            <TextField fullWidth id="quantity" label={<FormattedMessage id="quantity" />} />
+          </Grid>
+          <Grid item xs={12} lg={3}>
+            <Stack spacing={1}>
+              <Autocomplete
+                disablePortal
+                id="combo-box-demo"
+                options={ccy}
+                renderInput={(params) => <TextField {...params} label="Currency" />}
+              />
+            </Stack>
+          </Grid>
+          <Grid item xs={12} lg={2}>
+            <Stack spacing={1}>
+              <TextField fullWidth id="quantity" label={<FormattedMessage id="quantity" />} />
+            </Stack>
+          </Grid>
+          <Grid item xs={12} lg={2}>
+            <Stack spacing={1}>
+              {/*<TextField fullWidth id="quantity" label={<FormattedMessage id="quantity" />} />*/}
+              <Autocomplete
+                disablePortal
+                id="combo-box-demo"
+                options={ccy}
+                renderInput={(params) => <TextField {...params} label="Currency" />}
+              />
+            </Stack>
+          </Grid>
+        </Grid>
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <CardActions>
+              <Stack direction="row" alignItems="center" justifyContent="space-between" sx={{ width: 1 }}>
                 <Stack direction="row" spacing={1} sx={{ px: 1.5, py: 0.75 }}>
                   <Button variant="shadow" color="error">
                     Cancel

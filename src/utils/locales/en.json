@@ -150,5 +150,7 @@
   "product": "Product Management",
   "administration": "Administration",
   "authorization": "Authorization",
-  "data-input": "Data Input"
+  "data-input": "Data Input",
+  "quantity": "Quantity",
+  "unit-price": "Unit Price"
 }
