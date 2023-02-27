@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-
+import Test from 'test';
 // material-ui
 import { Avatar, AvatarGroup, Box, Button, Grid, List, ListItemButton, ListItemText, Stack, Typography } from '@mui/material';
 
@@ -60,6 +60,7 @@ const DashboardDefault = () => {
                 <Stack>
                   <Typography variant="h5" noWrap>
                     Create New Data Entry
+                    <Test/>
                   </Typography>
                   <Typography variant="caption" color="secondary" noWrap>
                     Insert Data....

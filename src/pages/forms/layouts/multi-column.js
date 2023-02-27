@@ -25,7 +25,7 @@ function ColumnsLayouts() {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12}>
-        <MainCard title="2 Columns Form Layout">
+        <MainCard title="2 Columns Form Layout1">
           <Grid container spacing={2} alignItems="center">
             <Grid item xs={12} lg={6}>
               <Stack spacing={0.5}>
