@@ -60,7 +60,7 @@ const DashboardDefault = () => {
                 <Stack>
                   <Typography variant="h5" noWrap>
                     Create New Data Entry
-                    <Test/>
+                    <Test />
                   </Typography>
                   <Typography variant="caption" color="secondary" noWrap>
                     Insert Data....
