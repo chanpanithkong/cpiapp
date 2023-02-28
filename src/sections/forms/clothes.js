@@ -24,7 +24,7 @@ function Layouts() {
             <Grid item xs={12}>
               <Grid container spacing={2} alignItems="center">
                 <Grid item xs={12} sm={9} lg={2}>
-                  <InputLabel alignItems="center">1. Rental Fee:</InputLabel>
+                  <InputLabel alignItems="center">1. Men Clothes:</InputLabel>
                 </Grid>
                 <Grid item xs={12} sm={9} lg={3}>
                   {/*<TextField fullWidth placeholder="Enter full name" />*/}
@@ -59,7 +59,7 @@ function Layouts() {
             <Grid item xs={12}>
               <Grid container spacing={2} alignItems="center">
                 <Grid item xs={12} sm={9} lg={2}>
-                  <InputLabel alignItems="center">2. Water Bill:</InputLabel>
+                  <InputLabel alignItems="center">2. Women Clothes:</InputLabel>
                 </Grid>
                 <Grid item xs={12} sm={9} lg={3}>
                   {/*<TextField fullWidth placeholder="Enter full name" />*/}
@@ -94,7 +94,7 @@ function Layouts() {
             <Grid item xs={12}>
               <Grid container spacing={2} alignItems="center">
                 <Grid item xs={12} sm={9} lg={2}>
-                  <InputLabel alignItems="center">3. Electric Bill:</InputLabel>
+                  <InputLabel alignItems="center">3. Kids Clothes:</InputLabel>
                 </Grid>
                 <Grid item xs={12} sm={9} lg={3}>
                   {/*<TextField fullWidth placeholder="Enter full name" />*/}
@@ -129,7 +129,7 @@ function Layouts() {
             <Grid item xs={12}>
               <Grid container spacing={2} alignItems="center">
                 <Grid item xs={12} sm={9} lg={2}>
-                  <InputLabel alignItems="center">4. Gas Bill:</InputLabel>
+                  <InputLabel alignItems="center">4. Shoe:</InputLabel>
                 </Grid>
                 <Grid item xs={12} sm={9} lg={3}>
                   {/*<TextField fullWidth placeholder="Enter full name" />*/}

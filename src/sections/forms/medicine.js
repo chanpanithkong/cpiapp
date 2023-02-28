@@ -24,7 +24,7 @@ function Layouts() {
             <Grid item xs={12}>
               <Grid container spacing={2} alignItems="center">
                 <Grid item xs={12} sm={9} lg={2}>
-                  <InputLabel alignItems="center">1. Rental Fee:</InputLabel>
+                  <InputLabel alignItems="center">1. Paracetamol:</InputLabel>
                 </Grid>
                 <Grid item xs={12} sm={9} lg={3}>
                   {/*<TextField fullWidth placeholder="Enter full name" />*/}
@@ -59,7 +59,7 @@ function Layouts() {
             <Grid item xs={12}>
               <Grid container spacing={2} alignItems="center">
                 <Grid item xs={12} sm={9} lg={2}>
-                  <InputLabel alignItems="center">2. Water Bill:</InputLabel>
+                  <InputLabel alignItems="center">2. Amoxicillin:</InputLabel>
                 </Grid>
                 <Grid item xs={12} sm={9} lg={3}>
                   {/*<TextField fullWidth placeholder="Enter full name" />*/}
@@ -94,42 +94,7 @@ function Layouts() {
             <Grid item xs={12}>
               <Grid container spacing={2} alignItems="center">
                 <Grid item xs={12} sm={9} lg={2}>
-                  <InputLabel alignItems="center">3. Electric Bill:</InputLabel>
-                </Grid>
-                <Grid item xs={12} sm={9} lg={3}>
-                  {/*<TextField fullWidth placeholder="Enter full name" />*/}
-                  <TextField fullWidth id="outlined-basic" label="Quantity" type="number" />
-                </Grid>
-                <Grid item xs={12} sm={9} lg={2}>
-                  {/*<TextField fullWidth placeholder="Enter email" />*/}
-                  <Autocomplete
-                    disablePortal
-                    id="combo-box-demo"
-                    options={uom}
-                    renderInput={(params) => <TextField {...params} label="Unit" />}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={9} lg={3}>
-                  {/*<TextField fullWidth placeholder="Enter email" />*/}
-                  <TextField fullWidth id="outlined-basic" label="Price" type="number" />
-                </Grid>
-                <Grid item xs={12} sm={9} lg={2}>
-                  <Autocomplete
-                    disablePortal
-                    id="combo-box-demo"
-                    options={ccy}
-                    renderInput={(params) => <TextField {...params} label="Currency" />}
-                  />
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid item xs={12}>
-              <Divider />
-            </Grid>
-            <Grid item xs={12}>
-              <Grid container spacing={2} alignItems="center">
-                <Grid item xs={12} sm={9} lg={2}>
-                  <InputLabel alignItems="center">4. Gas Bill:</InputLabel>
+                  <InputLabel alignItems="center">3. Vitamin C:</InputLabel>
                 </Grid>
                 <Grid item xs={12} sm={9} lg={3}>
                   {/*<TextField fullWidth placeholder="Enter full name" />*/}
