@@ -55,12 +55,12 @@ const RiceForm = () => {
   });
 
   return (
-    <MainCard title="អង្ករ1">
+    <MainCard title="អង្ករ">
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={3}>
           <Grid item xs={8} lg={4}>
             <Stack spacing={1}>
-              <InputLabel htmlFor="email"></InputLabel>
+              <InputLabel htmlFor="email">អង្ករផ្កាម្លិះ</InputLabel>
               <TextField
                 fullWidth
                 id="emailInstant"
