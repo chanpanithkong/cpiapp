@@ -22,21 +22,22 @@ import { FormattedMessage } from 'react-intl';
 // test api
 import { useDispatch, useSelector } from 'store';
 import { getUsers } from 'store/reducers/categories';
+import { getCcy } from 'store/reducers/ccyexchange';
 
 const DashboardDefault = () => {
   const [slot, setSlot] = useState('week');
 
   const [data, setData] = useState([]);
-  const { users } = useSelector((state) => state.chat);
+  const { users, ccy } = useSelector((state) => state.chat);
   const dispatch = useDispatch([]);
 
   useEffect(() => {
-    dispatch(getUsers());
+    dispatch(getUsers(), getCcy());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
-    setData(users);
-  }, [users]);
+    setData(users, ccy);
+  }, [users, ccy]);
 
   console.log({ data });
 
@@ -47,6 +48,7 @@ const DashboardDefault = () => {
         <Typography variant="h5" className="homepage">
           <FormattedMessage id="homepage" />
           <div>{data.map((data) => data.nameen + ' ' + data.namekh)}</div>
+          <div>{data.map((data) => data.bid)}</div>
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={8} lg={8}>

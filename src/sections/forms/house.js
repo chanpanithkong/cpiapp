@@ -1,5 +1,5 @@
 // material-ui
-import { Autocomplete, Button, Divider, Grid, InputLabel, Stack, TextField } from '@mui/material';
+import { Autocomplete, Button, Divider, Grid, InputLabel, MenuItem, Stack, TextField } from '@mui/material';
 
 // project imports
 import MainCard from 'components/MainCard';
@@ -8,6 +8,18 @@ import MainCard from 'components/MainCard';
 const ccy = [
   { label: 'KHR', id: 116 },
   { label: 'USD', id: 840 }
+];
+const currencies = [
+  {
+    value: 'KHR',
+    label: '៛',
+    id: 116
+  },
+  {
+    value: 'USD',
+    label: '$',
+    id: 840
+  }
 ];
 
 const uom = [
@@ -28,28 +40,47 @@ function Layouts() {
                 </Grid>
                 <Grid item xs={12} sm={9} lg={3}>
                   {/*<TextField fullWidth placeholder="Enter full name" />*/}
-                  <TextField fullWidth id="outlined-basic" label="Quantity" type="number" />
+                  {/*<TextField fullWidth id="outlined-basic" label="Quantity" type="number" />*/}
+                  <TextField
+                    fullWidth
+                    id="outlined-number"
+                    label="Quantity"
+                    type="number"
+                    InputLabelProps={{
+                      shrink: true
+                    }}
+                  />
                 </Grid>
                 <Grid item xs={12} sm={9} lg={2}>
                   {/*<TextField fullWidth placeholder="Enter email" />*/}
-                  <Autocomplete
-                    disablePortal
-                    id="combo-box-demo"
-                    options={uom}
-                    renderInput={(params) => <TextField {...params} label="Unit" />}
-                  />
+                  <TextField fullWidth id="outlined-select-currency" select label="Unit" defaultValue="KHR">
+                    {currencies.map((option) => (
+                      <MenuItem key={option.value} value={option.value}>
+                        {option.label}
+                      </MenuItem>
+                    ))}
+                  </TextField>
                 </Grid>
                 <Grid item xs={12} sm={9} lg={3}>
                   {/*<TextField fullWidth placeholder="Enter email" />*/}
-                  <TextField fullWidth id="outlined-basic" label="Price" type="number" />
+                  <TextField
+                    fullWidth
+                    id="outlined-number"
+                    label="Price"
+                    type="number"
+                    InputLabelProps={{
+                      shrink: true
+                    }}
+                  />
                 </Grid>
                 <Grid item xs={12} sm={9} lg={2}>
-                  <Autocomplete
-                    disablePortal
-                    id="combo-box-demo"
-                    options={ccy}
-                    renderInput={(params) => <TextField {...params} label="Currency" />}
-                  />
+                  <TextField fullWidth id="outlined-select-currency" select label="Currency" defaultValue="KHR">
+                    {currencies.map((option) => (
+                      <MenuItem key={option.value} value={option.value}>
+                        {option.label}
+                      </MenuItem>
+                    ))}
+                  </TextField>
                 </Grid>
               </Grid>
             </Grid>
