@@ -10,20 +10,13 @@ const ccy = [
   { label: 'USD', id: 840 }
 ];
 const currencies = [
-  {
-    value: 'KHR',
-    label: '៛',
-    id: 116
-  },
-  {
-    value: 'USD',
-    label: '$',
-    id: 840
-  }
+  { value: 'KHR', label: '៛', id: 116, key: 1 },
+  { value: 'USD', label: '$', id: 840, key: 1 },
+  { value: 'm3', label: 'm³', id: 1, key: 2 }
 ];
 
 const uom = [
-  { label: 'm3', id: 116 },
+  { label: 'm³', id: 116 },
   { label: 'other', id: 840 }
 ];
 
