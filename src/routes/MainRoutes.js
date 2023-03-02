@@ -13,7 +13,7 @@ const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/default')))
 const DashboardAnalytics = Loadable(lazy(() => import('pages/dashboard/analytics')));
 
 //render -food
-const Page1 = Loadable(lazy(() => import('pages/food/page1')));
+//const Page1 = Loadable(lazy(() => import('pages/food/page1')));
 const Rice = Loadable(lazy(() => import('pages/food/rice')));
 const Ingredient = Loadable(lazy(() => import('pages/food/ingredient')));
 const Meet = Loadable(lazy(() => import('pages/food/meet')));
@@ -174,10 +174,6 @@ const MainRoutes = {
         {
           path: 'food',
           children: [
-            {
-              path: 'page1',
-              element: <Page1 />
-            },
             {
               path: 'rice',
               element: <Rice />
