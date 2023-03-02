@@ -53,7 +53,7 @@ const SelectForms = () => {
             <Stack spacing={1}>
               <InputLabel htmlFor="age">Age</InputLabel>
               <FormControl sx={{ m: 1, minWidth: 120 }}>
-                <Select id="age" name="age" value={formik.values.age} onChange={formik.handleChange}>
+                <Select fullWidth id="age" name="age" value={formik.values.age} onChange={formik.handleChange}>
                   <MenuItem value="">
                     <em>Select age</em>
                   </MenuItem>
