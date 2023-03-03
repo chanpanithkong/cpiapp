@@ -6,8 +6,8 @@ import dashboard from './dashboard';
 //import chartsMap from './charts-map';
 //import other from './other';
 //import pages from './pages';
-import food from './food';
-import drinksmoke from './drinksmoke';
+//import food from './food';
+//import drinksmoke from './drinksmoke';
 import administration from './administration';
 import authorization from './authorization';
 import datainput from './datainput';
@@ -17,8 +17,6 @@ import datainput from './datainput';
 const menuItems = {
   items: [
     dashboard,
-    food,
-    drinksmoke,
     datainput,
     authorization,
     administration

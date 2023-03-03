@@ -555,7 +555,7 @@ const DrinksmokeForm = () => {
                   </IconButton>
                 </Tooltip>
                 <Stack direction="row" spacing={1} sx={{ px: 1.5, py: 0.75 }}>
-                  <Button variant="shadow" color="error">
+                  <Button variant="contained" color="error">
                     Cancel
                   </Button>
                   {/* <Button color="error" size="small">
