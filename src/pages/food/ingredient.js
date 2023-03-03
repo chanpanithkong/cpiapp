@@ -7,7 +7,7 @@ import { Grid } from '@mui/material';
 //import RadioGroupForms from 'sections/forms/validation/RadioGroupForms';
 //import CheckboxForms from 'sections/forms/validation/CheckboxForms';
 //import SelectForms from 'sections/forms/validation/SelectForms';
-import IngredientForm from 'sections/forms/food/ingredient_old';
+import IngredientForm from 'sections/forms/food/ingredient';
 
 // ==============================|| FORMS VALIDATION - FORMIK ||============================== //
 

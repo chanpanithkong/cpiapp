@@ -57,14 +57,16 @@ const MeetForm = () => {
   return (
     <MainCard title="សាច់">
       <form onSubmit={formik.handleSubmit}>
-        <Grid container spacing={3}>
-          <Grid item xs={12} lg={6} alignItems="center">
+        <Grid container spacing={2}>
+          <Grid item xs={12} lg={5} alignItems="center">
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
-              <Grid item xs={4} sm={3} lg={4} alignItems="center">
-                <InputLabel alignItems="center">សាច់គោ :</InputLabel>
+              <Grid item xs={4} sm={3} lg={5} alignItems="center">
+                <InputLabel alignItems="center">
+                  សាច់គោ :
+                </InputLabel>
               </Grid>
-              <Grid item xs={8} sm={9} lg={8}>
+              <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
                   <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
@@ -87,7 +89,7 @@ const MeetForm = () => {
               </FormControl>
             </Stack>
           </Grid>
-          <Grid item xs={4} lg={2}>
+          <Grid item xs={4} lg={3}>
             {/* <Stack spacing={2}>
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
@@ -111,13 +113,15 @@ const MeetForm = () => {
           <Grid item xs={12} style={{ paddingtop: '0px' }}>
             <Divider />
           </Grid>
-          <Grid item xs={12} lg={6} alignItems="center">
+          <Grid item xs={12} lg={5} alignItems="center">
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
-              <Grid item xs={4} sm={3} lg={4} alignItems="center">
-                <InputLabel alignItems="center">សាច់ជ្រូក :</InputLabel>
+              <Grid item xs={4} sm={3} lg={5} alignItems="center">
+                <InputLabel alignItems="center">
+                  សាច់ជ្រូក :
+                </InputLabel>
               </Grid>
-              <Grid item xs={8} sm={9} lg={8}>
+              <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
                   <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
@@ -140,7 +144,7 @@ const MeetForm = () => {
               </FormControl>
             </Stack>
           </Grid>
-          <Grid item xs={4} lg={2}>
+          <Grid item xs={4} lg={3}>
             {/* <Stack spacing={2}>
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
@@ -164,13 +168,15 @@ const MeetForm = () => {
           <Grid item xs={12} style={{ paddingtop: '0px' }}>
             <Divider />
           </Grid>
-          <Grid item xs={12} lg={6} alignItems="center">
+          <Grid item xs={12} lg={5} alignItems="center">
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
-              <Grid item xs={4} sm={3} lg={4} alignItems="center">
-                <InputLabel alignItems="center">សាច់មាន់ :</InputLabel>
+              <Grid item xs={4} sm={3} lg={5} alignItems="center">
+                <InputLabel alignItems="center">
+                  សាច់មាន់ :
+                </InputLabel>
               </Grid>
-              <Grid item xs={8} sm={9} lg={8}>
+              <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
                   <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
@@ -193,7 +199,7 @@ const MeetForm = () => {
               </FormControl>
             </Stack>
           </Grid>
-          <Grid item xs={4} lg={2}>
+          <Grid item xs={4} lg={3}>
             {/* <Stack spacing={2}>
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
@@ -217,13 +223,15 @@ const MeetForm = () => {
           <Grid item xs={12} style={{ paddingtop: '0px' }}>
             <Divider />
           </Grid>
-          <Grid item xs={12} lg={6} alignItems="center">
+          <Grid item xs={12} lg={5} alignItems="center">
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
-              <Grid item xs={4} sm={3} lg={4} alignItems="center">
-                <InputLabel alignItems="center">សាច់ទា :</InputLabel>
+              <Grid item xs={4} sm={3} lg={5} alignItems="center">
+                <InputLabel alignItems="center">
+                  សាច់ទា :
+                </InputLabel>
               </Grid>
-              <Grid item xs={8} sm={9} lg={8}>
+              <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
                   <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
@@ -246,7 +254,7 @@ const MeetForm = () => {
               </FormControl>
             </Stack>
           </Grid>
-          <Grid item xs={4} lg={2}>
+          <Grid item xs={4} lg={3}>
             {/* <Stack spacing={2}>
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
@@ -270,13 +278,15 @@ const MeetForm = () => {
           <Grid item xs={12} style={{ paddingtop: '0px' }}>
             <Divider />
           </Grid>
-          <Grid item xs={12} lg={6} alignItems="center">
+          <Grid item xs={12} lg={5} alignItems="center">
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
-              <Grid item xs={4} sm={3} lg={4} alignItems="center">
-                <InputLabel alignItems="center">ស៊ុតមាន់ :</InputLabel>
+              <Grid item xs={4} sm={3} lg={5} alignItems="center">
+                <InputLabel alignItems="center">
+                  ស៊ុតមាន់ :
+                </InputLabel>
               </Grid>
-              <Grid item xs={8} sm={9} lg={8}>
+              <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
                   <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
@@ -299,7 +309,7 @@ const MeetForm = () => {
               </FormControl>
             </Stack>
           </Grid>
-          <Grid item xs={4} lg={2}>
+          <Grid item xs={4} lg={3}>
             {/* <Stack spacing={2}>
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
@@ -323,13 +333,15 @@ const MeetForm = () => {
           <Grid item xs={12} style={{ paddingtop: '0px' }}>
             <Divider />
           </Grid>
-          <Grid item xs={12} lg={6} alignItems="center">
+          <Grid item xs={12} lg={5} alignItems="center">
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
-              <Grid item xs={4} sm={3} lg={4}>
-                <InputLabel alignItems="center">ស៊ុតទា :</InputLabel>
+              <Grid item xs={4} sm={3} lg={5} alignItems="center">
+                <InputLabel alignItems="center">
+                  ស៊ុតទា:
+                </InputLabel>
               </Grid>
-              <Grid item xs={8} sm={9} lg={8}>
+              <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
                   <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
@@ -352,7 +364,7 @@ const MeetForm = () => {
               </FormControl>
             </Stack>
           </Grid>
-          <Grid item xs={4} lg={2}>
+          <Grid item xs={4} lg={3}>
             {/* <Stack spacing={2}>
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
