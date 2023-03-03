@@ -62,9 +62,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ត្រីរ៉ស់ (ស្រែ) :
-                </InputLabel>
+                <InputLabel alignItems="center">ត្រីរ៉ស់ (ស្រែ) :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -117,9 +115,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ត្រីរ៉ស់ (ចិញ្ចឹម) :
-                </InputLabel>
+                <InputLabel alignItems="center">ត្រីរ៉ស់ (ចិញ្ចឹម) :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -172,9 +168,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  សាច់មាន់ :
-                </InputLabel>
+                <InputLabel alignItems="center">សាច់មាន់ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -227,9 +221,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ត្រីឆ្តោ :
-                </InputLabel>
+                <InputLabel alignItems="center">ត្រីឆ្តោ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -282,9 +274,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ត្រីអណ្តែង :
-                </InputLabel>
+                <InputLabel alignItems="center">ត្រីអណ្តែង :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -337,67 +327,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ត្រីទីឡាបយ៉ា:
-                </InputLabel>
-              </Grid>
-              <Grid item xs={8} sm={9} lg={7}>
-                <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
-                  {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
-                </Stack>
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              {/* <InputLabel htmlFor="email">ខ្នាត</InputLabel> */}
-              <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
-                <Select fullWidth id="age" name="age" value={formik.values.age} onChange={formik.handleChange} defaultValue={1}>
-                  <MenuItem value={1}>ជ្រើសរើស</MenuItem>
-                  <MenuItem value={10}>គីឡូ</MenuItem>
-                  <MenuItem value={20}>ក្រាម</MenuItem>
-                  <MenuItem value={30}>លីត្រ</MenuItem>
-                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={3}>
-            {/* <Stack spacing={2}>
-              <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
-            </Stack> */}
-            <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
-              {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
-            </Stack>
-          </Grid>
-          <Grid item xs={4} lg={2}>
-            <Stack spacing={1}>
-              {/* <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel> */}
-              <FormControl fullWidth>
-                <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
-                <Select id="currency" name="currency" value={formik.values.currency} onChange={formik.handleChange} defaultValue={10}>
-                  <MenuItem value={10}>រៀល</MenuItem>
-                  <MenuItem value={20}>ដុល្លា</MenuItem>
-                </Select>
-              </FormControl>
-            </Stack>
-          </Grid>
-          <Grid item xs={12} style={{ paddingtop: '0px' }}>
-            <Divider />
-          </Grid>
-          <Grid item xs={12} style={{ paddingtop: '0px' }}>
-            <Divider />
-          </Grid>
-          <Grid item xs={12} lg={5} alignItems="center">
-            <Grid container spacing={2} alignItems="center">
-              {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
-              <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ត្រីងៀត:
-                </InputLabel>
+                <InputLabel alignItems="center">ត្រីទីឡាបយ៉ា:</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -453,9 +383,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ផ្អក:
-                </InputLabel>
+                <InputLabel alignItems="center">ត្រីងៀត:</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -511,9 +439,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ប្រហុក:
-                </InputLabel>
+                <InputLabel alignItems="center">ផ្អក:</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -569,9 +495,63 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ត្រីសមុទ្រ(កាម៉ុងចំហុយ):
-                </InputLabel>
+                <InputLabel alignItems="center">ប្រហុក:</InputLabel>
+              </Grid>
+              <Grid item xs={8} sm={9} lg={7}>
+                <Stack spacing={1}>
+                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
+                </Stack>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              {/* <InputLabel htmlFor="email">ខ្នាត</InputLabel> */}
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">ខ្នាត</InputLabel>
+                <Select fullWidth id="age" name="age" value={formik.values.age} onChange={formik.handleChange} defaultValue={1}>
+                  <MenuItem value={1}>ជ្រើសរើស</MenuItem>
+                  <MenuItem value={10}>គីឡូ</MenuItem>
+                  <MenuItem value={20}>ក្រាម</MenuItem>
+                  <MenuItem value={30}>លីត្រ</MenuItem>
+                  <MenuItem value={40}>ផ្សេងៗ</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={4} lg={3}>
+            {/* <Stack spacing={2}>
+              <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
+            </Stack> */}
+            <Stack spacing={1}>
+              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
+            </Stack>
+          </Grid>
+          <Grid item xs={4} lg={2}>
+            <Stack spacing={1}>
+              {/* <InputLabel htmlFor="email">រូបិយប័ណ្ណ</InputLabel> */}
+              <FormControl fullWidth>
+                <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
+                <Select id="currency" name="currency" value={formik.values.currency} onChange={formik.handleChange} defaultValue={10}>
+                  <MenuItem value={10}>រៀល</MenuItem>
+                  <MenuItem value={20}>ដុល្លា</MenuItem>
+                </Select>
+              </FormControl>
+            </Stack>
+          </Grid>
+          <Grid item xs={12} style={{ paddingtop: '0px' }}>
+            <Divider />
+          </Grid>
+          <Grid item xs={12} style={{ paddingtop: '0px' }}>
+            <Divider />
+          </Grid>
+          <Grid item xs={12} lg={5} alignItems="center">
+            <Grid container spacing={2} alignItems="center">
+              {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
+              <Grid item xs={4} sm={3} lg={5} alignItems="center">
+                <InputLabel alignItems="center">ត្រីសមុទ្រ(កាម៉ុងចំហុយ):</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -624,9 +604,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  បង្គា:
-                </InputLabel>
+                <InputLabel alignItems="center">បង្គា:</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -679,9 +657,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  មឹក:
-                </InputLabel>
+                <InputLabel alignItems="center">មឹក:</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -734,9 +710,7 @@ const SeafoodForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ងាវ:
-                </InputLabel>
+                <InputLabel alignItems="center">ងាវ:</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>

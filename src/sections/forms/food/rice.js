@@ -62,9 +62,7 @@ const RiceForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  អង្ករផ្កាម្លិះ :
-                </InputLabel>
+                <InputLabel alignItems="center">អង្ករផ្កាម្លិះ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -117,9 +115,7 @@ const RiceForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  អង្ករផ្កាខ្ញី :
-                </InputLabel>
+                <InputLabel alignItems="center">អង្ករផ្កាខ្ញី :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -172,9 +168,7 @@ const RiceForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  អង្ករនាងមិញ :
-                </InputLabel>
+                <InputLabel alignItems="center">អង្ករនាងមិញ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -227,9 +221,7 @@ const RiceForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  អង្ករនាងខុន :
-                </InputLabel>
+                <InputLabel alignItems="center">អង្ករនាងខុន :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -282,9 +274,7 @@ const RiceForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  អង្ករដំណើប :
-                </InputLabel>
+                <InputLabel alignItems="center">អង្ករដំណើប :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -337,9 +327,7 @@ const RiceForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ធញ្ញជាតិផ្សេងៗ (សណ្តែកបាយ ក្រហម ខៀវ):
-                </InputLabel>
+                <InputLabel alignItems="center">ធញ្ញជាតិផ្សេងៗ (សណ្តែកបាយ ក្រហម ខៀវ):</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>

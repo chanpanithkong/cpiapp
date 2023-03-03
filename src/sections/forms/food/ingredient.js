@@ -62,9 +62,7 @@ const IngredientForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ប្រេងឆា និងខ្លាញ់ :
-                </InputLabel>
+                <InputLabel alignItems="center">ប្រេងឆា និងខ្លាញ់ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -117,9 +115,7 @@ const IngredientForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ទឹកត្រី :
-                </InputLabel>
+                <InputLabel alignItems="center">ទឹកត្រី :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -172,9 +168,7 @@ const IngredientForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ស្ករសរ :
-                </InputLabel>
+                <InputLabel alignItems="center">ស្ករសរ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -227,9 +221,7 @@ const IngredientForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ស្ករត្នោត :
-                </InputLabel>
+                <InputLabel alignItems="center">ស្ករត្នោត :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -282,9 +274,7 @@ const IngredientForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  អំបិល :
-                </InputLabel>
+                <InputLabel alignItems="center">អំបិល :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -337,9 +327,7 @@ const IngredientForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ម្សៅស៊ុប:
-                </InputLabel>
+                <InputLabel alignItems="center">ម្សៅស៊ុប:</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>

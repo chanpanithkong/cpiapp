@@ -62,9 +62,7 @@ const FruitForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ចេកណាំវ៉ា :
-                </InputLabel>
+                <InputLabel alignItems="center">ចេកណាំវ៉ា :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -117,9 +115,7 @@ const FruitForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ប៉ោម :
-                </InputLabel>
+                <InputLabel alignItems="center">ប៉ោម :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -172,9 +168,7 @@ const FruitForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ក្រូចពោធិសាត់ :
-                </InputLabel>
+                <InputLabel alignItems="center">ក្រូចពោធិសាត់ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -227,9 +221,7 @@ const FruitForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  មៀន :
-                </InputLabel>
+                <InputLabel alignItems="center">មៀន :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -282,9 +274,7 @@ const FruitForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ទំពាំងបាយជូរធម្មតា :
-                </InputLabel>
+                <InputLabel alignItems="center">ទំពាំងបាយជូរធម្មតា :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>

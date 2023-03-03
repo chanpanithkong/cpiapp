@@ -62,9 +62,7 @@ const MeetForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  សាច់គោ :
-                </InputLabel>
+                <InputLabel alignItems="center">សាច់គោ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -117,9 +115,7 @@ const MeetForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  សាច់ជ្រូក :
-                </InputLabel>
+                <InputLabel alignItems="center">សាច់ជ្រូក :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -172,9 +168,7 @@ const MeetForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  សាច់មាន់ :
-                </InputLabel>
+                <InputLabel alignItems="center">សាច់មាន់ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -227,9 +221,7 @@ const MeetForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  សាច់ទា :
-                </InputLabel>
+                <InputLabel alignItems="center">សាច់ទា :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -282,9 +274,7 @@ const MeetForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ស៊ុតមាន់ :
-                </InputLabel>
+                <InputLabel alignItems="center">ស៊ុតមាន់ :</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
@@ -337,9 +327,7 @@ const MeetForm = () => {
             <Grid container spacing={2} alignItems="center">
               {/* <Grid item xs={4} sm={3} lg={4} sx={{ pt: { xs: 2, sm: '0 !important' } }}> */}
               <Grid item xs={4} sm={3} lg={5} alignItems="center">
-                <InputLabel alignItems="center">
-                  ស៊ុតទា:
-                </InputLabel>
+                <InputLabel alignItems="center">ស៊ុតទា:</InputLabel>
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
