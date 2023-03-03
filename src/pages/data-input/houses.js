@@ -1,7 +1,7 @@
 // material-ui
 import { Grid } from '@mui/material';
 
-import FruitForm from 'sections/forms/house';
+import HouseForm from 'sections/forms/house';
 
 // ==============================|| FORMS HOUSE ||============================== //
 
@@ -11,17 +11,8 @@ const House = () => (
       <LoginForms />
     </Grid> */}
     <Grid item xs={12} md={12}>
-      <FruitForm />
+      <HouseForm />
     </Grid>
-    {/* <Grid item xs={12} md={6}>
-      <RadioGroupForms />
-    </Grid> */}
-    {/* <Grid item xs={12} md={6}>
-      <CheckboxForms />
-    </Grid>
-    <Grid item xs={12} md={6}>
-      <SelectForms />
-    </Grid> */}
   </Grid>
 );
 

@@ -78,7 +78,7 @@ const DashboardDefault = () => {
                 </AvatarGroup>
               </Grid>
             </Grid>
-            <Button size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
+            <Button href={'/datainput'} size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
               Create
             </Button>
           </Stack>
