@@ -26,6 +26,13 @@ const validationSchema = yup.object({
   rise2Instant: yup.string().min(8, 'something').required('Password is required')
 });
 
+// const currencies = [
+//   { value: 'KHR', label: 'រៀល', id: 1, key: 1 },
+//   { value: 'USD', label: 'ដុល្លា', id: 2, key: 2 }
+// ];
+
+//const value = currencies.map((opt) => (opt.label));
+//console.log(value);
 // ==============================|| FORM VALIDATION - INSTANT FEEDBACK FORMIK  ||============================== //
 
 const RiceForm = () => {
@@ -66,7 +73,7 @@ const RiceForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -92,7 +99,7 @@ const RiceForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>
@@ -102,6 +109,13 @@ const RiceForm = () => {
               <FormControl fullWidth>
                 <InputLabel id="demo-simple-select-label">រូបិយប័ណ្ណ</InputLabel>
                 <Select id="currency" name="currency" value={formik.values.currency} onChange={formik.handleChange} defaultValue={10}>
+                  {/* {currencies.map((ccrcd) => {
+                    return(
+                      <MenuItem key={ccrcd.value} value={ccrcd.value}>
+                        {ccrcd.label}
+                      </MenuItem>
+                    );
+                  })} */}
                   <MenuItem value={10}>រៀល</MenuItem>
                   <MenuItem value={20}>ដុល្លា</MenuItem>
                 </Select>
@@ -119,8 +133,7 @@ const RiceForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
-                  {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                 </Stack>
               </Grid>
             </Grid>
@@ -141,12 +154,8 @@ const RiceForm = () => {
             </Stack>
           </Grid>
           <Grid item xs={4} lg={3}>
-            {/* <Stack spacing={2}>
-              <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
-            </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
-              {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
             </Stack>
           </Grid>
           <Grid item xs={4} lg={2}>
@@ -172,8 +181,7 @@ const RiceForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
-                  {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                 </Stack>
               </Grid>
             </Grid>
@@ -194,12 +202,8 @@ const RiceForm = () => {
             </Stack>
           </Grid>
           <Grid item xs={4} lg={3}>
-            {/* <Stack spacing={2}>
-              <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
-            </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
-              {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
             </Stack>
           </Grid>
           <Grid item xs={4} lg={2}>
@@ -225,7 +229,7 @@ const RiceForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -251,7 +255,7 @@ const RiceForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>
@@ -278,7 +282,7 @@ const RiceForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -304,7 +308,7 @@ const RiceForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>
@@ -331,7 +335,7 @@ const RiceForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -357,7 +361,7 @@ const RiceForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>

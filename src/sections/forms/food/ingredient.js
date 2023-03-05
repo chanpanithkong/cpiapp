@@ -66,7 +66,7 @@ const IngredientForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -92,7 +92,7 @@ const IngredientForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>
@@ -119,7 +119,7 @@ const IngredientForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -145,7 +145,7 @@ const IngredientForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>
@@ -172,7 +172,7 @@ const IngredientForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -198,7 +198,7 @@ const IngredientForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>
@@ -225,7 +225,7 @@ const IngredientForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -251,7 +251,7 @@ const IngredientForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>
@@ -278,7 +278,7 @@ const IngredientForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -304,7 +304,7 @@ const IngredientForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>
@@ -331,7 +331,7 @@ const IngredientForm = () => {
               </Grid>
               <Grid item xs={8} sm={9} lg={7}>
                 <Stack spacing={1}>
-                  <TextField id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
+                  <TextField type="number" id="filled-basic-small" label="Qty" InputLabelProps={{ shrink: true }} fullWidth />
                   {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
                 </Stack>
               </Grid>
@@ -357,7 +357,7 @@ const IngredientForm = () => {
               <TextField id="outlined-basic"  label="តំលៃ" size="small"/>
             </Stack> */}
             <Stack spacing={1}>
-              <TextField id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
+              <TextField type="number" id="filled-basic-small" label="តំលៃ" InputLabelProps={{ shrink: true }} fullWidth />
               {/* <TextField sx={{ textAlign: { xs: 'left', sm: 'right' } }} fullWidth placeholder="Enter full name" /> */}
             </Stack>
           </Grid>
