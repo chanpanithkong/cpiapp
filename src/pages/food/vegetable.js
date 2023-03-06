@@ -11,7 +11,7 @@ import VegetableForm from 'sections/forms/food/vegetable';
 
 // ==============================|| FORMS VALIDATION - FORMIK ||============================== //
 
-const Seafood = () => (
+const Vegetable = () => (
   <Grid container spacing={2.5}>
     {/* <Grid item xs={12} md={6}>
       <LoginForms />
@@ -31,4 +31,4 @@ const Seafood = () => (
   </Grid>
 );
 
-export default Seafood;
+export default Vegetable;

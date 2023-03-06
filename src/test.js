@@ -20,7 +20,7 @@ class Test extends Component {
   state = {
     matches: []
   };
-  showMatches = () => <div>Test WS</div>;
+  showMatches = () => <div>Test WS1</div>;
   render() {
     return <div className="home_matches">{this.showMatches(this.state.matches)}</div>;
   }

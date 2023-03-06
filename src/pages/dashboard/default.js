@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
+//import Test from 'test';
 // material-ui
-import { Box, Button, Grid, List, ListItemButton, ListItemText, Stack, Typography } from '@mui/material';
+import { Avatar, AvatarGroup, Box, Button, Grid, List, ListItemButton, ListItemText, Stack, Typography } from '@mui/material';
 
 // project import
 import MainCard from 'components/MainCard';
@@ -11,28 +12,35 @@ import ReportAreaChart from 'sections/dashboard/default/ReportAreaChart';
 import OrdersTable from 'sections/dashboard/default/OrdersTable';
 
 // assets
+import avatar1 from 'assets/images/users/avatar-1.png';
+import avatar2 from 'assets/images/users/avatar-2.png';
+import avatar3 from 'assets/images/users/avatar-3.png';
+import avatar4 from 'assets/images/users/avatar-4.png';
 import { FormattedMessage } from 'react-intl';
 
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
 // test api
 import { useDispatch, useSelector } from 'store';
 import { getUsers } from 'store/reducers/categories';
+import { getCcy } from 'store/reducers/ccyexchange';
 
 const DashboardDefault = () => {
   const [slot, setSlot] = useState('week');
+
   const [data, setData] = useState([]);
-  const { users } = useSelector((state) => state.chat);
+  const { users, ccy } = useSelector((state) => state.chat);
   const dispatch = useDispatch([]);
 
   useEffect(() => {
-    dispatch(getUsers());
+    dispatch(getUsers(), getCcy());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
-    setData(users);
-  }, [users]);
+    setData(users, ccy);
+  }, [users, ccy]);
 
   console.log({ data });
+
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
       {/* row 1 */}
@@ -40,6 +48,7 @@ const DashboardDefault = () => {
         <Typography variant="h5" className="homepage">
           <FormattedMessage id="homepage" />
           <div>{data.map((data) => data.nameen + ' ' + data.namekh)}</div>
+          <div>{data.map((data) => data.bid)}</div>
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6} md={8} lg={8}>
@@ -53,14 +62,23 @@ const DashboardDefault = () => {
                 <Stack>
                   <Typography variant="h5" noWrap>
                     Create New Data Entry
+                    {/* <Test /> */}
                   </Typography>
                   <Typography variant="caption" color="secondary" noWrap>
                     Insert Data....
                   </Typography>
                 </Stack>
               </Grid>
+              <Grid item>
+                <AvatarGroup sx={{ '& .MuiAvatar-root': { width: 32, height: 32 } }}>
+                  <Avatar alt="Remy Sharp" src={avatar1} />
+                  <Avatar alt="Travis Howard" src={avatar2} />
+                  <Avatar alt="Cindy Baker" src={avatar3} />
+                  <Avatar alt="Agnes Walker" src={avatar4} />
+                </AvatarGroup>
+              </Grid>
             </Grid>
-            <Button href={'/data-input'} size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
+            <Button href={'/datainput'} size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
               Create
             </Button>
           </Stack>
