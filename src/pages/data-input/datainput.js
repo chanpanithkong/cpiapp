@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchProductList = async () => {
       try {
-        const params = { _page: 1, _limit: 10 };
+        const params = {};
         const response = await ExchangeRateApi.getAll(params);
         console.log('Fetch products successfully: ', response);
       } catch (error) {

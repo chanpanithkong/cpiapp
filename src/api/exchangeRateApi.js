@@ -2,7 +2,7 @@ import axiosClient from './axiosClient';
 
 const exchangeRateApi = {
   getAll: (params) => {
-    const url = '/products';
+    const url = '/';
     return axiosClient.get(url, { params });
   }
 };

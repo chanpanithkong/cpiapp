@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57bfe810-6006-40a8-b904-3f80d219203b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/FirebaseContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/FirebaseContext.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MainLayout/Drawer/DrawerContent/NavCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MainLayout/Drawer/DrawerContent/NavCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MainLayout/Drawer/DrawerContent/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MainLayout/Drawer/DrawerContent/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Customization/ThemeMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Customization/ThemeMode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Customization/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Customization/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Notification.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Profile/SettingTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Profile/SettingTab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Profile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Profile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/Search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MainLayout/Header/HeaderContent/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dashboard/default.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dashboard/default.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/locales/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/locales/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/locales/km.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/locales/km.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setupProxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_15_2_23,_9_59_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_15_2_23__9_59_AM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/axiosClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/axiosClient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/exchangeRateApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/exchangeRateApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/data-input/datainput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/data-input/datainput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,10 +80,26 @@
       <workItem from="1676557391997" duration="271000" />
       <workItem from="1676775184063" duration="26902000" />
       <workItem from="1676854386817" duration="21952000" />
+      <workItem from="1677915036463" duration="268000" />
+      <workItem from="1677915916967" duration="38000" />
+      <workItem from="1677916318632" duration="6000" />
+      <workItem from="1678065564422" duration="1173000" />
+      <workItem from="1678067749242" duration="19431000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
