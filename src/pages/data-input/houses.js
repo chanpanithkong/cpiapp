@@ -7,9 +7,6 @@ import HouseForm from 'sections/forms/house';
 
 const House = () => (
   <Grid container spacing={2.5}>
-    {/* <Grid item xs={12} md={6}>
-      <LoginForms />
-    </Grid> */}
     <Grid item xs={12} md={12}>
       <HouseForm />
     </Grid>

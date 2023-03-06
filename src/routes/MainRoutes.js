@@ -88,6 +88,7 @@ const FormMedicine = Loadable(lazy(() => import('pages/data-input/medicine')));
 const FormTransport = Loadable(lazy(() => import('pages/data-input/transportation')));
 const FormClothes = Loadable(lazy(() => import('pages/data-input/clothes')));
 const FormRestaurants = Loadable(lazy(() => import('pages/data-input/restaurants')));
+const DataInput = Loadable(lazy(() => import('pages/data-input/datainput')));
 
 // render - charts & map
 const ChartApexchart = Loadable(lazy(() => import('pages/charts/apexchart')));
@@ -170,6 +171,10 @@ const MainRoutes = {
               element: <DashboardAnalytics />
             }
           ]
+        },
+        {
+          path: 'data-input',
+          element: <DataInput />
         },
         {
           path: 'food',
