@@ -23,6 +23,7 @@ const Vegetable = Loadable(lazy(() => import('pages/food/vegetable')));
 
 //Render Food Category
 const Drinksmoke = Loadable(lazy(() => import('pages/forms/drinksmoke')));
+const UserProfile = Loadable(lazy(() => import('pages/forms/user')));
 
 // render - widget
 const WidgetStatistics = Loadable(lazy(() => import('pages/widget/statistics')));
@@ -34,12 +35,12 @@ const AppChat = Loadable(lazy(() => import('pages/apps/chat')));
 const AppCalendar = Loadable(lazy(() => import('pages/apps/calendar')));
 const AppCustomerList = Loadable(lazy(() => import('pages/apps/customer/list')));
 
-const UserProfile = Loadable(lazy(() => import('pages/apps/profiles/user')));
-const UserTabPersonal = Loadable(lazy(() => import('sections/apps/profiles/user/TabPersonal')));
-const UserTabPayment = Loadable(lazy(() => import('sections/apps/profiles/user/TabPayment')));
-const UserTabPassword = Loadable(lazy(() => import('sections/apps/profiles/user/TabPassword')));
+// const UserProfile = Loadable(lazy(() => import('pages/apps/profiles/user')));
+// const UserTabPersonal = Loadable(lazy(() => import('sections/apps/profiles/user/TabPersonal')));
+// const UserTabPayment = Loadable(lazy(() => import('sections/apps/profiles/user/TabPayment')));
+// const UserTabPassword = Loadable(lazy(() => import('sections/apps/profiles/user/TabPassword')));
 const AccountTabRole = Loadable(lazy(() => import('sections/apps/profiles/account/TabRole')));
-const UserTabSettings = Loadable(lazy(() => import('sections/apps/profiles/user/TabSettings')));
+// const UserTabSettings = Loadable(lazy(() => import('sections/apps/profiles/user/TabSettings')));
 
 const AccountProfile = Loadable(lazy(() => import('pages/apps/profiles/account')));
 const AccountTabProfile = Loadable(lazy(() => import('sections/apps/profiles/account/TabProfile')));
@@ -210,6 +211,10 @@ const MainRoutes = {
           element: <Drinksmoke />
         },
         {
+          path: 'user',
+          element: <UserProfile />
+        },
+        {
           path: 'widget',
           children: [
             {
@@ -279,28 +284,28 @@ const MainRoutes = {
                     }
                   ]
                 },
-                {
-                  path: 'user',
-                  element: <UserProfile />,
-                  children: [
-                    {
-                      path: 'personal',
-                      element: <UserTabPersonal />
-                    },
-                    {
-                      path: 'payment',
-                      element: <UserTabPayment />
-                    },
-                    {
-                      path: 'password',
-                      element: <UserTabPassword />
-                    },
-                    {
-                      path: 'settings',
-                      element: <UserTabSettings />
-                    }
-                  ]
-                },
+                // {
+                //   path: 'user',
+                //   element: <UserProfile />,
+                //   children: [
+                //     {
+                //       path: 'personal',
+                //       element: <UserTabPersonal />
+                //     },
+                //     {
+                //       path: 'payment',
+                //       element: <UserTabPayment />
+                //     },
+                //     {
+                //       path: 'password',
+                //       element: <UserTabPassword />
+                //     },
+                //     {
+                //       path: 'settings',
+                //       element: <UserTabSettings />
+                //     }
+                //   ]
+                // },
                 {
                   path: 'user-list',
                   element: <ProfileUserList />

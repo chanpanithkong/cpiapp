@@ -29,7 +29,7 @@ const administration = {
       id: 'user',
       title: <FormattedMessage id="user" />,
       type: 'item',
-      url: '/maintenance/coming-soon',
+      url: '/user',
       icon: icons.UsergroupAddOutlined
     },
     {
