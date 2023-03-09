@@ -7,7 +7,7 @@ import { Avatar, AvatarGroup, Box, Button, Grid, List, ListItemButton, ListItemT
 import MainCard from 'components/MainCard';
 import AnalyticEcommerce from 'components/cards/statistics/AnalyticEcommerce';
 import IncomeAreaChart from 'sections/dashboard/default/IncomeAreaChart';
-import Calendar from 'sections/forms/calendar';
+//import Calendar from 'sections/forms/calendar';
 import ReportAreaChart from 'sections/dashboard/default/ReportAreaChart';
 import OrdersTable from 'sections/dashboard/default/OrdersTable';
 
@@ -17,6 +17,11 @@ import avatar2 from 'assets/images/users/avatar-2.png';
 import avatar3 from 'assets/images/users/avatar-3.png';
 import avatar4 from 'assets/images/users/avatar-4.png';
 import { FormattedMessage } from 'react-intl';
+import { Calendar, ConfigProvider, Radio, Space, theme } from 'antd';
+import enUS from 'antd/locale/en_US';
+import kmKH from 'antd/locale/km_KH';
+import dayjs from 'dayjs';
+import 'dayjs/locale/km';
 
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
 // test api
@@ -31,6 +36,29 @@ const DashboardDefault = () => {
   const { users, ccy } = useSelector((state) => state.chat);
   const dispatch = useDispatch([]);
 
+  // ==============================|| CALENDAR ||============================== //
+  dayjs.locale('en');
+  const Page = () => {
+    const { token } = theme.useToken();
+
+    return (
+      <Space
+        direction="vertical"
+        style={{
+          borderTop: `1px solid ${token.colorBorder}`
+        }}
+      >
+        <div
+          style={{
+            border: `1px solid ${token.colorBorder}`
+          }}
+        >
+          <Calendar fullscreen={false} value={dayjs()} />
+        </div>
+      </Space>
+    );
+  };
+
   useEffect(() => {
     dispatch(getUsers(), getCcy());
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -40,6 +68,17 @@ const DashboardDefault = () => {
   }, [users, ccy]);
 
   console.log({ data });
+
+  const [locale, setLocal] = useState(enUS);
+  const changeLocale = (e) => {
+    const localeValue = e.target.value;
+    setLocal(localeValue);
+    if (!localeValue) {
+      dayjs.locale('en');
+    } else {
+      dayjs.locale('km');
+    }
+  };
 
   return (
     <Grid container rowSpacing={4.5} columnSpacing={2.75}>
@@ -78,18 +117,12 @@ const DashboardDefault = () => {
                 </AvatarGroup>
               </Grid>
             </Grid>
-            <Button href={'/datainput'} size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
+            <Button href={'/data-input'} size="small" variant="contained" sx={{ textTransform: 'capitalize' }}>
               Create
             </Button>
           </Stack>
         </MainCard>
       </Grid>
-      {/*<Grid item xs={12} sm={6} md={4} lg={3}>*/}
-      {/*  <AnalyticEcommerce title="Total Order" count="18,800" percentage={27.4} isLoss color="warning" extra="1,943" />*/}
-      {/*</Grid>*/}
-      {/*<Grid item xs={12} sm={6} md={4} lg={3}>*/}
-      {/*  <AnalyticEcommerce title="Total Sales" count="$35,078" percentage={27.4} isLoss color="warning" extra="$20,395" />*/}
-      {/*</Grid>*/}
       <Grid item md={8} sx={{ display: { sm: 'none', md: 'block', lg: 'none' } }} />
 
       {/* row 2 */}
@@ -134,26 +167,31 @@ const DashboardDefault = () => {
               <FormattedMessage id="calendar" />
             </Typography>
           </Grid>
-          <Grid item />
+          <Grid item>
+            <Stack direction="row" alignItems="center" spacing={0}>
+              <Radio.Group value={locale} onChange={changeLocale}>
+                <Radio.Button key="en" value={enUS}>
+                  English
+                </Radio.Button>
+                <Radio.Button key="km" value={kmKH}>
+                  ខ្មែរ
+                </Radio.Button>
+              </Radio.Group>
+            </Stack>
+          </Grid>
         </Grid>
-        <MainCard sx={{ mt: 2 }} content={false}>
-          {/*<Box sx={{ p: 3, pb: 0 }}>*/}
-          {/*  <Stack spacing={2}>*/}
-          {/*    <Typography variant="h6" color="textSecondary">*/}
-          {/*      This Week Statistics*/}
-          {/*    </Typography>*/}
-          {/*    <Typography variant="h3">$7,650</Typography>*/}
-          {/*  </Stack>*/}
-          {/*</Box>*/}
-          <Calendar />
-        </MainCard>
+        <ConfigProvider locale={locale}>
+          <MainCard sx={{ mt: 2 }} content={false}>
+            <Page />
+          </MainCard>
+        </ConfigProvider>
       </Grid>
 
       {/* row 3 */}
       <Grid item xs={12} md={7} lg={8}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <Typography variant="h5">Recent Orders</Typography>
+            <Typography variant="h5">Recent Submit</Typography>
           </Grid>
           <Grid item />
         </Grid>
@@ -164,7 +202,7 @@ const DashboardDefault = () => {
       <Grid item xs={12} md={5} lg={4}>
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item>
-            <Typography variant="h5">Analytics Report</Typography>
+            <Typography variant="h5">NBC Exchange Rate</Typography>
           </Grid>
           <Grid item />
         </Grid>

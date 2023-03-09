@@ -21,14 +21,14 @@ const authorization = {
       id: 'authreject',
       title: <FormattedMessage id="authreject" />,
       type: 'item',
-      url: '/maintenance/coming-soon',
+      url: '/authorization/auth-reject',
       icon: icons.AuditOutlined
     },
     {
       id: 'reviewdata',
       title: <FormattedMessage id="reviewdata" />,
       type: 'item',
-      url: '/apps/customer/list',
+      url: '/authorization/review-submit',
       icon: icons.FundViewOutlined
     }
   ]

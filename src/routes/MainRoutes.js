@@ -92,6 +92,8 @@ const FormTransport = Loadable(lazy(() => import('pages/data-input/transportatio
 const FormClothes = Loadable(lazy(() => import('pages/data-input/clothes')));
 const FormRestaurants = Loadable(lazy(() => import('pages/data-input/restaurants')));
 const DataInput = Loadable(lazy(() => import('pages/data-input/datainput')));
+const ReviewSubmit = Loadable(lazy(() => import('pages/authorization/review-submit')));
+const AuthReject = Loadable(lazy(() => import('pages/authorization/auth-reject')));
 
 // render - charts & map
 const ChartApexchart = Loadable(lazy(() => import('pages/charts/apexchart')));
@@ -172,6 +174,19 @@ const MainRoutes = {
             {
               path: 'analytics',
               element: <DashboardAnalytics />
+            }
+          ]
+        },
+        {
+          path: 'authorization',
+          children: [
+            {
+              path: 'auth-reject',
+              element: <AuthReject />
+            },
+            {
+              path: 'review-submit',
+              element: <ReviewSubmit />
             }
           ]
         },
