@@ -24,6 +24,8 @@ const Vegetable = Loadable(lazy(() => import('pages/food/vegetable')));
 //Render Food Category
 const Drinksmoke = Loadable(lazy(() => import('pages/forms/drinksmoke')));
 const UserProfile = Loadable(lazy(() => import('pages/forms/user')));
+const Product = Loadable(lazy(() => import('pages/forms/product')));
+const Role = Loadable(lazy(() => import('pages/forms/role')));
 
 // render - widget
 const WidgetStatistics = Loadable(lazy(() => import('pages/widget/statistics')));
@@ -211,8 +213,16 @@ const MainRoutes = {
           element: <Drinksmoke />
         },
         {
+          path: 'role',
+          element: <Role />
+        },
+        {
           path: 'user',
           element: <UserProfile />
+        },
+        {
+          path: 'product',
+          element: <Product />
         },
         {
           path: 'widget',

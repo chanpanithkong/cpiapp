@@ -8,10 +8,10 @@ import useConfig from 'hooks/useConfig';
 import Search from './Search';
 import Profile from './Profile';
 import Localization from './Localization';
-import Notification from './Notification';
+//import Notification from './Notification';
 //import Customization from './Customization';
 import MobileSection from './MobileSection';
-import MegaMenuSection from './MegaMenuSection';
+//import MegaMenuSection from './MegaMenuSection';
 
 // ==============================|| HEADER - CONTENT ||============================== //
 
@@ -23,16 +23,17 @@ const HeaderContent = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const localization = useMemo(() => <Localization />, [i18n]);
 
-  const megaMenu = useMemo(() => <MegaMenuSection />, []);
+  //const megaMenu = useMemo(() => <MegaMenuSection />, []);
 
   return (
     <>
       {!matchesXs && <Search />}
-      {!matchesXs && megaMenu}
+      {/* {!matchesXs && megaMenu} */}
+      {!matchesXs}
       {!matchesXs && localization}
       {matchesXs && <Box sx={{ width: '100%', ml: 1 }} />}
-      <Notification />
-      {!matchesXs && <Profile />}
+      {/* <Notification /> */}
+      {<Profile />}
       {matchesXs && <MobileSection />}
     </>
   );

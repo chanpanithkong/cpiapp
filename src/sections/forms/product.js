@@ -23,10 +23,8 @@ import NumberFormat from 'react-number-format';
 import { useFilters, useExpanded, useGlobalFilter, useRowSelect, useSortBy, useTable, usePagination } from 'react-table';
 
 // project import
-//import CustomerView from 'sections/apps/customer/CustomerView';
-//import AddCustomer from 'sections/apps/customer/AddCustomer';
-import UserView from 'sections/apps/user/UserView';
-import AddUser from 'sections/apps/user/AddUser';
+import CustomerView from 'sections/apps/customer/CustomerView';
+import AddCustomer from 'sections/apps/customer/AddCustomer';
 import Avatar from 'components/@extended/Avatar';
 import IconButton from 'components/@extended/IconButton';
 import MainCard from 'components/MainCard';
@@ -118,7 +116,7 @@ function ReactTable({ columns, data, getHeaderProps, renderRowSubComponent, hand
           <Stack direction={matchDownSM ? 'column' : 'row'} alignItems="center" spacing={1}>
             <SortingSelect sortBy={sortBy.id} setSortBy={setSortBy} allColumns={allColumns} />
             <Button variant="contained" startIcon={<PlusOutlined />} onClick={handleAdd}>
-              Add New User
+              Add Customer
             </Button>
           </Stack>
         </Stack>
@@ -253,7 +251,7 @@ CellActions.propTypes = {
   row: PropTypes.object
 };
 
-const UserProfile = () => {
+const Product = () => {
   const theme = useTheme();
 
   const data = useMemo(() => makeData(200), []);
@@ -283,7 +281,7 @@ const UserProfile = () => {
         className: 'cell-center'
       },
       {
-        Header: 'User Name',
+        Header: 'Customer Name',
         accessor: 'fatherName',
         Cell: CellCustomerDetails
       },
@@ -388,7 +386,7 @@ const UserProfile = () => {
     [theme]
   );
 
-  const renderRowSubComponent = useCallback(({ row }) => <UserView data={data[row.id]} />, [data]);
+  const renderRowSubComponent = useCallback(({ row }) => <CustomerView data={data[row.id]} />, [data]);
 
   return (
     <MainCard content={false}>
@@ -404,10 +402,10 @@ const UserProfile = () => {
 
       {/* add customer dialog */}
       <Dialog maxWidth="sm" fullWidth onClose={handleAdd} open={add} sx={{ '& .MuiDialog-paper': { p: 0 } }}>
-        {add && <AddUser customer={customer} onCancel={handleAdd} />}
+        {add && <AddCustomer customer={customer} onCancel={handleAdd} />}
       </Dialog>
     </MainCard>
   );
 };
 
-export default UserProfile;
+export default Product;

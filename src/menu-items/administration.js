@@ -22,7 +22,7 @@ const administration = {
       id: 'role',
       title: <FormattedMessage id="role" />,
       type: 'item',
-      url: '/maintenance/coming-soon',
+      url: '/role',
       icon: icons.SettingOutlined
     },
     {
@@ -36,7 +36,7 @@ const administration = {
       id: 'product',
       title: <FormattedMessage id="product" />,
       type: 'item',
-      url: '/maintenance/coming-soon',
+      url: '/product',
       icon: icons.PieChartOutlined
     }
   ]

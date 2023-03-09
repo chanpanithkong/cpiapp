@@ -151,5 +151,9 @@
   "authorization": "Authorization",
   "data-input": "បញ្ចូលទិន្ន័យ",
   "quantity": "បិរមាណ",
-  "unit-price": "Unit Price"
+  "unit-price": "Unit Price",
+  "user": "គ្រប់គ្រងអ្នកប្រើប្រព័ន្ធ",
+  "product": "គ្រប់គ្រងទំនិញ",
+  "role": "គ្រប់គ្រងសិទ្ធិ",
+  "home": "ទំព័រដើម"
 }
