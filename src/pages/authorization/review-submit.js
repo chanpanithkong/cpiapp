@@ -331,12 +331,12 @@ const CustomerList = () => {
                 Cell: ({ value }) => {
           switch (value) {
             case 'Complicated':
-              return <Chip color="error" label="Complicated" size="small" variant="light" />;
+              return <Chip color="error" label="Rejected" size="small" variant="light" />;
             case 'Relationship':
-              return <Chip color="success" label="Relationship" size="small" variant="light" />;
+              return <Chip color="success" label="Submitted" size="small" variant="light" />;
             case 'Single':
             default:
-              return <Chip color="primary" label="Single" size="small" variant="light" />;
+              return <Chip color="primary" label="New" size="small" variant="light" />;
           }
         }
       },

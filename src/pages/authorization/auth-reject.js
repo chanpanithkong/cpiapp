@@ -23,9 +23,8 @@ import NumberFormat from 'react-number-format';
 import { useFilters, useExpanded, useGlobalFilter, useRowSelect, useSortBy, useTable, usePagination } from 'react-table';
 
 // project import
-import CustomerView from 'sections/apps/customer/CustomerView';
+import DaataView from 'sections/forms/DataView';
 import AddCustomer from 'sections/apps/customer/AddCustomer';
-import Avatar from 'components/@extended/Avatar';
 import IconButton from 'components/@extended/IconButton';
 import MainCard from 'components/MainCard';
 import ScrollX from 'components/ScrollX';
@@ -34,13 +33,12 @@ import { renderFilterTypes, GlobalFilter } from 'utils/react-table';
 import { HeaderSort, IndeterminateCheckbox, SortingSelect, TablePagination, TableRowSelection } from 'components/third-party/ReactTable';
 
 // assets
-import { CloseOutlined, PlusOutlined, EyeTwoTone, EditTwoTone, DeleteTwoTone } from '@ant-design/icons';
-
-const avatarImage = require.context('assets/images/users', true);
+import { CloseOutlined, FileAddOutlined, EyeTwoTone, EditTwoTone, DeleteTwoTone } from '@ant-design/icons';
+import { Modal } from 'antd';
 
 // ==============================|| REACT TABLE ||============================== //
 
-function ReactTable({ columns, data, getHeaderProps, renderRowSubComponent, handleAdd }) {
+function ReactTable({ columns, data, getHeaderProps, renderRowSubComponent }) {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -96,6 +94,24 @@ function ReactTable({ columns, data, getHeaderProps, renderRowSubComponent, hand
     // eslint-disable-next-line
     }, [matchDownSM]);
 
+  const [open, setOpen] = useState(false);
+  const [confirmLoading, setConfirmLoading] = useState(false);
+  const [modalText] = useState('You are about to submit data!');
+  const showModal = () => {
+    setOpen(true);
+  };
+  const handleOk = () => {
+    setConfirmLoading(true);
+    setTimeout(() => {
+      setOpen(false);
+      setConfirmLoading(false);
+    }, 500);
+  };
+  const handleCancel = () => {
+    console.log('Clicked cancel button');
+    setOpen(false);
+  };
+
   return (
     <>
       <TableRowSelection selected={Object.keys(selectedRowIds).length} />
@@ -115,9 +131,15 @@ function ReactTable({ columns, data, getHeaderProps, renderRowSubComponent, hand
           />
           <Stack direction={matchDownSM ? 'column' : 'row'} alignItems="center" spacing={1}>
             <SortingSelect sortBy={sortBy.id} setSortBy={setSortBy} allColumns={allColumns} />
-            <Button variant="contained" startIcon={<PlusOutlined />} onClick={handleAdd}>
-              Add Customer
+            {/*<Button variant="contained" startIcon={<FileAddOutlined />} onClick={handleAdd}>*/}
+            {/*  Submit Data*/}
+            {/*</Button>*/}
+            <Button variant="contained" startIcon={<FileAddOutlined />} onClick={showModal}>
+              Submit Data
             </Button>
+            <Modal title="Title" open={open} onOk={handleOk} confirmLoading={confirmLoading} onCancel={handleCancel}>
+              <p>{modalText}</p>
+            </Modal>
           </Stack>
         </Stack>
 
@@ -186,12 +208,8 @@ const CellCustomerDetails = ({ row }) => {
   const { values } = row;
   return (
     <Stack direction="row" spacing={1.5} alignItems="center">
-      <Avatar alt="Avatar 1" size="sm" src={avatarImage(`./avatar-${!values.avatar ? 1 : values.avatar}.png`).default} />
       <Stack spacing={0}>
         <Typography variant="subtitle1">{values.fatherName}</Typography>
-        <Typography variant="caption" color="textSecondary">
-          {values.email}
-        </Typography>
       </Stack>
     </Stack>
   );
@@ -281,7 +299,7 @@ const CustomerList = () => {
         className: 'cell-center'
       },
       {
-        Header: 'Customer Name',
+        Header: 'Category/Suby',
         accessor: 'fatherName',
         Cell: CellCustomerDetails
       },
@@ -295,36 +313,30 @@ const CustomerList = () => {
         accessor: 'email'
       },
       {
-        Header: 'Contact',
+        Header: 'Date Submitted',
         accessor: 'contact',
         // eslint-disable-next-line
                 Cell: ({ value }) => <NumberFormat displayType="text" format="+1 (###) ###-####" mask="_" defaultValue={value} />
       },
       {
-        Header: 'Order',
+        Header: 'Branch',
         accessor: 'age',
-        className: 'cell-right'
-      },
-      {
-        Header: 'Spent',
-        accessor: 'visits',
-        className: 'cell-right',
-        // eslint-disable-next-line
-                Cell: ({ value }) => <NumberFormat value={value} displayType="text" thousandSeparator prefix="$" />
+        className: 'cell-center'
       },
       {
         Header: 'Status',
         accessor: 'status',
+        className: 'cell-center',
         // eslint-disable-next-line
                 Cell: ({ value }) => {
           switch (value) {
             case 'Complicated':
-              return <Chip color="error" label="Complicated" size="small" variant="light" />;
+              return <Chip color="error" label="Rejected" size="small" variant="light" />;
             case 'Relationship':
-              return <Chip color="success" label="Relationship" size="small" variant="light" />;
+              return <Chip color="success" label="Submitted" size="small" variant="light" />;
             case 'Single':
             default:
-              return <Chip color="primary" label="Single" size="small" variant="light" />;
+              return <Chip color="primary" label="New" size="small" variant="light" />;
           }
         }
       },
@@ -386,7 +398,7 @@ const CustomerList = () => {
     [theme]
   );
 
-  const renderRowSubComponent = useCallback(({ row }) => <CustomerView data={data[row.id]} />, [data]);
+  const renderRowSubComponent = useCallback(({ row }) => <DaataView data={data[row.id]} />, [data]);
 
   return (
     <MainCard content={false}>
