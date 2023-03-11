@@ -20,25 +20,6 @@ const uom = [
   { value: 'other', label: 'Other', id: 6, key: 1 }
 ];
 
-// const items = [
-//   {
-//     key: '1',
-//     name: 'House'
-//   },
-//   {
-//     key: '2',
-//     name: 'Electric'
-//   },
-//   {
-//     key: '3',
-//     name: 'Water'
-//   },
-//   {
-//     key: '4',
-//     name: 'Gas'
-//   }
-// ];
-
 function Layouts() {
   const [message, setMessage] = useState('');
 
