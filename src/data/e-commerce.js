@@ -267,7 +267,7 @@ export const products = [
     popularity: chance.natural(),
     date: chance.natural(),
     created: sub(new Date(), { days: 0, hours: 11, minutes: 10 }),
-    isStock: true,
+    isStock: false,
     new: 10
   }
 ];

@@ -1,12 +1,12 @@
 import axios from 'axios';
 //import * as queryString from 'querystring';
 const axiosClient = axios.create({
-  baseURL: process.env.REACT_APP_API_EXCHANGE_RATE,
+  baseURL: process.env.REACT_APP_API_BASE,
   headers: {
     'Access-Control-Allow-Origin': '*',
     //media type for api xml or json
-    'content-type': 'application/xml',
-    Accept: 'application/xml'
+    'content-type': 'application/json',
+    Accept: 'application/json'
   }
   //paramsSerializer: (params) => queryString.stringify(params)
 });

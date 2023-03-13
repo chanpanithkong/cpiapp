@@ -46,7 +46,7 @@ function ElevationScroll({ layout, children, window }) {
     target: window ? window() : undefined
   });
 
-  const backColorScroll = theme.palette.mode === 'dark' ? theme.palette.grey[50] : theme.palette.grey[800];
+  const backColorScroll = theme.palette.mode === 'light' ? theme.palette.grey[50] : theme.palette.grey[800];
   const backColor = layout !== 'landing' ? backColorScroll : 'transparent';
 
   return React.cloneElement(children, {
@@ -94,7 +94,7 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
               }}
               spacing={2}
             >
-              <Link className="header-link" color="white" component={RouterLink} to="/login" target="_blank" underline="none">
+              <Link className="header-link" color="black" component={RouterLink} to="/login" target="_blank" underline="none">
                 Home Page
               </Link>
               <Box sx={{ display: 'inline-block' }}>
@@ -139,10 +139,10 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }) => {
                   color="secondary"
                   {...(layout === 'component' ? { onClick: handleDrawerOpen } : { onClick: drawerToggler(true) })}
                   sx={{
-                    '&:hover': { bgcolor: theme.palette.mode === 'dark' ? 'secondary.lighter' : 'secondary.dark' }
+                    '&:hover': { bgcolor: theme.palette.mode === 'light' ? 'secondary.lighter' : 'secondary.dark' }
                   }}
                 >
-                  <MenuOutlined style={{ color: theme.palette.mode === 'dark' ? 'inherit' : theme.palette.grey[100] }} />
+                  <MenuOutlined style={{ color: theme.palette.mode === 'light' ? 'inherit' : theme.palette.grey[100] }} />
                 </IconButton>
               </Stack>
               <Drawer
