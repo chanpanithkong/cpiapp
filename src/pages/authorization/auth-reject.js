@@ -23,7 +23,7 @@ import NumberFormat from 'react-number-format';
 import { useFilters, useExpanded, useGlobalFilter, useRowSelect, useSortBy, useTable, usePagination } from 'react-table';
 
 // project import
-import DaataView from 'sections/forms/DataView';
+import DataView from 'sections/forms/DataView';
 import AddCustomer from 'sections/apps/customer/AddCustomer';
 import IconButton from 'components/@extended/IconButton';
 import MainCard from 'components/MainCard';
@@ -398,7 +398,7 @@ const CustomerList = () => {
     [theme]
   );
 
-  const renderRowSubComponent = useCallback(({ row }) => <DaataView data={data[row.id]} />, [data]);
+  const renderRowSubComponent = useCallback(({ row }) => <DataView data={data[row.id]} />, [data]);
 
   return (
     <MainCard content={false}>

@@ -1,7 +1,8 @@
 import { lazy } from 'react';
 
 // project import
-import CommonLayout from 'layout/CommonLayout';
+//import CommonLayout from 'layout/CommonLayout';
+import CommonLayout from 'layout/DataInputLayout';
 import Loadable from 'components/Loadable';
 
 // render - inputs components page

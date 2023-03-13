@@ -24,37 +24,13 @@ function Layouts() {
           <Grid container spacing={3} alignItems="center">
             <Grid item xs={12}>
               <Grid container spacing={2} alignItems="center">
-                <Grid item xs={12} sm={9} lg={2}>
-                  <InputLabel alignItems="center">1. Men Clothes:</InputLabel>
+                <Grid item xs={12} sm={9} lg={4}>
+                  <InputLabel alignItems="center">1. Men Clothes 1 Set</InputLabel>
                 </Grid>
-                <Grid item xs={12} sm={9} lg={3}>
-                  {/*<TextField fullWidth placeholder="Enter full name" />*/}
-                  {/*<TextField fullWidth id="outlined-basic" label="Quantity" type="number" />*/}
-                  <TextField
-                    fullWidth
-                    id="outlined-number"
-                    label="Quantity"
-                    type="number"
-                    InputLabelProps={{
-                      shrink: true
-                    }}
-                  />
-                </Grid>
-                <Grid item xs={12} sm={9} lg={2}>
-                  {/*<TextField fullWidth placeholder="Enter email" />*/}
-                  <TextField fullWidth id="outlined-select-currency" select label="Unit" defaultValue="KHR">
-                    {uom.map((option) => {
-                      return (
-                        <MenuItem key={option.value} value={option.value}>
-                          {option.label}
-                        </MenuItem>
-                      );
-                    })}
-                  </TextField>
-                </Grid>
-                <Grid item xs={12} sm={9} lg={3}>
+                <Grid item xs={12} sm={9} lg={8}>
                   {/*<TextField fullWidth placeholder="Enter email" />*/}
                   <TextField
+                    placeholder="0.00"
                     fullWidth
                     id="outlined-number"
                     label="Price"
@@ -62,16 +38,10 @@ function Layouts() {
                     InputLabelProps={{
                       shrink: true
                     }}
+                    InputProps={{
+                      startAdornment: '$'
+                    }}
                   />
-                </Grid>
-                <Grid item xs={12} sm={9} lg={2}>
-                  <TextField fullWidth id="outlined-select-currency" select label="Currency" defaultValue="KHR">
-                    {currencies.map((option) => (
-                      <MenuItem key={option.value} value={option.value}>
-                        {option.label}
-                      </MenuItem>
-                    ))}
-                  </TextField>
                 </Grid>
               </Grid>
             </Grid>
