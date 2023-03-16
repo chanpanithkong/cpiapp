@@ -5,8 +5,8 @@ import { Box, Typography } from '@mui/material';
 
 // project import
 import NavGroup from './NavGroup';
-import menuItem from 'menu-items/components';
-
+//import menuItem from 'menu-items/components';
+import menuItem from 'menu-items/menuinput';
 // ==============================|| DRAWER CONTENT - NAVIGATION ||============================== //
 
 const Navigation = ({ searchValue }) => {
