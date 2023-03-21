@@ -152,5 +152,6 @@
   "authorization": "Authorization",
   "data-input": "Data Input",
   "quantity": "Quantity",
-  "unit-price": "Unit Price"
+  "unit-price": "Unit Price",
+  "create-batch": "Create Batch"
 }

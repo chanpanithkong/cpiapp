@@ -144,9 +144,6 @@
   "food": "ម្ហូបអាហារ",
   "reviewdata": "ពិនិត្យ និងបញ្ជូនទិន្នន័យ",
   "authreject": "Authorize and Reject",
-  "user": "User Management",
-  "role": "Role Management",
-  "product": "Product Management",
   "administration": "Administration",
   "authorization": "Authorization",
   "data-input": "បញ្ចូលទិន្ន័យ",
@@ -155,5 +152,6 @@
   "user": "គ្រប់គ្រងអ្នកប្រើប្រព័ន្ធ",
   "product": "គ្រប់គ្រងទំនិញ",
   "role": "គ្រប់គ្រងសិទ្ធិ",
-  "home": "ទំព័រដើម"
+  "home": "ទំព័រដើម",
+  "create-batch": "Create Batch"
 }

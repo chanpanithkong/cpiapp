@@ -32,7 +32,7 @@ const dataInput = {
   title: <FormattedMessage id="data-input" />,
   type: 'group',
   children: [
-    {
+    /*{
       id: 'food',
       title: <FormattedMessage id="food" />,
       type: 'collapse',
@@ -127,14 +127,14 @@ const dataInput = {
       url: '/medicine',
       icon: icons.MedicineBoxFilled
       //breadcrumbs: false
-    },
+    },*/
     {
-      id: 'house',
-      title: <FormattedMessage id="house" />,
+      id: 'create-batch',
+      title: <FormattedMessage id="create-batch" />,
       type: 'item',
-      url: '/house',
-      icon: icons.HomeOutlined
-      //breadcrumbs: false
+      url: '/data-input',
+      icon: icons.HomeOutlined,
+      breadcrumbs: false
     }
   ]
 };
