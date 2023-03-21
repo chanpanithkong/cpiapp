@@ -9,68 +9,67 @@ const menuItems = [
     title: <FormattedMessage id="inputs" />,
     type: 'group',
     children: [
+      /*{
+        id: 'food',
+        search: 'food, mlis',
+        title: <FormattedMessage id="food" />,
+        type: 'collapse',
+        children: [
+          {
+            id: 'rice',
+            title: <FormattedMessage id="rice" />,
+            type: 'item',
+            url: '/data-input/6'
+          },
+          {
+            id: 'meat',
+            title: <FormattedMessage id="meat" />,
+            type: 'item',
+            url: '/data-input/7'
+          }
+        ]
+      },*/
       {
-        id: 'autocomplete',
-        search: 'autocomplete, combo box, country select, grouped, multi select',
-        title: <FormattedMessage id="autocomplete" />,
+        id: 'drinksmoke',
+        search: 'drinksmoke',
+        title: <FormattedMessage id="drinksmoke" />,
         type: 'item',
-        url: '/components-overview/autocomplete'
+        url: '/data-input/9'
       },
       {
-        id: 'buttons',
-        search: 'buttons, button group, icon button, toggle button, loading button',
-        title: <FormattedMessage id="button" />,
+        id: 'restaurants',
+        search: 'restaurants, indeterminate',
+        title: <FormattedMessage id="restaurants" />,
         type: 'item',
-        url: '/components-overview/buttons'
+        url: '/data-input/8'
       },
       {
-        id: 'checkbox',
-        search: 'checkbox, indeterminate',
-        title: <FormattedMessage id="checkbox" />,
-        type: 'item',
-        url: '/components-overview/checkbox'
-      },
-      {
-        id: 'radio',
+        id: 'cloth',
         search: 'radio',
-        title: <FormattedMessage id="radio" />,
+        title: <FormattedMessage id="cloth" />,
         type: 'item',
-        url: '/components-overview/radio'
+        url: '/data-input/7'
       },
       {
-        id: 'rating',
-        search: 'rating, star rating, feedback',
-        title: <FormattedMessage id="rating" />,
+        id: 'transport',
+        search: 'transport, star rating, feedback',
+        title: <FormattedMessage id="transport" />,
         type: 'item',
         url: '/components-overview/rating'
       },
       {
-        id: 'switch',
-        search: 'switch',
-        title: <FormattedMessage id="switch" />,
+        id: 'medicine',
+        search: 'medicine',
+        title: <FormattedMessage id="medicine" />,
         type: 'item',
         url: '/components-overview/switch'
       },
       {
-        id: 'select',
+        id: 'house',
         search: 'select, multi-select',
-        title: <FormattedMessage id="select" />,
+        title: <FormattedMessage id="house" />,
         type: 'item',
         url: '/components-overview/select'
-      },
-      {
-        id: 'slider',
-        search: 'slider, range',
-        title: <FormattedMessage id="slider" />,
-        type: 'item',
-        url: '/components-overview/slider'
-      },
-      {
-        id: 'textfield',
-        search: 'textfield, input, form input, search',
-        title: <FormattedMessage id="text-field" />,
-        type: 'item',
-        url: '/components-overview/textfield'
       }
     ]
   }

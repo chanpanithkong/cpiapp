@@ -7,6 +7,7 @@ import { useRoutes } from 'react-router-dom';
 import ComponentsRoutes from './ComponentsRoutes';
 import LoginRoutes from './LoginRoutes';
 import MainRoutes from './MainRoutes';
+import DataInputRoutes from './DataInputRoutes';
 
 // render - landing page
 // const PagesLanding = Loadable(lazy(() => import('pages/landing')));
@@ -14,5 +15,5 @@ import MainRoutes from './MainRoutes';
 // ==============================|| ROUTING RENDER ||============================== //
 
 export default function ThemeRoutes() {
-  return useRoutes([MainRoutes, LoginRoutes, ComponentsRoutes]);
+  return useRoutes([MainRoutes, LoginRoutes, ComponentsRoutes, DataInputRoutes]);
 }

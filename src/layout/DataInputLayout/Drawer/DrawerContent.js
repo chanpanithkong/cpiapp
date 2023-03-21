@@ -6,7 +6,7 @@ import Navigation from './Navigation';
 
 // ==============================|| DRWAER CONTENT ||============================== //
 
-const DrawerContent = ({ searchValue }) => (
+const DrawerContent = () => (
   <SimpleBar
     sx={{
       height: { xs: 'calc(100vh - 70px)', md: 'calc(100% - 70px)' },
@@ -16,7 +16,7 @@ const DrawerContent = ({ searchValue }) => (
       }
     }}
   >
-    <Navigation searchValue={searchValue} />
+    <Navigation />
   </SimpleBar>
 );
 

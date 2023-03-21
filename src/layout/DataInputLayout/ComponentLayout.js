@@ -45,7 +45,7 @@ const ComponentsLayout = ({ handleDrawerOpen, componentDrawerOpen }) => {
   }, [matchDownMd]);
 
   return (
-    <Box sx={{ display: 'flex', pt: componentDrawerOpen ? { xs: 0, md: 3, xl: 5.5 } : 0 }}>
+    <Box sx={{ display: 'flex', pt: componentDrawerOpen ? { xs: 0, md: 0, xl: 5.5 } : 0 }}>
       <Drawer handleDrawerOpen={handleDrawerOpen} open={componentDrawerOpen} />
       <Main theme={theme} open={componentDrawerOpen}>
         <Outlet />

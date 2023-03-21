@@ -82,7 +82,7 @@ export const products = [
     about:
       'This watch from Apple is highly known for its features, like you can control your apple smartphone with this watch and you can do everything you would want to do on smartphone',
     quantity: 3,
-    rating: 4.0,
+    rating: 4.5,
     discount: 75,
     offerPrice: 275,
     gender: 'male',
@@ -229,13 +229,13 @@ export const products = [
   {
     id: 8,
     image: 'prod-88.png',
-    name: 'Apple iPhone 13 Pro',
+    name: 'Resaturant',
     brand: 'Apple',
     description: '(512GB ROM, MLLH3HN/A,..',
     about:
       'The smartphone comes with 12GB of RAM and 2Ghz of processor.There are two front cameras, one of 20MP and second of 10MP for depth phptpgraphy.Its lightweight and fast',
     quantity: 21,
-    rating: 4.5,
+    rating: 4,
     discount: 30,
     salePrice: 129.99,
     offerPrice: 100.0,
@@ -251,6 +251,28 @@ export const products = [
 
   {
     id: 9,
+    image: 'prod-99.png',
+    name: 'Canon EOS 1500D 24.1 Digital',
+    brand: 'Kotak',
+    description: '(512GB ROM, MLLH3HN/A,..',
+    about:
+      'Image Enlargement: After shooting, you can enlarge photographs of the objects for clear zoomed view. Change In Aspect Ratio: Boldly crop the subject and save it with a composition that has impact. You can convert it to a 1:1 square format, and after shooting you can create a photo that will be popular on SNS.',
+    quantity: 21,
+    rating: 4.0,
+    discount: 5,
+    offerPrice: 399,
+    gender: 'female',
+    categories: ['electronics', 'camera'],
+    colors: ['errorMain', 'successDark'],
+    popularity: chance.natural(),
+    date: chance.natural(),
+    created: sub(new Date(), { days: 0, hours: 11, minutes: 10 }),
+    isStock: false,
+    new: 10
+  },
+
+  {
+    id: 10,
     image: 'prod-99.png',
     name: 'Canon EOS 1500D 24.1 Digital',
     brand: 'Kotak',

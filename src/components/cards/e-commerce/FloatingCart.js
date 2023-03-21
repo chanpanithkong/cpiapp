@@ -9,7 +9,7 @@ import { Fab, Badge } from '@mui/material';
 import { useSelector } from 'store';
 
 // assets
-import { ShoppingCartOutlined } from '@ant-design/icons';
+import { BarChartOutlined } from '@ant-design/icons';
 
 // ==============================|| CART ITEMS - FLOATING BUTTON ||============================== //
 
@@ -46,7 +46,7 @@ const FloatingCart = () => {
       }}
     >
       <Badge showZero badgeContent={totalQuantity} color="error">
-        <ShoppingCartOutlined style={{ color: theme.palette.primary.main, fontSize: '1.5rem' }} />
+        <BarChartOutlined style={{ color: theme.palette.primary.main, fontSize: '1.5rem' }} />
       </Badge>
     </Fab>
   );

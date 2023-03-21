@@ -1,22 +1,24 @@
 import PropTypes from 'prop-types';
 import { forwardRef, useEffect } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Avatar, Chip, ListItemButton, ListItemText, Typography } from '@mui/material';
+import { useMediaQuery, Avatar, Chip, ListItemButton, ListItemText, Typography } from '@mui/material';
 
-// project import
-import { activeItem } from 'store/reducers/menu';
+// project imports
+import { activeComponent, openComponentDrawer } from 'store/reducers/menu';
 
 // ==============================|| NAVIGATION - LIST ITEM ||============================== //
 
 const NavItem = ({ item }) => {
   const theme = useTheme();
   const dispatch = useDispatch();
+  const matchesMD = useMediaQuery(theme.breakpoints.down('md'));
+
   const menu = useSelector((state) => state.menu);
-  const { drawerOpen, openItem } = menu;
+  const { openComponent } = menu;
 
   let itemTarget = '_self';
   if (item.target) {
@@ -28,32 +30,32 @@ const NavItem = ({ item }) => {
     listItemProps = { component: 'a', href: item.url, target: itemTarget };
   }
 
-  const isSelected = openItem.findIndex((id) => id === item.id) > -1;
-
-  const { pathname } = useLocation();
+  const itemHandler = (id) => {
+    dispatch(activeComponent({ openComponent: id }));
+    if (matchesMD) dispatch(openComponentDrawer({ componentDrawerOpen: false }));
+  };
 
   // active menu item on page load
   useEffect(() => {
-    if (pathname && pathname.includes('product-details')) {
-      if (item.url && item.url.includes('product-details')) {
-        dispatch(activeItem({ openItem: [item.id] }));
-      }
-    }
-
-    if (pathname === item.url) {
-      dispatch(activeItem({ openItem: [item.id] }));
+    const currentIndex = document.location.pathname
+      .toString()
+      .split('/')
+      .findIndex((id) => id === item.id);
+    if (currentIndex > -1) {
+      dispatch(activeComponent({ openComponent: item.id }));
     }
     // eslint-disable-next-line
-  }, [pathname]);
+  }, []);
 
   const textColor = theme.palette.mode === 'dark' ? 'grey.400' : 'text.primary';
-  const iconSelectedColor = theme.palette.mode === 'dark' && drawerOpen ? 'text.primary' : 'primary.main';
+  const iconSelectedColor = theme.palette.mode === 'dark' ? 'text.primary' : 'primary.main';
 
   return (
     <ListItemButton
       {...listItemProps}
       disabled={item.disabled}
-      selected={isSelected}
+      onClick={() => itemHandler(item.id)}
+      selected={openComponent === item.id}
       sx={{
         pl: 4,
         py: 1,
@@ -74,7 +76,7 @@ const NavItem = ({ item }) => {
     >
       <ListItemText
         primary={
-          <Typography variant="h6" sx={{ color: isSelected ? iconSelectedColor : textColor }}>
+          <Typography variant="h6" sx={{ color: openComponent === item.id ? iconSelectedColor : textColor }}>
             {item.title}
           </Typography>
         }
@@ -93,8 +95,7 @@ const NavItem = ({ item }) => {
 };
 
 NavItem.propTypes = {
-  item: PropTypes.object,
-  level: PropTypes.number
+  item: PropTypes.object
 };
 
 export default NavItem;
