@@ -2,9 +2,9 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 
 module.exports = function (app) {
   app.use(
-    'api/',
+    'api1/',
     createProxyMiddleware('', {
-      target: 'https://192.168.0.21:8443/OnlineBanking/EFT/ExchangeRate',
+      target: 'https://nbc.gov.kh/',
       secure: false,
       changeOrigin: true,
     })

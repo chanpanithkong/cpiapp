@@ -10,11 +10,13 @@ import menu from './menu';
 import snackbar from './snackbar';
 import productReducer from './product';
 import cartReducer from './cart';
+import ccyexchange from './ccyexchange';
 
 // ==============================|| COMBINE REDUCERS ||============================== //
 
 const reducers = combineReducers({
   chat,
+  ccyexchange,
   calendar,
   menu,
   snackbar,

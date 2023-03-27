@@ -27,7 +27,8 @@ import 'dayjs/locale/km';
 // test api
 import { useDispatch, useSelector } from 'store';
 import { getUsers } from 'store/reducers/categories';
-import { getCcy } from 'store/reducers/ccyexchange';
+//import { getCcy } from 'store/reducers/ccyexchange';
+import MyComponent from '../apps/exchangerate';
 
 const DashboardDefault = () => {
   const [slot, setSlot] = useState('week');
@@ -60,14 +61,12 @@ const DashboardDefault = () => {
   };
 
   useEffect(() => {
-    dispatch(getUsers(), getCcy());
+    dispatch(getUsers());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     setData(users, ccy);
   }, [users, ccy]);
-
-  console.log({ data });
 
   const [locale, setLocal] = useState(enUS);
   const changeLocale = (e) => {
@@ -205,6 +204,7 @@ const DashboardDefault = () => {
             <Typography variant="h5">NBC Exchange Rate</Typography>
           </Grid>
           <Grid item />
+          <MyComponent />
         </Grid>
         <MainCard sx={{ mt: 2 }} content={false}>
           <List sx={{ p: 0, '& .MuiListItemButton-root': { py: 2 } }}>
