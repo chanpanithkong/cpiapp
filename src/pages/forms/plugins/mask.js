@@ -59,7 +59,7 @@ const MaskPage = () => {
             <Grid container alignItems="center" spacing={3}>
               <Grid item xs={12}>
                 <Stack spacing={0.5}>
-                  <InputLabel>Enter Time 1</InputLabel>
+                  <InputLabel>Enter Time 333</InputLabel>
                   <TimePicker
                     ampm={false}
                     openTo="hours"

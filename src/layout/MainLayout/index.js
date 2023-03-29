@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // material-ui
 import { useTheme } from '@mui/material/styles';
 import { useMediaQuery, Box, Container, Toolbar } from '@mui/material';
-
+RightOutlined
 // project import
 import Drawer from './Drawer';
 import Header from './Header';
@@ -14,7 +14,7 @@ import navigation from 'menu-items';
 import useConfig from 'hooks/useConfig';
 import Breadcrumbs from 'components/@extended/Breadcrumbs';
 import { openDrawer } from 'store/reducers/menu';
-
+import { RightOutlined } from '@ant-design/icons';
 // ==============================|| MAIN LAYOUT ||============================== //
 
 const MainLayout = () => {
@@ -59,14 +59,14 @@ const MainLayout = () => {
             maxWidth="lg"
             sx={{ px: { xs: 0, sm: 2 }, position: 'relative', minHeight: 'calc(100vh - 110px)', display: 'flex', flexDirection: 'column' }}
           >
-            <Breadcrumbs navigation={navigation} title titleBottom card={false} divider={false} />
+            <Breadcrumbs separator={RightOutlined} navigation={navigation} title titleBottom card={false} divider={false} />
             <Outlet />
             <Footer />
           </Container>
         )}
         {!container && (
           <Box sx={{ position: 'relative', minHeight: 'calc(100vh - 110px)', display: 'flex', flexDirection: 'column' }}>
-            <Breadcrumbs navigation={navigation} title titleBottom card={false} divider={false} />
+            <Breadcrumbs separator={RightOutlined} navigation={navigation} title titleBottom card={false} divider={false} />
             <Outlet />
             <Footer />
           </Box>

@@ -10,26 +10,20 @@ import menu from './menu';
 import snackbar from './snackbar';
 import productReducer from './product_bk';
 import cartReducer from './cart';
-<<<<<<< Updated upstream
 import user from './ccyexchange';
-=======
 //import ccyexchange from './ccyexchange';
 import cat from './categories';
 import pro from './products';
 import batch from './batches';
->>>>>>> Stashed changes
 
 // ==============================|| COMBINE REDUCERS ||============================== //
 
 const reducers = combineReducers({
   chat,
-<<<<<<< Updated upstream
   user,
-=======
   cat,
   pro,
   batch,
->>>>>>> Stashed changes
   calendar,
   menu,
   snackbar,

@@ -73,7 +73,7 @@ export default function DataInput() {
           <TableHead>
             <TableRow>
               <TableCell sx={{ pl: 3 }}>Batch Code</TableCell>
-              <TableCell align="center">Batch Name</TableCell>
+              <TableCell align="left">Batch Name</TableCell>
               <TableCell>Branch</TableCell>
               <TableCell align="center">Create Date</TableCell>
               <TableCell align="center">Closed Date</TableCell>
@@ -90,7 +90,7 @@ export default function DataInput() {
                 {/* <TableCell>
                   <CardMedia component="img" image={row.photo} title="image" sx={{ width: 20, height: 'auto' }} />
                 </TableCell> */}
-                <TableCell align="center">{dataBatch.batch}</TableCell>
+                <TableCell align="left">{dataBatch.batch}</TableCell>
                 <TableCell></TableCell>
                 {/* <TableCell align="center">
                   <Chip color={row.statuscolor} label={dataBatch.detail} size="small" />

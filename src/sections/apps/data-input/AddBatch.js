@@ -1,19 +1,17 @@
+import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { useEffect, useState } from 'react';
+//import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 // material-ui
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from '@mui/material/styles';
 import {
-  Box,
   Button,
   DialogActions,
   DialogContent,
   DialogTitle,
   Divider,
   FormControl,
-  FormControlLabel,
-  FormLabel,
   Grid,
   FormHelperText,
   InputLabel,
@@ -22,13 +20,13 @@ import {
   OutlinedInput,
   Select,
   Stack,
-  Switch,
   TextField,
   Tooltip,
   Typography
 } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { MobileDateTimePicker } from '@mui/x-date-pickers/MobileDateTimePicker';
 
 // third-party
 import _ from 'lodash';
@@ -36,14 +34,14 @@ import * as Yup from 'yup';
 import { useFormik, Form, FormikProvider } from 'formik';
 
 // project imports
-import Avatar from 'components/@extended/Avatar';
+// import Avatar from 'components/@extended/Avatar';
 import IconButton from 'components/@extended/IconButton';
 import { openSnackbar } from 'store/reducers/snackbar';
 
 // assets
-import { CameraOutlined, DeleteFilled } from '@ant-design/icons';
+import { DeleteFilled } from '@ant-design/icons';
 
-const avatarImage = require.context('assets/images/users', true);
+//const avatarImage = require.context('assets/images/users', true);
 
 // constant
 const getInitialValues = (customer) => {
@@ -68,24 +66,25 @@ const allStatus = ['Complicated', 'Single', 'Relationship'];
 // ==============================|| CUSTOMER ADD / EDIT / DELETE ||============================== //
 
 const AddBatch = ({ customer, onCancel }) => {
-  const theme = useTheme();
+  //const theme = useTheme();
   const dispatch = useDispatch();
   const isCreating = !customer;
 
-  const [selectedImage, setSelectedImage] = useState(undefined);
-  const [avatar, setAvatar] = useState(avatarImage(`./avatar-${isCreating && !customer?.avatar ? 1 : customer.avatar}.png`).default);
+  //const [selectedImage, setSelectedImage] = useState(undefined);
+  //const [avatar, setAvatar] = useState(avatarImage(`./avatar-${isCreating && !customer?.avatar ? 1 : customer.avatar}.png`).default);
 
-  useEffect(() => {
-    if (selectedImage) {
-      setAvatar(URL.createObjectURL(selectedImage));
-    }
-  }, [selectedImage]);
+  // useEffect(() => {
+  //   if (selectedImage) {
+  //     setAvatar(URL.createObjectURL(selectedImage));
+  //   }
+  // }, [selectedImage]);
 
   const CustomerSchema = Yup.object().shape({
-    name: Yup.string().max(255).required('Name is required'),
-    orderStatus: Yup.string().required('Name is required'),
-    email: Yup.string().max(255).required('Email is required').email('Must be a valid email'),
-    location: Yup.string().max(500)
+    code: Yup.string().max(255).required('Batch code is required'),
+    //orderStatus: Yup.string().required('Name is required'),
+    //email: Yup.string().max(255).required('Email is required').email('Must be a valid email'),
+    batchname: Yup.string().max(255).required('Batch name is required'),
+    //location: Yup.string().max(500)
   });
 
   const deleteHandler = () => {
@@ -134,7 +133,7 @@ const AddBatch = ({ customer, onCancel }) => {
           dispatch(
             openSnackbar({
               open: true,
-              message: 'Customer add successfully.',
+              message: 'Batch add successfully.',
               variant: 'alert',
               alert: {
                 color: 'success'
@@ -153,7 +152,7 @@ const AddBatch = ({ customer, onCancel }) => {
   });
 
   const { errors, touched, handleSubmit, isSubmitting, getFieldProps, setFieldValue } = formik;
-
+  const [datetime, setDatetime] = useState(new Date());
   return (
     <FormikProvider value={formik}>
       <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -162,80 +161,37 @@ const AddBatch = ({ customer, onCancel }) => {
           <Divider />
           <DialogContent sx={{ p: 2.5 }}>
             <Grid container spacing={3}>
-              <Grid item xs={12} md={3}>
-                <Stack direction="row" justifyContent="center" sx={{ mt: 3 }}>
-                  <FormLabel
-                    htmlFor="change-avtar"
-                    sx={{
-                      position: 'relative',
-                      borderRadius: '50%',
-                      overflow: 'hidden',
-                      '&:hover .MuiBox-root': { opacity: 1 },
-                      cursor: 'pointer'
-                    }}
-                  >
-                    <Avatar alt="Avatar 1" src={avatar} sx={{ width: 72, height: 72, border: '1px dashed' }} />
-                    <Box
-                      sx={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        backgroundColor: theme.palette.mode === 'dark' ? 'rgba(255, 255, 255, .75)' : 'rgba(0,0,0,.65)',
-                        width: '100%',
-                        height: '100%',
-                        opacity: 0,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                      }}
-                    >
-                      <Stack spacing={0.5} alignItems="center">
-                        <CameraOutlined style={{ color: theme.palette.secondary.lighter, fontSize: '2rem' }} />
-                        <Typography sx={{ color: 'secondary.lighter' }}>Upload</Typography>
-                      </Stack>
-                    </Box>
-                  </FormLabel>
-                  <TextField
-                    type="file"
-                    id="change-avtar"
-                    label="Outlined"
-                    variant="outlined"
-                    sx={{ display: 'none' }}
-                    onChange={(e) => setSelectedImage(e.target.files?.[0])}
-                  />
-                </Stack>
-              </Grid>
               <Grid item xs={12} md={8}>
                 <Grid container spacing={3}>
                   <Grid item xs={12}>
                     <Stack spacing={1.25}>
-                      <InputLabel htmlFor="customer-name">Name</InputLabel>
+                      <InputLabel htmlFor="batchcode">Batch Code</InputLabel>
                       <TextField
                         fullWidth
-                        id="customer-name"
-                        placeholder="Enter Customer Name"
-                        {...getFieldProps('name')}
-                        error={Boolean(touched.name && errors.name)}
-                        helperText={touched.name && errors.name}
+                        id="batchcode"
+                        placeholder="Enter Batch Code"
+                        {...getFieldProps('code')}
+                        error={Boolean(touched.code && errors.code)}
+                        helperText={touched.code && errors.code}
                       />
                     </Stack>
                   </Grid>
                   <Grid item xs={12}>
                     <Stack spacing={1.25}>
-                      <InputLabel htmlFor="customer-email">Email</InputLabel>
+                      <InputLabel htmlFor="customer-email">Batch Name</InputLabel>
                       <TextField
                         fullWidth
                         id="customer-email"
-                        placeholder="Enter Customer Email"
-                        {...getFieldProps('email')}
-                        error={Boolean(touched.email && errors.email)}
-                        helperText={touched.email && errors.email}
+                        placeholder="Enter Batch Name"
+                        {...getFieldProps('batchname')}
+                        error={Boolean(touched.batchname && errors.batchname)}
+                        helperText={touched.batchname && errors.batchname}
                       />
                     </Stack>
                   </Grid>
                   <Grid item xs={12}>
                     <Stack spacing={1.25}>
-                      <InputLabel htmlFor="customer-orderStatus">Status</InputLabel>
+                      <InputLabel htmlFor="customer-orderStatus">Branch</InputLabel>
                       <FormControl fullWidth>
                         <Select
                           id="column-hiding"
@@ -245,7 +201,7 @@ const AddBatch = ({ customer, onCancel }) => {
                           input={<OutlinedInput id="select-column-hiding" placeholder="Sort by" />}
                           renderValue={(selected) => {
                             if (!selected) {
-                              return <Typography variant="subtitle1">Select Status</Typography>;
+                              return <Typography variant="subtitle1">Select Branch</Typography>;
                             }
 
                             return <Typography variant="subtitle2">{selected}</Typography>;
@@ -266,39 +222,42 @@ const AddBatch = ({ customer, onCancel }) => {
                     </Stack>
                   </Grid>
                   <Grid item xs={12}>
-                    <Stack spacing={1.25}>
-                      <InputLabel htmlFor="customer-location">Location</InputLabel>
-                      <TextField
-                        fullWidth
-                        id="customer-location"
-                        multiline
-                        rows={2}
-                        placeholder="Enter Location"
-                        {...getFieldProps('location')}
-                        error={Boolean(touched.location && errors.location)}
-                        helperText={touched.location && errors.location}
+                    <Stack spacing={0.5}>
+                      <InputLabel>Open Date</InputLabel>
+                      <MobileDateTimePicker
+                        value={datetime}
+                        onChange={(newValue) => {
+                          setDatetime(newValue);
+                        }}
+                        renderInput={(params) => <TextField fullWidth {...params} />}
                       />
                     </Stack>
                   </Grid>
                   <Grid item xs={12}>
-                    <Stack direction="row" justifyContent="space-between" alignItems="flex-start">
-                      <Stack spacing={0.5}>
-                        <Typography variant="subtitle1">Make Contact Info Public</Typography>
-                        <Typography variant="caption" color="textSecondary">
-                          Means that anyone viewing your profile will be able to see your contacts details
-                        </Typography>
-                      </Stack>
-                      <FormControlLabel control={<Switch defaultChecked sx={{ mt: 0 }} />} label="" labelPlacement="start" />
+                    <Stack spacing={0.5}>
+                      <InputLabel>Close Date</InputLabel>
+                      <MobileDateTimePicker
+                        value={datetime}
+                        onChange={(newValue) => {
+                          setDatetime(newValue);
+                        }}
+                        renderInput={(params) => <TextField fullWidth {...params} />}
+                      />
                     </Stack>
-                    <Divider sx={{ my: 2 }} />
-                    <Stack direction="row" justifyContent="space-between" alignItems="flex-start">
-                      <Stack spacing={0.5}>
-                        <Typography variant="subtitle1">Available to hire</Typography>
-                        <Typography variant="caption" color="textSecondary">
-                          Toggling this will let your teammates know that you are available for acquiring new projects
-                        </Typography>
-                      </Stack>
-                      <FormControlLabel control={<Switch sx={{ mt: 0 }} />} label="" labelPlacement="start" />
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Stack spacing={1.25}>
+                      <InputLabel htmlFor="detail">Detail</InputLabel>
+                      <TextField
+                        fullWidth
+                        id="detail"
+                        multiline
+                        rows={2}
+                        placeholder="Enter Detail"
+                        //{...getFieldProps('detail')}
+                        //error={Boolean(touched.location && errors.detail)}
+                        //helperText={touched.detail && errors.detail}
+                      />
                     </Stack>
                   </Grid>
                 </Grid>
