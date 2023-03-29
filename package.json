@@ -29,6 +29,7 @@
     "@mui/x-date-pickers": "^5.0.0-alpha.6",
     "@reduxjs/toolkit": "^1.8.2",
     "amazon-cognito-identity-js": "^5.2.9",
+    "antd": "^5.3.2",
     "apexcharts": "^3.35.3",
     "axios": "^0.27.2",
     "axios-mock-adapter": "^1.21.1",
@@ -67,6 +68,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-images": "^1.2.0-beta.7",
     "react-intl": "^5.25.1",
+    "react-jwt": "^1.1.8",
     "react-number-format": "^4.9.3",
     "react-organizational-chart": "^2.1.1",
     "react-otp-input-rc-17": "^2.4.1-minor",
@@ -83,6 +85,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "react-table": "^7.8.0",
     "react-timer-hook": "^3.0.5",
+    "react-use-auth": "^2.1.0-14",
     "react-window": "^1.8.7",
     "react-zoom-pan-pinch": "^2.1.3",
     "reactstrap": "^9.1.6",
@@ -94,6 +97,7 @@
     "stylis-plugin-rtl": "^2.1.1",
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4",
+    "xml2js": "^0.4.23",
     "yup": "^0.32.11"
   },
   "scripts": {

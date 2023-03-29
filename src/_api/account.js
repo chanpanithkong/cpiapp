@@ -18,7 +18,7 @@ services.onPost('/api/account/login').reply(async (request) => {
   try {
     await delay(500);
 
-    const { email, password } = JSON.parse(request.data);
+    const { username, password } = JSON.parse(request.data);
 
     let newUsers = users;
 
@@ -27,10 +27,10 @@ services.onPost('/api/account/login').reply(async (request) => {
       newUsers = JSON.parse(localUsers);
     }
 
-    const user = newUsers.find((_user) => _user.email === email);
+    const user = newUsers.find((_user) => _user.username === username);
 
     if (!user) {
-      return [400, { message: 'Verify Your Email & Password' }];
+      return [400, { message: 'Verify Your User ID & Password' }];
     }
 
     if (user.password !== password) {
@@ -45,39 +45,11 @@ services.onPost('/api/account/login').reply(async (request) => {
         serviceToken,
         user: {
           id: user.id,
-          email: user.email,
+          username: user.username,
           name: user.name
         }
       }
     ];
-  } catch (err) {
-    console.error(err);
-    return [500, { message: 'Server Error' }];
-  }
-});
-
-services.onPost('/api/account/register').reply(async (request) => {
-  try {
-    await delay(500);
-
-    const { id, email, password, firstName, lastName } = JSON.parse(request.data);
-
-    if (!email || !password) {
-      return [400, { message: 'Enter Your Email & Password' }];
-    }
-
-    if (!firstName || !lastName) {
-      return [400, { message: 'Enter Your Name' }];
-    }
-
-    const result = users.push({
-      id,
-      email,
-      password,
-      name: `${firstName} ${lastName}`
-    });
-
-    return [200, { users: result }];
   } catch (err) {
     console.error(err);
     return [500, { message: 'Server Error' }];
@@ -113,6 +85,7 @@ services.onGet('/api/account/me').reply((request) => {
       {
         user: {
           id: user.id,
+          userid: user.userid,
           email: user.email
         }
       }

@@ -8,6 +8,10 @@ const exchangeRateApi = {
   get: (params) => {
     const url = '/categorieslist';
     return axiosClient.get(url, { params });
+  },
+  login: (data) => {
+    const url = '/userlogin';
+    return axiosClient.post(url, { data });
   }
 };
 export default exchangeRateApi;
