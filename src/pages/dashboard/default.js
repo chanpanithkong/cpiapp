@@ -26,15 +26,15 @@ import 'dayjs/locale/km';
 // ==============================|| DASHBOARD - DEFAULT ||============================== //
 // test api
 import { useDispatch, useSelector } from 'store';
-import { getUsers } from 'store/reducers/categories';
+import { getCategories } from 'store/reducers/categories';
 //import { getCcy } from 'store/reducers/ccyexchange';
 import MyComponent from '../apps/exchangerate';
-
+// import { categories } from 'data/categories';
 const DashboardDefault = () => {
   const [slot, setSlot] = useState('week');
 
   const [data, setData] = useState([]);
-  const { users, ccy } = useSelector((state) => state.chat);
+  const { categories } = useSelector((state) => state.cat);
   const dispatch = useDispatch([]);
 
   // ==============================|| CALENDAR ||============================== //
@@ -61,12 +61,12 @@ const DashboardDefault = () => {
   };
 
   useEffect(() => {
-    dispatch(getUsers());
+    dispatch(getCategories());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
-    setData(users, ccy);
-  }, [users, ccy]);
+    setData(categories);
+  }, [categories]);
 
   const [locale, setLocal] = useState(enUS);
   const changeLocale = (e) => {
@@ -86,6 +86,16 @@ const DashboardDefault = () => {
         <Typography variant="h5" className="homepage">
           <FormattedMessage id="homepage" />
           <div>{data.map((data) => data.nameen + ' ' + data.namekh)}</div>
+          <div>
+            <ul>
+              {
+                data.map(data =>
+                  <li key={data.catid}>{data.nameen}</li>
+                )
+              }
+              
+            </ul>
+          </div>
           <div>{data.map((data) => data.bid)}</div>
         </Typography>
       </Grid>

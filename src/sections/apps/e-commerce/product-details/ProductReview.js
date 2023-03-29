@@ -10,7 +10,7 @@ import ProductReview from 'components/cards/e-commerce/ProductReview';
 import MainCard from 'components/MainCard';
 import Avatar from 'components/@extended/Avatar';
 import { useDispatch, useSelector } from 'store';
-import { getProductReviews } from 'store/reducers/product';
+import { getProductReviews } from 'store/reducers/product_bk';
 
 // assets
 import { PaperClipOutlined, PictureOutlined, SmileOutlined, StarFilled, StarOutlined } from '@ant-design/icons';

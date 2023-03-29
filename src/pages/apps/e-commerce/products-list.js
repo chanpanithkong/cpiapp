@@ -32,7 +32,7 @@ import ScrollX from 'components/ScrollX';
 import { renderFilterTypes, GlobalFilter } from 'utils/react-table';
 import { HeaderSort, IndeterminateCheckbox, SortingSelect, TablePagination, TableRowSelection } from 'components/third-party/ReactTable';
 import { useDispatch, useSelector } from 'store';
-import { getProducts } from 'store/reducers/product';
+import { getProducts } from 'store/reducers/product_bk';
 
 // assets
 import { CloseOutlined, PlusOutlined, EyeTwoTone, EditTwoTone, DeleteTwoTone } from '@ant-design/icons';

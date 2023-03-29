@@ -134,7 +134,7 @@ const dataInput = {
       type: 'item',
       url: '/data-input',
       icon: icons.HomeOutlined,
-      breadcrumbs: false
+      breadcrumbs: true
     }
   ]
 };

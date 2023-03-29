@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useCallback, useEffect, useMemo, useState, Fragment } from 'react';
-
+//import { useDispatch, useSelector } from 'store';
 // material-ui
 import { alpha, useTheme } from '@mui/material/styles';
 import {
@@ -35,6 +35,9 @@ import { HeaderSort, IndeterminateCheckbox, SortingSelect, TablePagination, Tabl
 
 // assets
 import { CloseOutlined, PlusOutlined, EyeTwoTone, EditTwoTone, DeleteTwoTone } from '@ant-design/icons';
+//get api
+import { useDispatch, useSelector } from 'store';
+import { getProducts } from 'store/reducers/products';
 
 const avatarImage = require.context('assets/images/users', true);
 
@@ -43,7 +46,7 @@ const avatarImage = require.context('assets/images/users', true);
 function ReactTable({ columns, data, getHeaderProps, renderRowSubComponent, handleAdd }) {
   const theme = useTheme();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
-
+  
   const filterTypes = useMemo(() => renderFilterTypes, []);
   const sortBy = { id: 'fatherName', desc: false };
 
@@ -96,8 +99,31 @@ function ReactTable({ columns, data, getHeaderProps, renderRowSubComponent, hand
     // eslint-disable-next-line
   }, [matchDownSM]);
 
+    //Get API data
+    const [dataProduct, setDataProduct] = useState([]);
+    const { products } = useSelector((state) => state.pro);
+    const dispatch = useDispatch([]);
+
+    useEffect(() => {
+      dispatch(getProducts());
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+    useEffect(() => {
+      setDataProduct(products);
+    }, [products]);
+    console.log(dataProduct);
   return (
     <>
+      <div>
+            <ul>
+              {
+                dataProduct.map(dataProduct =>
+                  <li key={dataProduct.catid}>{dataProduct.namekh}</li>
+                )
+              }
+              
+            </ul>
+          </div>
       <TableRowSelection selected={Object.keys(selectedRowIds).length} />
       <Stack spacing={3}>
         <Stack
@@ -254,7 +280,7 @@ CellActions.propTypes = {
 const Product = () => {
   const theme = useTheme();
 
-  const data = useMemo(() => makeData(200), []);
+  const data = useMemo(() => makeData(50), []);
 
   const [customer, setCustomer] = useState(null);
   const [add, setAdd] = useState(false);
@@ -276,12 +302,12 @@ const Product = () => {
         disableSortBy: true
       },
       {
-        Header: '#',
+        Header: '#ID',
         accessor: 'id',
         className: 'cell-center'
       },
       {
-        Header: 'Customer Name',
+        Header: 'Product Name',
         accessor: 'fatherName',
         Cell: CellCustomerDetails
       },
@@ -295,20 +321,20 @@ const Product = () => {
         accessor: 'email'
       },
       {
-        Header: 'Contact',
+        Header: 'Product Code',
         accessor: 'contact',
         // eslint-disable-next-line
         Cell: ({ value }) => <NumberFormat displayType="text" format="+1 (###) ###-####" mask="_" defaultValue={value} />
       },
       {
-        Header: 'Order',
+        Header: 'Category',
         accessor: 'age',
         className: 'cell-right'
       },
       {
-        Header: 'Spent',
-        accessor: 'visits',
-        className: 'cell-right',
+        Header: 'Detail',
+        accessor: 'visits',//data display in table
+        className: 'cell-right', 
         // eslint-disable-next-line
         Cell: ({ value }) => <NumberFormat value={value} displayType="text" thousandSeparator prefix="$" />
       },

@@ -9,11 +9,11 @@ import { dispatch } from '../index';
 
 const initialState = {
   error: null,
-  categories: []
+  products: []
 };
 
-const cat = createSlice({
-  name: 'cat',
+const pro = createSlice({
+  name: 'pro',
   initialState,
   reducers: {
     // HAS ERROR
@@ -22,26 +22,26 @@ const cat = createSlice({
     },
 
     // GET USERS
-    getCategoriesSuccess(state, action) {
-      state.categories = action.payload;
+    getProductsSuccess(state, action) {
+      state.products = action.payload;
     }
   }
 });
 
 // Reducer
-export default cat.reducer;
+export default pro.reducer;
 // ----------------------------------------------------------------------
-export function getCategories() {
+export function getProducts() {
   return async () => {
     try {
-      await axios.get('http://172.16.17.171/api/categorieslist').then((res) => {
-        console.log(res.data.categories);
-        dispatch(cat.actions.getCategoriesSuccess(res.data.categories));
+      await axios.get('http://172.16.17.171/api/productslist').then((res) => {
+        //console.log(res.data.products);
+        dispatch(pro.actions.getProductsSuccess(res.data.products));
       });
       
       // /api/chat/users
     } catch (error) {
-      dispatch(cat.actions.hasError(error));
+      dispatch(pro.actions.hasError(error));
     }
   };
 }

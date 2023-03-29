@@ -14,7 +14,7 @@ import Payment from 'sections/apps/e-commerce/checkout/Payment';
 import MainCard from 'components/MainCard';
 import { openSnackbar } from 'store/reducers/snackbar';
 import { useDispatch, useSelector } from 'store';
-import { getAddresses, editAddress } from 'store/reducers/product';
+import { getAddresses, editAddress } from 'store/reducers/product_bk';
 import { removeProduct, setBackStep, setBillingAddress, setNextStep, setShippingCharge, setStep, updateProduct } from 'store/reducers/cart';
 
 // assets

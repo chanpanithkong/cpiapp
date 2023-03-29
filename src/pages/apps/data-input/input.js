@@ -13,7 +13,7 @@ import FloatingCart from 'components/cards/e-commerce/FloatingCart';
 import FormInput from './form-input';
 import MainCard from 'components/MainCard';
 import { useDispatch, useSelector } from 'store';
-import { getProduct } from 'store/reducers/product';
+import { getProduct } from 'store/reducers/product_bk';
 import { resetCart } from 'store/reducers/cart';
 import ComponentHeader from '../../../components/cards/data-input/ComponentHeader';
 import ComponentWrapper from '../../../sections/components-overview/ComponentWrapper';

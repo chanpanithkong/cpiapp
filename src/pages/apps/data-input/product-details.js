@@ -16,7 +16,7 @@ import ProductSpecifications from 'sections/apps/e-commerce/product-details/Prod
 import RelatedProducts from 'sections/apps/e-commerce/product-details/RelatedProducts';
 import MainCard from 'components/MainCard';
 import { useDispatch, useSelector } from 'store';
-import { getProduct } from 'store/reducers/product';
+import { getProduct } from 'store/reducers/product_bk';
 import { resetCart } from 'store/reducers/cart';
 
 function TabPanel({ children, value, index, ...other }) {

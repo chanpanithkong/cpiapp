@@ -11,7 +11,7 @@ import Highlighter from './third-party/Highlighter';
 // header style
 const headerSX = {
   p: 2.5,
-  bgcolor: 'primary.light',
+  // bgcolor: 'primary.light',
   '& .MuiCardHeader-action': { m: '0px auto', alignSelf: 'center' }
 };
 

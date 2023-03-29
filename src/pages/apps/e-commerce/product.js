@@ -15,7 +15,7 @@ import useConfig from 'hooks/useConfig';
 import { resetCart } from 'store/reducers/cart';
 import { openDrawer } from 'store/reducers/menu';
 import { useDispatch, useSelector } from 'store';
-import { getProducts, filterProducts } from 'store/reducers/product';
+import { getProducts, filterProducts } from 'store/reducers/product_bk';
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' && prop !== 'container' })(({ theme, open, container }) => ({
   flexGrow: 1,

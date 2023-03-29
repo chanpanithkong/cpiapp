@@ -21,7 +21,7 @@ import {
 import Avatar from 'components/@extended/Avatar';
 import IconButton from 'components/@extended/IconButton';
 import { useDispatch, useSelector } from 'store';
-import { getRelatedProducts } from 'store/reducers/product';
+import { getRelatedProducts } from 'store/reducers/product_bk';
 import { openSnackbar } from 'store/reducers/snackbar';
 import SimpleBar from 'components/third-party/SimpleBar';
 

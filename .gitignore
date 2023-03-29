@@ -106,3 +106,8 @@ dist
 
 # wincompare file
 .bak
+package-lock.json
+package-lock.json
+package-lock.json
+package.json
+yarn.lock

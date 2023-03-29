@@ -9,11 +9,11 @@ import { dispatch } from '../index';
 
 const initialState = {
   error: null,
-  categories: []
+  users: []
 };
 
-const cat = createSlice({
-  name: 'cat',
+const chat = createSlice({
+  name: 'chat',
   initialState,
   reducers: {
     // HAS ERROR
@@ -22,26 +22,26 @@ const cat = createSlice({
     },
 
     // GET USERS
-    getCategoriesSuccess(state, action) {
-      state.categories = action.payload;
+    getUsersSuccess(state, action) {
+      state.users = action.payload;
     }
   }
 });
 
 // Reducer
-export default cat.reducer;
+export default chat.reducer;
 // ----------------------------------------------------------------------
-export function getCategories() {
+
+export function getUsers() {
   return async () => {
     try {
       await axios.get('http://172.16.17.171/api/categorieslist').then((res) => {
-        console.log(res.data.categories);
-        dispatch(cat.actions.getCategoriesSuccess(res.data.categories));
+        dispatch(chat.actions.getUsersSuccess(res.data.categories));
       });
-      
+
       // /api/chat/users
     } catch (error) {
-      dispatch(cat.actions.hasError(error));
+      dispatch(chat.actions.hasError(error));
     }
   };
 }
